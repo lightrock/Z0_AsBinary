@@ -1,0 +1,11 @@
+﻿[project]
+name = "characteristic-impedance"
+version = "0.1.0"
+description = "Python-first characteristic impedance physics exploration"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
