@@ -4,7 +4,7 @@
 
 Extraction and clarification of the 2019 observation in *The Fundamental Constants in binary*: the significant digits of the characteristic impedance of vacuum form a 39-bit information object that already contains whole quark mass-signature words and visually arranges into a gluon-like diagram.
 
-Source material: `E:\physics\ObservationsOfTheFundamentalConstantsInBinary.pdf`, with matching text recovered from `E:\physics\ObservationsOfTheFundamentalConstantsInBinary.rtf`. The core source range is the “QUARKS”, “CHARACTERISTIC IMPEDANCE OF VACUUM”, “GLUONS”, and “Atom from 39 bits” section.
+Source material: legacy 2019 PDF/RTF research notes from the binary constants investigation. The core source range is the “QUARKS”, “CHARACTERISTIC IMPEDANCE OF VACUUM”, “GLUONS”, and “Atom from 39 bits” section.
 
 ## Claim Being Preserved
 
