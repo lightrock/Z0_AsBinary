@@ -95,6 +95,21 @@ Every genetic decomposition report must state allowed token catalogs,
 orientation/transform rules, whether overlaps/circular wrap were allowed,
 literal leftovers, coverage percentage, token count, and controls used.
 
+## Emergent Motif Discovery Discipline
+
+Emergent bit motif discovery is a later experiment and must not be confused with
+quark GeneZip. Before implementing it, read
+`docs/experiments/emergent-bit-motif-discovery.md`.
+
+This experiment starts with unnamed repeated bit patterns, not known quarks or
+known constants. Find large recurring motifs first, then inspect which physical
+families they occupy, then propose cautious names. Do not name motifs first and
+search backward for confirmation.
+
+Keep discovery and interpretation separate: motif search finds recurring bit
+strings; family labeling and phrases such as "candidate quark-like motif
+occupying optical constants" come only after occurrence tables and controls.
+
 ## Chain-Of-Evidence Rules
 
 - Keep raw/source/generated artifacts separate.
@@ -115,6 +130,8 @@ literal leftovers, coverage percentage, token count, and controls used.
 - `docs/tokens/legacy-physics-token-catalog.md` - legacy appended-token catalog.
 - `docs/experiments/quark-genetic-sequence.md` - next experiment design note for
   quark genetic compression and XOR run comparison.
+- `docs/experiments/emergent-bit-motif-discovery.md` - later experiment design
+  note for unnamed recurring motifs across constants.
 - `docs/z0-binary-structure.md` - Z0 quark/gluon bit-structure observation.
 - `docs/legacy-genetic-sequence-analysis.md` - BigCalc2 gene/run-tape analysis.
 - `docs/information-first-position.md` - information-first position statement.
