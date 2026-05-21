@@ -48,6 +48,34 @@ could treat quarks, hadrons, and candidate mass signatures like named constants
 during binary scans. Preserve that fact. Do not silently mix official CODATA and
 legacy tokens without saying so.
 
+## Quark-Token Scan Discipline
+
+Short quark bit patterns are high-noise probes. Do not overinterpret raw hits
+from tiny low-precision tokens such as `Q_UP` (`10110`) or raw `Q_DOWN`
+(`101111`) without strong controls. Many unrelated constants will contain such
+short patterns by chance.
+
+For first-pass quark-grouping experiments, prioritize the longer and more
+specific quark signatures:
+
+```text
+Q_CHARM   10011111011   length 11
+Q_BOTTOM  110100010     length 9
+Q_TOP     11011000011   length 11
+```
+
+Also prioritize the longer Z0 closure-style quark words preserved in the
+Z0 binary-structure notes:
+
+```text
+DOWN closure word     10111101      length 8
+STRANGE closure word  1100000011    length 10
+```
+
+Report token length with every hit table. Separate raw-token scans from
+closure-word scans. Compare apparent groupings against shuffled, same-length,
+and same-density controls before calling a pattern meaningful.
+
 ## Chain-Of-Evidence Rules
 
 - Keep raw/source/generated artifacts separate.
