@@ -52,25 +52,24 @@ result before expanding the test space.
 
 ## Initial Notes
 
-- [Information-First Position](docs/information-first-position.html) states the
-  adversarial thesis: physical constants are compressed information artifacts
-  before they are physics classroom objects, and unit objections must be tested
-  as encoding transformations rather than used as a dismissal.
-- [Legacy Genetic Sequence Analysis](docs/legacy-genetic-sequence-analysis.html)
+- [Information-First Position](docs/information-first-position.md) states the
+  central thesis: physical constants are compressed information artifacts before
+  they are physics classroom objects, and unit objections must be tested as
+  encoding transformations rather than used as a dismissal.
+- [Legacy Genetic Sequence Analysis](docs/legacy-genetic-sequence-analysis.md)
   explains what the old BigCalc2 "gene" machinery was doing: circular tape
   decomposition, Z0-facet compression, ablation controls, and Z0-as-running-tape
   scans.
-- [Z0 Binary Structure](docs/z0-binary-structure.html) captures the 2019 PDF/RTF
+- [Z0 Binary Structure](docs/z0-binary-structure.md) captures the 2019 PDF/RTF
   observation that the characteristic impedance bits already contain whole
   quark mass-signature words, arrange naturally into a gluon-like chart, and
   come from a prime significant-digit integer with a primitive Pythagorean
   triple identity.
 
-Note: GitHub Pages is the clean way to make these HTML files open as rendered
-pages from the GitHub README. GitHub rejected Pages for this private repository
-under the current account plan, so the links above currently open GitHub's file
-view. If the repository is made public or Pages becomes available for the
-private repo, switch these links to `https://lightrock.github.io/CharacteristicImpedancePython/...`.
+Note: the Markdown documents linked above are the GitHub-readable versions.
+The companion HTML files in `docs/` are much nicer looking when opened locally
+or through a static site, but GitHub's repository file browser shows them as
+source code unless GitHub Pages or another static host is used.
 
 ## Design Posture
 
