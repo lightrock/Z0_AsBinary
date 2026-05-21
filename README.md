@@ -74,13 +74,4 @@ result before expanding the test space.
 - Require randomized and cross-constant baselines before making strong claims.
 - Keep generated reports separate from core library code.
 
-## Legacy Reference
 
-The original exploratory C# / WinForms lab bench is preserved separately:
-
-```text
-E:\physics\CharacteristicImpedanceLegacy
-```
-
-Do not mechanically port the GUI. Extract the experiment and rebuild it as a
-testable Python research tool.
