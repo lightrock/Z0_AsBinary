@@ -42,6 +42,17 @@ If a fundamental constant of physics is truly fundamental, then a structural or 
 
 Informally, the forward layout has a minimal tetrahedral flavor — a kind of binary `d4` in tabletop terms. That image should be treated as an interpretive clue, not as proof. The research task is to turn the visual/geometric hunch into explicit segmentation rules, generated layouts, and controls.
 
+## Discovery Provenance: Visual Natural Order
+
+The quark observation was not originally found by arbitrarily permuting the Z0 information until a match appeared. It came from looking at proto-geometric views of the impedance bits and noticing that quark words could be read in a natural visual order, including an outside/clockwise ordering in the relevant layout.
+
+That discovery path matters. The project should preserve the difference between:
+
+- changing or scrambling the information until a match appears, and
+- reading the same fixed information through a natural orientation, boundary, or traversal order suggested by the layout itself.
+
+The stronger claim to test is that all quark signatures may be resolvable from the fixed Z0 information when viewed in the right natural orientation/order, without changing the underlying bits. Future code should therefore be able to reproduce candidate visual traversals explicitly: row order, outside boundary order, clockwise/counter-clockwise order, orientation used, and any closure rule used.
+
 ## Quark Words
 
 The source converts quark mass values to binary using significant digits and ignoring units and decimal placement for the initial information experiment.
