@@ -19,6 +19,8 @@ Current project state:
 - A complete pre-2019 CODATA 2014 evidence chain exists under `docs/codata/`,
   including the raw NIST-style source text, 336 parsed official rows, derived
   binary rows, and a bits-only corpus.
+- A separate legacy physics-token catalog exists under `docs/tokens/` for the
+  quark and hadron rows that BigCalc2 appended after the official CODATA table.
 - CODATA documentation generation tools exist under `tools/codata/`.
 - Unit tests cover the Z0 anchor, core bit operations, XOR loop behavior, and
   CODATA document generation.
@@ -109,6 +111,9 @@ The project now keeps the full pre-2019 source and derived binary evidence in-tr
   preserves the same rows with significant digits and binary forms.
 - [Pre-2019 CODATA 2014 Bits Only](docs/codata/pre-2019-codata-2014-bits-only.txt)
   is the stripped corpus for pure bit experiments.
+- [Legacy Physics Token Catalog](docs/tokens/legacy-physics-token-catalog.md)
+  preserves the non-CODATA quark/hadron/convenience rows that BigCalc2 appended
+  to its local NIST file so they could be treated like named bit tokens.
 
 The conversion rule intentionally uses the published value mantissa only:
 
@@ -121,6 +126,9 @@ The conversion rule intentionally uses the published value mantissa only:
 That rule ignores sign, decimal point, digit-grouping spaces, ellipsis,
 uncertainty, unit, and exponent marker. This is not an accident; it is the
 information-object hypothesis made explicit and testable.
+
+Future reports must state which catalog they used: official CODATA only, legacy
+tokens only, or a combined catalog.
 
 ## Falsification Criteria
 
@@ -225,6 +233,9 @@ python -m unittest discover -s tests -p "test_*.py"
   explains what the old BigCalc2 "gene" machinery was doing: circular tape
   decomposition, Z0-facet compression, ablation controls, and Z0-as-running-tape
   scans.
+- [Legacy Physics Token Catalog](docs/tokens/legacy-physics-token-catalog.md)
+  calls out the appended quark and hadron rows from BigCalc2, including their
+  values, significant digits, and binary strings.
 - [Z0 Binary Structure](docs/z0-binary-structure.md) captures the 2019 PDF/RTF
   observation that the characteristic impedance bits already contain whole
   quark mass-signature words, arrange naturally into a gluon-like chart, and
