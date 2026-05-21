@@ -1,7 +1,23 @@
-﻿# Legacy Reference
+# Legacy Reference
 
-The legacy reference project is `E:\physics\bigcalc2`, locally committed as `Characteristic Impedance Legacy` material.
+The legacy reference project is:
 
-Use it to recover original formulas, constants, exploratory data, GUI behavior, and historical experiments.
+```text
+E:\physics\CharacteristicImpedanceLegacy
+```
 
-Do not mechanically port the GUI. Extract concepts and rebuild them as testable Python modules.
+It preserves the original BigCalc2 C# / WinForms exploration. The important
+early workflow was:
+
+- load pre-2019 CODATA text,
+- parse significant digits,
+- convert those digits into binary,
+- run circular XOR evolution,
+- compare forward/reverse/inverse/inverse-reverse outputs,
+- scan generated runs for other constant bit patterns.
+
+Use the legacy project to recover original formulas, constants, exploratory
+data, GUI behavior, and historical experiments.
+
+Do not mechanically port the GUI. Extract concepts and rebuild them as testable
+Python modules.

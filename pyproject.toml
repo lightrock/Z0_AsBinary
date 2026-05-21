@@ -1,8 +1,12 @@
-﻿[project]
+[project]
 name = "characteristic-impedance"
 version = "0.1.0"
-description = "Python-first characteristic impedance physics exploration"
+description = "Python research instrument for characteristic impedance as an information substrate"
 requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Allen Light"}
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
