@@ -4,20 +4,41 @@ Python-first research instrument for testing whether the characteristic impedanc
 of vacuum behaves like an unusually generative information substrate inside the
 published catalog of fundamental physical constants.
 
+## Status
+
+This is an early research instrument, not a completed proof. The project begins
+with one strong legacy observation and turns it into code, tests, baselines, and
+failure conditions.
+
+The current code reproduces the pre-2019 `Z0` circular-XOR loop result and
+provides the scaffolding for broader catalog and control tests.
+
+## Claim Under Test
+
+This project tests the claim that the pre-2019 CODATA significant-digit
+representation of the characteristic impedance of vacuum is not merely an
+arbitrary decimal artifact. Under a minimal binary encoding and a minimal
+circular XOR evolution, it appears to behave as an unusually generative seed
+inside the catalog of physical constants.
+
+The claim is not that the ohm is sacred. The claim is that the pre-2019
+published `Z0` value may preserve a privileged information object whose
+structure became harder to see after the 2019 SI redefinition changed the
+exact/measured status of vacuum electromagnetic constants.
+
 ## Thesis
 
-The claim is not that the unit "ohm" is physically privileged, or that the
-decimal value `376.730313461` is magic.
+Mature physics compresses empirical reality into a finite symbolic catalog of
+authoritative constants. Once a constant is published, its significant digits can
+be treated as an information object.
 
-The claim is that mature physics compresses empirical reality into a finite
-symbolic catalog of authoritative constants. Once a constant is published, its
-significant digits can be treated as an information object. Under a minimal
-binary encoding and a minimal XOR-only ring evolution, the characteristic
-impedance of vacuum appears to behave like a privileged seed whose orbit
-contains or reconstructs a surprisingly large fraction of the other CODATA
-constant bit patterns.
+The working hypothesis is that the characteristic impedance of vacuum is not
+just another constant in that catalog. It may be the impedance boundary between
+physical measurement and symbolic compression: a compact seed whose simple
+binary evolution reconstructs or intersects an unusually large fraction of the
+other published constant bit patterns.
 
-That claim is testable. This repository is the sober instrument for testing it.
+That claim is testable.
 
 ## Core Experiment
 
@@ -35,7 +56,7 @@ That claim is testable. This repository is the sober instrument for testing it.
 7. Compare the characteristic impedance of vacuum (`Z0`) against all other constants and randomized controls.
 8. Repeat under precision choices, unit translations, CODATA editions, and alternative encodings.
 
-## Starting Point
+## Known Verified Result
 
 The legacy observation uses pre-2019 CODATA:
 
@@ -46,9 +67,93 @@ bits:   101011110110110111000000110001011110101
 len:    39
 ```
 
-The legacy C# project recorded a forward exact loop for this seed with period
-`4095`. The Python implementation should reproduce, isolate, and harden that
-result before expanding the test space.
+The current Python implementation verifies that the forward circular-XOR
+evolution of this seed closes a loop at period `4095`:
+
+```text
+seed        = 101011110110110111000000110001011110101
+period      = 4095
+halted      = false
+closed_loop = true
+```
+
+This is the first anchor result. The project should not make stronger claims
+until the catalog-level and randomized-control tests are implemented.
+
+## Falsification Criteria
+
+This claim weakens or fails if:
+
+- `Z0` does not outperform other constants under the same encoding and evolution.
+- Randomized bitstrings with the same length and density perform comparably.
+- Shuffled catalog controls perform comparably.
+- The observed structure disappears under reasonable precision and unit transformation tests.
+- Post-selection explains the apparent matches.
+- The result depends on undocumented choices that cannot be preregistered and repeated.
+
+## Why Pre-2019 Z0 Matters
+
+The 2019 SI revision is not treated here as a mere bookkeeping change. It is
+treated as a change in the published information structure of the constants
+catalog.
+
+Before the revised SI, the vacuum electromagnetic constants occupied a different
+definitional status. After the revision, the SI is defined through exact values
+assigned to selected defining constants, including `c`, `h`, and `e`. Under that
+regime, the vacuum magnetic permeability and the impedance of free space are no
+longer fixed in the same way; they become tied to the measured fine-structure
+constant.
+
+This project therefore treats the pre-2019 `Z0` value as a historically specific
+information object. The question is not whether a unit convention is sacred. The
+question is whether the pre-2019 catalog preserved a compact symbolic seed that
+is structurally special under simple computational tests.
+
+## Methodological Context
+
+The computational stance is close to the Wolfram-style lesson that very simple
+programs can produce unexpectedly rich behavior. The rule used here is much
+smaller than a physics model:
+
+```text
+circular binary seed -> XOR with one-bit rotation -> generated orbit
+```
+
+If that minimal rule produces non-random reconstruction behavior against a
+catalog of physical constants, the next move is not rhetoric. The next move is
+controls.
+
+## Install And Run
+
+From the repository root:
+
+```bash
+python -m venv .venv
+```
+
+Windows PowerShell:
+
+```powershell
+.venv\Scripts\Activate.ps1
+pip install -e .
+python -m unittest
+```
+
+Windows cmd:
+
+```bat
+.venv\Scripts\activate.bat
+pip install -e .
+python -m unittest
+```
+
+Linux/macOS:
+
+```bash
+source .venv/bin/activate
+pip install -e .
+python -m unittest
+```
 
 ## Initial Notes
 
@@ -79,3 +184,19 @@ source code unless GitHub Pages or another static host is used.
 - Require randomized and cross-constant baselines before making strong claims.
 - Keep generated reports separate from core library code.
 
+## Roadmap
+
+- Reproduce the legacy `Z0` XOR-ring period result. Done.
+- Add catalog loading for pre-2019 CODATA constants.
+- Add orientation, period, and orbit scans across the full constants catalog.
+- Add shuffled-bit, random-seed, and alternate-constant baselines.
+- Add unit-translation and precision-cut experiments.
+- Generate reproducible Markdown/HTML reports from code outputs.
+- Publish null results and failed variants alongside positive results.
+
+## References
+
+- BIPM, [The International System of Units (SI)](https://www.bipm.org/en/measurement-units).
+- NIST, [SI Redefinition](https://www.nist.gov/si-redefinition).
+- Pierre Fayet, [Completing the International System of units with c = hbar = mu0 = epsilon0 = kB = NA = 1](https://arxiv.org/abs/1906.05123), arXiv:1906.05123.
+- Wolfram, [Wolfram Science](https://www.wolfram.com/wolfram-science/).
