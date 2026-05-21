@@ -52,6 +52,10 @@ result before expanding the test space.
 
 ## Initial Notes
 
+- [Information-First Position](docs/information-first-position.html) states the
+  adversarial thesis: physical constants are compressed information artifacts
+  before they are physics classroom objects, and unit objections must be tested
+  as encoding transformations rather than used as a dismissal.
 - [Z0 Binary Structure](docs/z0-binary-structure.html) captures the 2019 PDF/RTF
   observation that the characteristic impedance bits already contain whole
   quark mass-signature words, arrange naturally into a gluon-like chart, and

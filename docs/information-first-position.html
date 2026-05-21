@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Information First, Physics Second</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #111916;
+      --muted: #5b6762;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --line: #cdd8d3;
+      --accent: #1b6a50;
+      --steel: #244c63;
+      --warn: #8a5b12;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.58;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 44px 24px 72px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.14;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    h2 {
+      margin-top: 42px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      font-size: 25px;
+    }
+
+    h3 {
+      margin-top: 22px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 14px 0 0;
+    }
+
+    code, pre {
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    pre {
+      margin: 16px 0 0;
+      padding: 16px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f4f7f5;
+    }
+
+    .lede {
+      margin-top: 16px;
+      max-width: 890px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .thesis {
+      margin-top: 22px;
+      padding: 18px 20px;
+      border-left: 5px solid var(--accent);
+      background: #edf7f2;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .card strong {
+      color: var(--steel);
+    }
+
+    .label {
+      margin-bottom: 7px;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 16px;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    th, td {
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #eef2f0;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .warning {
+      margin-top: 18px;
+      padding: 16px;
+      border: 1px solid #d6bf83;
+      border-radius: 8px;
+      background: #fff8e6;
+      color: #3e2b0b;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        padding: 30px 16px 52px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Information First, Physics Second</h1>
+  <p class="lede">
+    A position statement for the characteristic impedance research program:
+    before arguing about the physical interpretation of a constant, inspect the
+    information artifact that physics has published.
+  </p>
+
+  <div class="thesis">
+    Physical constants are high-value compressed information objects. They are
+    produced by experiment, apparatus, theory, unit convention, uncertainty,
+    rounding, standardization, and consensus. Physics does not hand us raw
+    reality; it hands us encoded artifacts. This project studies structure in
+    that encoded layer first.
+  </div>
+
+  <h2>The Counterpunch</h2>
+  <p>
+    The ordinary dismissal is that binary patterns in dimensionful constants
+    must be numerology because the numerical value depends on units. That
+    objection is too cheap. Units are not a reason to stop; units are part of
+    the encoding stack and must be tested as transformations.
+  </p>
+  <pre>You are objecting from inside the physics representation layer.
+This project asks whether the representation layer itself has structure.</pre>
+
+  <h2>What This Is Not</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="label">Not magic numbers</div>
+      <p>
+        The project is not claiming that <code>376.730313461</code> is sacred
+        because it is measured in ohms.
+      </p>
+    </div>
+    <div class="card">
+      <div class="label">Not hidden freedom</div>
+      <p>
+        Garden-variety numerology hides degrees of freedom. This work exposes
+        them: source catalog, encoding rule, transform, search target, and
+        baseline are all part of the protocol.
+      </p>
+    </div>
+    <div class="card">
+      <div class="label">Not anti-physics</div>
+      <p>
+        Physics is the source of the catalog. The challenge is that physics may
+        have generated an information structure it has not learned to read.
+      </p>
+    </div>
+    <div class="card">
+      <div class="label">Not proof by picture</div>
+      <p>
+        The Z0 quark/gluon layout is evidence to preserve and test. It is not
+        the end of the argument.
+      </p>
+    </div>
+  </div>
+
+  <h2>Reviewer Objections</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Objection</th>
+        <th>Response</th>
+        <th>Required Test</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>“But units.”</td>
+        <td>Units are encoding choices. Change them and measure whether the information structure survives, mutates coherently, or disappears.</td>
+        <td>Run the same protocol under unit translations and scaling conventions.</td>
+      </tr>
+      <tr>
+        <td>“That is numerology.”</td>
+        <td>Numerology resists falsification. This work must define explicit rules and failure conditions.</td>
+        <td>Compare Z0 against all catalog constants, shuffled bits, random strings, and alternate encodings.</td>
+      </tr>
+      <tr>
+        <td>“Quark masses are uncertain.”</td>
+        <td>Good. Uncertainty makes them stress tests, not disqualifiers.</td>
+        <td>Scan neighborhoods of accepted quark-mass values and report stability basins.</td>
+      </tr>
+      <tr>
+        <td>“You chose significant digits.”</td>
+        <td>Yes. That is the artifact physics published. The choice becomes a parameter.</td>
+        <td>Repeat across precision cuts, CODATA editions, rounded forms, and exact/derived constants.</td>
+      </tr>
+      <tr>
+        <td>“The layout was manually seen.”</td>
+        <td>Yes, first as observation. Now encode the segmentation and score it.</td>
+        <td>Search for non-overlapping whole-word decompositions and compare their rarity.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>The Research Stance</h2>
+  <p>
+    Start with the artifact exactly as published. Convert it by a documented
+    rule. Apply the smallest transformations possible. Ask whether the resulting
+    symbolic object behaves randomly or as if it carries constraint.
+  </p>
+  <pre>published constant -> significant digits -> binary seed -> orientations -> XOR ring -> matches -> baselines</pre>
+  <p>
+    If the pattern collapses under controls, that is a useful result. If the
+    pattern survives changes in units, precision, catalog edition, and random
+    baseline, then the units objection failed to explain it.
+  </p>
+
+  <h2>Z0 As The First Wedge</h2>
+  <p>
+    The characteristic impedance of vacuum is the first wedge because its
+    pre-2019 significant-digit integer:
+  </p>
+  <table>
+    <tbody>
+      <tr>
+        <td>Digits</td>
+        <td><code>376730313461</code></td>
+      </tr>
+      <tr>
+        <td>Bits</td>
+        <td><code>101011110110110111000000110001011110101</code></td>
+      </tr>
+      <tr>
+        <td>Whole-word segmentation</td>
+        <td><code>10 10111101 101101 1100000011 000 10111101 01</code></td>
+      </tr>
+      <tr>
+        <td>XOR-ring behavior</td>
+        <td>Forward seed closes a legacy loop at period <code>4095</code>.</td>
+      </tr>
+      <tr>
+        <td>Number-theory feature</td>
+        <td>Prime, congruent to <code>1 mod 4</code>, and hypotenuse of a primitive Pythagorean triple.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Hard Thesis</h2>
+  <div class="warning">
+    Fundamental constants are not merely physical measurements. They are
+    compressed symbolic outputs of physics. Before dismissing structure in their
+    symbolic form as numerology, test whether the symbolic layer contains
+    non-random constraints that physics itself has not learned to read.
+  </div>
+
+  <h2>Success Criteria</h2>
+  <p>
+    This project earns the right to be taken seriously only by surviving
+    adversarial testing. The goal is not to protect the Z0 observation. The goal
+    is to make the observation precise enough that it can either break cleanly
+    or become harder to dismiss.
+  </p>
+</main>
+</body>
+</html>
