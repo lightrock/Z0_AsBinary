@@ -5,7 +5,7 @@ description = "Python research instrument for characteristic impedance as an inf
 requires-python = ">=3.11"
 license = {file = "LICENSE"}
 authors = [
-  {name = "Allen Light"}
+  {name = "Allen E. Francom"}
 ]
 
 [tool.setuptools]
