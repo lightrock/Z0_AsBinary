@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Z0 As A ZFA-Runnable Object</title>
+  <title>Z0 As A QLF / Quantum OS Runnable Object</title>
   <style>
     :root {
       color-scheme: light;
@@ -180,16 +180,18 @@
   <main>
     <p><a href="index.html">Back to docs index</a></p>
 
-    <h1>Z0 As A ZFA-Runnable Object</h1>
+    <h1>Z0 As A QLF / Quantum OS Runnable Object</h1>
     <p class="lede">
       This page translates the pre-2019 characteristic impedance bitstring into
-      a compact object that a ZFA-style process can run: fixed seed, canonical
-      views, evolution rule, tap stream, and named-word segmentation.
+      a compact object that a QLF / Quantum OS style process can run: fixed
+      seed, canonical views, evolution rule, tap stream, and named-word
+      segmentation.
     </p>
 
     <div class="source">
-      This is a machine-facing handoff shape, not a proof. It says what ZFA can
-      operate on without changing the underlying Z0 bits.
+      This is a machine-facing handoff shape, not a proof. It says what a
+      QLF / Quantum OS runtime can operate on without changing the underlying
+      Z0 bits.
     </div>
 
     <h2>Core Translation</h2>
@@ -222,7 +224,7 @@
       </article>
     </div>
 
-    <h2>ZFA Input Package</h2>
+    <h2>QLF / Quantum OS Input Package</h2>
     <pre>{
   "object": "Z0_PRE_2019",
   "type": "finite_circular_binary_seed",
@@ -311,8 +313,8 @@ emit          = state_next[0]</pre>
     <h2>Known Forward Word Segmentation</h2>
     <p>
       The known forward segmentation is preserved as a named reading, not as a
-      proof. It gives ZFA a first set of words to test against orientation scans,
-      circular substrings, and run-tape output.
+      proof. It gives a QLF / Quantum OS runtime a first set of words to test
+      against orientation scans, circular substrings, and run-tape output.
     </p>
     <table>
       <thead>
@@ -363,7 +365,7 @@ emit          = state_next[0]</pre>
 
     <pre>10 10111101 101101 1100000011 000 10111101 01</pre>
 
-    <h2>What ZFA Should Do With It</h2>
+    <h2>What QLF / Quantum OS Should Do With It</h2>
     <ol>
       <li>Load Z0 as a fixed 39-bit circular seed.</li>
       <li>Generate the four canonical orientation views.</li>

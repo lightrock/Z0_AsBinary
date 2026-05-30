@@ -1,4 +1,4 @@
-"""Z0-as-runnable-object probes for ZFA-style experiments."""
+"""Z0-as-runnable-object probes for QLF / Quantum OS experiments."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ from .core import Z0_PRE_2019_BITS, orientations, xor_ring_run, xor_ring_step
 
 @dataclass(frozen=True)
 class BitToken:
-    """Named bit word used by a Z0/ZFA probe."""
+    """Named bit word used by a Z0 QLF / Quantum OS probe."""
 
     name: str
     bits: str
@@ -52,7 +52,7 @@ class ControlSummary:
 
 @dataclass(frozen=True)
 class ZfaProbeResult:
-    """A first-pass ZFA-style run-tape result for the fixed Z0 seed."""
+    """A first-pass QLF / Quantum OS run-tape result for the fixed Z0 seed."""
 
     seed_bits: str
     period_steps: int
@@ -175,7 +175,7 @@ def density_preserving_shuffle_controls(
 
 
 def run_z0_zfa_probe(control_trials: int = 256, tap_index: int = 0) -> ZfaProbeResult:
-    """Run the first Z0/ZFA tap-tape probe with shuffled controls."""
+    """Run the first Z0 QLF / Quantum OS tap-tape probe with shuffled controls."""
     seed_bits = Z0_PRE_2019_BITS
     run = xor_ring_run(seed_bits)
     tap_tape = z0_tap_tape(seed_bits, tap_index=tap_index, steps=run.period_steps)
@@ -196,9 +196,9 @@ def run_z0_zfa_probe(control_trials: int = 256, tap_index: int = 0) -> ZfaProbeR
 
 
 def render_zfa_probe_markdown(result: ZfaProbeResult) -> str:
-    """Render a Markdown report for the first Z0/ZFA probe."""
+    """Render a Markdown report for the first Z0 QLF / Quantum OS probe."""
     lines = [
-        "# Z0 ZFA Run-Tape Probe",
+        "# Z0 QLF / Quantum OS Run-Tape Probe",
         "",
         "This generated report runs the fixed pre-2019 Z0 bit seed as the",
         "minimal circular-XOR process described in the legacy BigCalc2 notes:",
@@ -352,7 +352,7 @@ def render_zfa_probe_html(result: ZfaProbeResult) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Z0 ZFA Run-Tape Probe</title>
+    <title>Z0 QLF / Quantum OS Run-Tape Probe</title>
   <style>
     :root {{
       --ink: #14201b;
@@ -443,11 +443,13 @@ def render_zfa_probe_html(result: ZfaProbeResult) -> str:
 <body>
   <main>
     <a class="back-link" href="../index.html">Back to docs index</a>
-    <h1>Z0 ZFA Run-Tape Probe</h1>
+    <h1>Z0 QLF / Quantum OS Run-Tape Probe</h1>
     <p class="lede">
       A generated first-pass experiment that runs the fixed pre-2019 Z0 bit seed
       as a circular-XOR tap machine, then checks priority closure and quark
-      words against same-density shuffled controls.
+      words against same-density shuffled controls. In this report, QLF /
+      Quantum OS names the larger runtime idea; the Python probe is only the
+      small executable tape mechanism.
     </p>
 
     <div class="note">

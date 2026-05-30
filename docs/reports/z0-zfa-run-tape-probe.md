@@ -1,4 +1,4 @@
-# Z0 ZFA Run-Tape Probe
+# Z0 QLF / Quantum OS Run-Tape Probe
 
 This generated report runs the fixed pre-2019 Z0 bit seed as the
 minimal circular-XOR process described in the legacy BigCalc2 notes:
