@@ -389,6 +389,16 @@ def render_zfa_probe_html(result: ZfaProbeResult) -> str:
     p {{
       max-width: 860px;
     }}
+    a {{
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }}
+    .back-link {{
+      display: inline-block;
+      margin-bottom: 18px;
+    }}
     .lede {{
       color: var(--muted);
       font-size: 18px;
@@ -432,6 +442,7 @@ def render_zfa_probe_html(result: ZfaProbeResult) -> str:
 </head>
 <body>
   <main>
+    <a class="back-link" href="../index.html">Back to docs index</a>
     <h1>Z0 ZFA Run-Tape Probe</h1>
     <p class="lede">
       A generated first-pass experiment that runs the fixed pre-2019 Z0 bit seed
