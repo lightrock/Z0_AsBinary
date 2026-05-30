@@ -24,6 +24,17 @@ from .z0_geometry import (
     render_markdown_report,
     traversal_string,
 )
+from .zfa import (
+    KNOWN_FORWARD_SEGMENTS,
+    PRIORITY_ZFA_TOKENS,
+    circular_token_hits,
+    render_zfa_probe_html,
+    render_zfa_probe_markdown,
+    run_z0_zfa_probe,
+    scan_token,
+    scan_tokens,
+    z0_tap_tape,
+)
 
 __all__ = [
     "ConstantRecord",
@@ -46,4 +57,13 @@ __all__ = [
     "forward_layout_bits",
     "render_markdown_report",
     "traversal_string",
+    "KNOWN_FORWARD_SEGMENTS",
+    "PRIORITY_ZFA_TOKENS",
+    "circular_token_hits",
+    "render_zfa_probe_html",
+    "render_zfa_probe_markdown",
+    "run_z0_zfa_probe",
+    "scan_token",
+    "scan_tokens",
+    "z0_tap_tape",
 ]

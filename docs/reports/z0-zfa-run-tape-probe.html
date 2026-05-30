@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z0 ZFA Run-Tape Probe</title>
+  <style>
+    :root {
+      --ink: #14201b;
+      --muted: #58655f;
+      --line: #ccd8d2;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --soft: #eef6f1;
+      --blue: #245c88;
+    }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 20px 64px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      line-height: 1.1;
+    }
+    h2 {
+      margin-top: 36px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+      font-size: 24px;
+    }
+    p {
+      max-width: 860px;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .note {
+      padding: 14px 16px;
+      border-left: 4px solid var(--blue);
+      background: var(--soft);
+    }
+    pre {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f4f7f5;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      background: var(--panel);
+      font-size: 14px;
+    }
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #edf3ef;
+    }
+    code {
+      font-family: Consolas, "Courier New", monospace;
+    }
+    ul {
+      padding-left: 22px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Z0 ZFA Run-Tape Probe</h1>
+    <p class="lede">
+      A generated first-pass experiment that runs the fixed pre-2019 Z0 bit seed
+      as a circular-XOR tap machine, then checks priority closure and quark
+      words against same-density shuffled controls.
+    </p>
+
+    <div class="note">
+      This is a scientific artifact, not a proof. The result is useful because
+      it preserves both the positive hits and the control brake pedal.
+    </div>
+
+    <h2>Machine</h2>
+    <pre>seed bits:       101011110110110111000000110001011110101
+seed length:     39
+period:          4095
+tap index:       0
+tap-tape length: 4095
+tap-tape prefix: 100010010101001011011101010110101010000011100000100110000111100001101101110011001001010111011101</pre>
+
+    <h2>Known Forward Segmentation</h2>
+    <table>
+      <thead><tr><th>Segment</th><th>Bits</th><th>Length</th></tr></thead>
+      <tbody><tr><td>left edge</td><td><code>10</code></td><td>2</td></tr>
+<tr><td>DOWN closure word</td><td><code>10111101</code></td><td>8</td></tr>
+<tr><td>UP closure word</td><td><code>101101</code></td><td>6</td></tr>
+<tr><td>STRANGE closure word</td><td><code>1100000011</code></td><td>10</td></tr>
+<tr><td>central gluon gap</td><td><code>000</code></td><td>3</td></tr>
+<tr><td>DOWN closure word</td><td><code>10111101</code></td><td>8</td></tr>
+<tr><td>right edge</td><td><code>01</code></td><td>2</td></tr></tbody>
+    </table>
+
+    <h2>Circular Seed Hits</h2>
+    <p>Positions are zero-based circular offsets inside each canonical Z0 orientation.</p>
+    <table>
+      <thead><tr><th>Orientation</th><th>Token</th><th>Positions</th></tr></thead>
+      <tbody><tr><td>forward</td><td>DOWN closure word</td><td><code>2, 29</code></td></tr><tr><td>forward</td><td>STRANGE closure word</td><td><code>16</code></td></tr><tr><td>forward</td><td>Q_CHARM</td><td><code>-none-</code></td></tr><tr><td>forward</td><td>Q_BOTTOM</td><td><code>-none-</code></td></tr><tr><td>forward</td><td>Q_TOP</td><td><code>-none-</code></td></tr><tr><td>forward</td><td>UP closure word</td><td><code>7, 10, 36</code></td></tr><tr><td>reverse</td><td>DOWN closure word</td><td><code>2, 29</code></td></tr><tr><td>reverse</td><td>STRANGE closure word</td><td><code>13</code></td></tr><tr><td>reverse</td><td>Q_CHARM</td><td><code>-none-</code></td></tr><tr><td>reverse</td><td>Q_BOTTOM</td><td><code>-none-</code></td></tr><tr><td>reverse</td><td>Q_TOP</td><td><code>-none-</code></td></tr><tr><td>reverse</td><td>UP closure word</td><td><code>23, 26, 36</code></td></tr><tr><td>inverse</td><td>DOWN closure word</td><td><code>-none-</code></td></tr><tr><td>inverse</td><td>STRANGE closure word</td><td><code>-none-</code></td></tr><tr><td>inverse</td><td>Q_CHARM</td><td><code>-none-</code></td></tr><tr><td>inverse</td><td>Q_BOTTOM</td><td><code>-none-</code></td></tr><tr><td>inverse</td><td>Q_TOP</td><td><code>-none-</code></td></tr><tr><td>inverse</td><td>UP closure word</td><td><code>-none-</code></td></tr><tr><td>inverse_reverse</td><td>DOWN closure word</td><td><code>-none-</code></td></tr><tr><td>inverse_reverse</td><td>STRANGE closure word</td><td><code>-none-</code></td></tr><tr><td>inverse_reverse</td><td>Q_CHARM</td><td><code>-none-</code></td></tr><tr><td>inverse_reverse</td><td>Q_BOTTOM</td><td><code>-none-</code></td></tr><tr><td>inverse_reverse</td><td>Q_TOP</td><td><code>-none-</code></td></tr><tr><td>inverse_reverse</td><td>UP closure word</td><td><code>-none-</code></td></tr></tbody>
+    </table>
+
+    <h2>Tap-Tape Token Hits</h2>
+    <table>
+      <thead><tr><th>Token</th><th>Bits</th><th>Length</th><th>Count</th><th>First positions</th></tr></thead>
+      <tbody><tr><td>DOWN closure word</td><td><code>10111101</code></td><td>8</td><td>18</td><td><code>154, 184, 489, 715, 1063, 1511, 1747, 1936, 2063, 2211, 2306, 2320, ...</code></td></tr><tr><td>STRANGE closure word</td><td><code>1100000011</code></td><td>10</td><td>4</td><td><code>426, 750, 1916, 2244</code></td></tr><tr><td>Q_CHARM</td><td><code>10011111011</code></td><td>11</td><td>1</td><td><code>3549</code></td></tr><tr><td>Q_BOTTOM</td><td><code>110100010</code></td><td>9</td><td>12</td><td><code>228, 438, 975, 1038, 1891, 2201, 2389, 2509, 3087, 3235, 3310, 3663</code></td></tr><tr><td>Q_TOP</td><td><code>11011000011</code></td><td>11</td><td>1</td><td><code>3105</code></td></tr><tr><td>UP closure word (high-noise short token)</td><td><code>101101</code></td><td>6</td><td>56</td><td><code>14, 25, 66, 113, 122, 151, 293, 311, 436, 502, 505, 514, ...</code></td></tr></tbody>
+    </table>
+
+    <h2>Same-Density Shuffled Controls</h2>
+    <p>
+      Each control shuffles the 39 Z0 seed bits with the same one/zero density,
+      runs the same circular-XOR tap process for 4095 steps, and scans the same
+      token set. The empirical p column is <code>P(control &gt;= observed)</code>
+      with a one-count smoothing term.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Token</th><th>Observed</th><th>Control mean</th><th>Control min</th><th>Control max</th><th>Controls &gt;= observed</th><th>Empirical p</th></tr>
+      </thead>
+      <tbody><tr><td>DOWN closure word</td><td>18</td><td>16.35</td><td>7</td><td>30</td><td>93/256</td><td>0.366</td></tr>
+<tr><td>STRANGE closure word</td><td>4</td><td>3.83</td><td>0</td><td>10</td><td>129/256</td><td>0.506</td></tr>
+<tr><td>Q_CHARM</td><td>1</td><td>2.04</td><td>0</td><td>6</td><td>225/256</td><td>0.879</td></tr>
+<tr><td>Q_BOTTOM</td><td>12</td><td>8.13</td><td>1</td><td>15</td><td>29/256</td><td>0.117</td></tr>
+<tr><td>Q_TOP</td><td>1</td><td>1.95</td><td>0</td><td>6</td><td>221/256</td><td>0.864</td></tr>
+<tr><td>UP closure word</td><td>56</td><td>63.50</td><td>42</td><td>87</td><td>212/256</td><td>0.829</td></tr></tbody>
+    </table>
+
+    <h2>Result</h2>
+    <p>
+      The Z0 run tape emits every priority word in this first token set at least
+      once during one closed 4095-step cycle. That is a real runnable-object
+      result worth preserving.
+    </p>
+    <p>
+      The same-density controls matter: common closure words are not surprising
+      by count alone in a 4095-bit emitted tape. The stronger next question is
+      whether Z0-generated run fragments compress official CODATA constants or
+      legacy physics tokens better than shuffled seeds, alternate constants, and
+      fake same-length token catalogs.
+    </p>
+
+    <h2>Declared Limits</h2>
+    <ul>
+      <li>Catalog used: Z0 closure words plus selected legacy quark tokens only.</li>
+      <li>Official CODATA constants are not decomposed in this report.</li>
+      <li>Orientation transforms are used only for circular seed-hit accounting.</li>
+      <li>Tap-tape scans are linear, overlapping substring scans.</li>
+      <li>Controls preserve seed length and bit density, but not every possible cellular-automaton invariant.</li>
+    </ul>
+  </main>
+</body>
+</html>
