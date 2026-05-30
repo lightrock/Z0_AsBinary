@@ -1,3 +1,5 @@
+# NOTE: The idea is right, the semi-salad framing is not entirely right yet in terms of what to prove, the obervations otherwise are good.
+
 # Characteristic Impedance Python
 
 Python-first research instrument for testing whether the characteristic impedance
