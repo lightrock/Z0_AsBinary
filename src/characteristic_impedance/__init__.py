@@ -35,6 +35,18 @@ from .zfa import (
     scan_tokens,
     z0_tap_tape,
 )
+from .qlf_admissibility import (
+    QlfAdmissibility,
+    QlfAdmissibilityReport,
+    QlfCandidate,
+    bits_to_balanced_twists,
+    bits_to_window_candidate,
+    evaluate_candidate,
+    render_qlf_admissibility_markdown,
+    run_z0_qlf_admissibility_probe,
+    spectral_gap,
+    twist_polarity,
+)
 
 __all__ = [
     "ConstantRecord",
@@ -66,4 +78,14 @@ __all__ = [
     "scan_token",
     "scan_tokens",
     "z0_tap_tape",
+    "QlfAdmissibility",
+    "QlfAdmissibilityReport",
+    "QlfCandidate",
+    "bits_to_balanced_twists",
+    "bits_to_window_candidate",
+    "evaluate_candidate",
+    "render_qlf_admissibility_markdown",
+    "run_z0_qlf_admissibility_probe",
+    "spectral_gap",
+    "twist_polarity",
 ]

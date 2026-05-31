@@ -99,6 +99,19 @@ closed_loop = true
 This is the first anchor result. The project should not make stronger claims
 until the catalog-level and randomized-control tests are implemented.
 
+## QLF / ZFA Admissibility Layer
+
+The XOR orbit is only the generated substrate. The admissibility layer treats
+selected generated bit windows as candidate QLF/ZFA objects, separate from raw
+bits, tap-tape observations, and named token hits.
+
+A candidate is admissible only when positive/action twists and negative/lift
+twists balance to spectral gap zero. This is closer to the QLF / Quantum OS
+idea than substring matching alone because it separates generated observations
+from interpreted process/capability/proof-like objects.
+
+This remains a hypothesis-testing scaffold, not a physics proof.
+
 ## Evidence Chain
 
 The project now keeps the full pre-2019 source and derived binary evidence in-tree:
