@@ -797,10 +797,10 @@ The resulting QLF question is sharper than merely asking whether its census tend
 A complete treatment would need to determine:
 
 1. what physical quantity sets the closure depth $n$;
-2. whether $[200~\pi_n$[201~ is observable or only an estimator used to diagnose geometry;
+2. whether $\pi_n$ is observable or only an estimator used to diagnose geometry;
 3. how anisotropy, graph topology, curvature, and spectral dimension alter its finite-scale behavior;
 4. whether different fields infer different effective geometries at the same microscopic scale;
-5. how rapidly $[200~\pi_n$[201~ converges in the actual QLF dynamics;
+5. how rapidly $\pi_n$ converges in the actual QLF dynamics;
 6. whether any finite-scale deviation survives coarse-graining strongly enough to produce a measurable correction.
 
 If QLF derives such behavior rather than inserting it, the unfinished geometry bridge could become a physical prediction:
