@@ -723,6 +723,92 @@ That is our first genuinely operational candidate for how the universe itself co
 
 ---
 
+## 12. Could closure occur before geometric π has fully emerged?
+
+The random-walk construction suggests a further possibility. At finite depth, the closure estimator
+
+$$
+\pi_n=\frac{1}{nP_{2n}(0)}
+$$
+
+is not yet equal to π. For the standard square-lattice walk,
+
+$$
+\pi_1=4,
+$$
+
+$$
+\pi_{10}\approx3.22109,
+$$
+
+$$
+\pi_{100}\approx3.14946,
+$$
+
+$$
+\pi_{1000}\approx3.14238,
+$$
+
+and only in the asymptotic limit does
+
+$$
+\pi_n\longrightarrow\pi.
+$$
+
+The most careful terminology is therefore not "degenerate π," because mathematical π itself has not changed. Better terms are:
+
+- **pre-asymptotic effective π**;
+- **finite-resolution closure ratio**;
+- **effective π at scale $n$**;
+- **running π estimator**;
+- **pre-geometric π**;
+- **pre-asymptotic geometric closure invariant**.
+
+These are finite-scale estimators or effective geometric observables, not defective versions of π. They may retain corrections from lattice structure, anisotropy, curvature, topology, finite sampling, diffusion normalization, and the scale-dependent effective dimension.
+
+This raises a physically meaningful possibility:
+
+> A microscopic process may achieve finite closure before its propagation statistics have accumulated enough scale to render continuum geometric π to the precision assumed by macroscopic equations.
+
+The distinction between phase and geometry is essential. A finite cyclic state can close exactly:
+
+$$
+k\mapsto k+N\equiv k\pmod N,
+$$
+
+while the geometry inferred from an ensemble of finite propagation histories may still be pre-asymptotic. Therefore exact phase closure need not imply that Euclidean geometric π has already emerged at the same scale or precision.
+
+A possible hierarchy is
+
+```text
+exact finite phase/state closure
+-> finite-depth propagation ensemble
+-> scale-dependent return statistics
+-> progressively isotropic effective geometry
+-> continuum geometric π
+```
+
+This is compatible in spirit with quantum-gravity research in which spectral dimension and effective geometry depend on diffusion scale. It does not establish that π itself varies as a fundamental constant. It suggests instead that the operational estimate of geometric π may run with scale until the continuum regime is reached.
+
+The resulting QLF question is sharper than merely asking whether its census tends to π:
+
+> Can a physical event close at finite depth with an effective $\pi_n\neq\pi$, while continuum π emerges only after coarse-graining many closures?
+
+A complete treatment would need to determine:
+
+1. what physical quantity sets the closure depth $n$;
+2. whether $[200~\pi_n$[201~ is observable or only an estimator used to diagnose geometry;
+3. how anisotropy, graph topology, curvature, and spectral dimension alter its finite-scale behavior;
+4. whether different fields infer different effective geometries at the same microscopic scale;
+5. how rapidly $[200~\pi_n$[201~ converges in the actual QLF dynamics;
+6. whether any finite-scale deviation survives coarse-graining strongly enough to produce a measurable correction.
+
+If QLF derives such behavior rather than inserting it, the unfinished geometry bridge could become a physical prediction:
+
+> Microscopic closure may be exact while Euclidean geometry, and therefore the operational appearance of geometric π, is still emerging.
+
+---
+
 ## References
 
 - BIPM, *The International System of Units (SI Brochure)*: distinction between frequency in hertz and angular frequency in radians per second.
