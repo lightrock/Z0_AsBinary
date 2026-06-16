@@ -260,6 +260,41 @@ Compact line:
 
 > They found heat coming off the machine. We still need the engine.
 
+### Einstein / General Relativity
+
+Win:
+
+```text
+empirical monster
+equivalence principle
+spacetime as dynamical accounting
+metric relations replace absolute background
+precision macroscopic gravity
+```
+
+Gap:
+
+```text
+smooth spacetime is assumed as primitive
+time becomes a coordinate/accounting parameter, not the process drive
+singularities mark accounting failure
+does not explain why geometry exists or why process can run
+quantization fails because GR is likely a continuum closure limit, not substrate
+```
+
+Compact line:
+
+> Einstein killed absolute space and time. Then physics started worshipping the metric.
+
+Kung fu move:
+
+```text
+Make Einstein's field equations the impedance-matching condition of process closure.
+Matter/process tells geometry how closure stress accumulates.
+Geometry tells process how admissible propagation is constrained.
+The metric is the dashboard, not the engine.
+```
+
 ### Kitada / Dugić + Kitada
 
 Win:
@@ -425,12 +460,13 @@ Compact line:
 ```text
 1. Wheeler + Tegmark together
 2. Everett + Deutsch together
-3. Sorkin / causal sets separately
-4. Jacobson + Verlinde + Padmanabhan together
-5. Kitada / Dugić + Kitada, friendly and carefully
-6. Rovelli + Smolin together
-7. Friston separately
-8. Feynman separately, carefully, because he is dangerous in a good way
+3. Einstein / General Relativity separately and carefully
+4. Sorkin / causal sets separately
+5. Jacobson + Verlinde + Padmanabhan together
+6. Kitada / Dugić + Kitada, friendly and carefully
+7. Rovelli + Smolin together
+8. Friston separately
+9. Feynman separately, carefully, because he is dangerous in a good way
 ```
 
 ---
@@ -450,6 +486,8 @@ Compact line:
 > Tegmark gives the library.
 >
 > Everett gives branching-as-closure but not branch admissibility.
+>
+> Einstein gives dynamical metric accounting, but not the process engine.
 >
 > Causal sets give the skeleton.
 >
