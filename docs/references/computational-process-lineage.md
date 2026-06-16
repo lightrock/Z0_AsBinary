@@ -57,6 +57,57 @@ this process is only formal exhaust
 
 Without that rule, the ruliad risks becoming the computational version of the string landscape: powerful, enormous, and under-selected.
 
+### Fundamental Pi repair: early closure in the universal walk
+
+If Wolfram is the everything-generator, then at the deepest level it behaves like an exhaustive or random walk across rule-state possibility.
+
+Not random as mere noise. Random as effectively unprivileged traversal: no path is physically privileged just because the generator can produce it.
+
+The repair is:
+
+```text
+Wolfram gives the universal walk.
+Fundamental Pi supplies the closure test.
+Physics is not everything that runs.
+Physics is what closes, persists, and renders receipts.
+```
+
+The crucial addition is that closure does not need to wait for the completed classical cycle.
+
+Fundamental Pi allows early closure:
+
+```text
+walk begins
+-> transformations accumulate
+-> partial return becomes detectable
+-> closure class forms early
+-> stable quantum receipt appears
+-> later, full-cycle closure renders classical geometry
+```
+
+That creates a clean quantum/classical distinction:
+
+```text
+quantum = early closure / pre-geometric return classes
+classical = late closure / full rendered cycle geometry
+```
+
+So even if everything runs, not everything closes at the same depth.
+
+This turns Wolfram's abundance from a fatal weakness into a substrate candidate:
+
+```text
+ruliad = possibility-space / universal walk
+random walk = exploration through rule-state space
+Fundamental Pi = return/closure detector
+quantum physics = early admissible closure before classical pi
+classical physics = late rendered closure after full-cycle accounting
+```
+
+Compact repair:
+
+> Wolfram supplies the generator. Fundamental Pi supplies early closure. Quantum appears before classical because closure can happen before the full rendered cycle.
+
 ---
 
 ## 2. 't Hooft: the machine instinct
@@ -101,6 +152,34 @@ what prunes nonphysical histories
 
 Otherwise the proposal risks becoming hidden-variable bookkeeping rather than a full substrate theory.
 
+### Fundamental Pi repair: deterministic update is not enough
+
+The same early-closure move can repair the strong part of 't Hooft without reducing everything to ordinary classical machinery.
+
+The hidden update may be real, but the physical object is not merely the update state. The physical object is the closure class produced by update, comparison, persistence, and rendering.
+
+```text
+deterministic update
+-> accumulated transformation
+-> return comparison
+-> early closure class
+-> quantum receipt/statistics
+-> late closure geometry/classical limit
+```
+
+This preserves the machine instinct while avoiding the trap:
+
+```text
+not: quantum is just classical ignorance
+but: quantum is early closure over deeper process before classical geometry is rendered
+```
+
+That matters because a cellular automaton can have a clock and still fail to produce physics. The clock only orders updates. It does not by itself explain which update histories become admissible, persistent, record-bearing, or observer-rendered.
+
+Compact repair:
+
+> 't Hooft gives the update engine. Fundamental Pi says which updates close early enough to appear quantum, and which close late enough to render classical geometry.
+
 ---
 
 ## 3. Together, but not identical
@@ -112,6 +191,7 @@ both reject passive spacetime-as-stage
 both take computation/process seriously
 both pressure quantum formalism as final ontology
 both need a stronger physical admissibility rule
+both become stronger if Fundamental Pi supplies closure depth
 ```
 
 They should be handled separately at the gap level:
@@ -126,6 +206,7 @@ In compact form:
 ```text
 Wolfram: all possible processes, insufficient physical pruning.
 't Hooft: deterministic underlying process, insufficient closure/admissibility/rendering bridge.
+Fundamental Pi: early return/closure classes can recover quantum before classical geometry.
 PFEM/QLF/Fundamental Pi: process must generate receipts, closure, persistence, and rendered geometry/time.
 ```
 
@@ -142,6 +223,7 @@ raw generator space != physical universe
 all possible rules != realized physics
 observer slice != admissibility proof
 computational richness != receipt of physical selection
+universal walk != physical closure by itself
 ```
 
 For 't Hooft:
@@ -151,6 +233,7 @@ deterministic update != closure rule
 cellular automaton != observed quantum substrate by itself
 hidden variables != physical receipt
 clockwork != rendered geometry/time bridge
+update order != closure depth
 ```
 
 The PFEM demand is the same in both cases:
@@ -180,12 +263,20 @@ Fundamental Pi asks for the physical closure operation behind `π`, phase, rotat
 generated process -> closure test -> admissible/persistent history -> rendered observables
 ```
 
-So the repair move is:
+The upgraded repair move is:
 
 ```text
-Wolfram's generator needs ZFA-style pruning.
-'t Hooft's clockwork needs closure/admissibility and observer rendering.
+Wolfram's generator needs ZFA-style pruning and Fundamental Pi closure-depth testing.
+'t Hooft's clockwork needs early closure, admissibility, and observer rendering.
 Both need PFEM-style evidence separation.
+```
+
+Most importantly:
+
+```text
+closure can occur before full classical pi
+quantum can be recovered as early closure / partial return
+classical geometry can be recovered as late closure / full-cycle rendered accounting
 ```
 
 ---
@@ -202,6 +293,10 @@ The missing piece is not computation alone.
 
 It is running process plus closure, pruning, persistence, and rendered observer geometry.
 
+The sharpest repair is:
+
+> Even if everything runs, not everything closes at the same depth. Fundamental Pi turns universal process into quantum-before-classical physics by detecting early closure before full rendered `π`.
+
 ---
 
 ## 7. Follow-up work
@@ -211,11 +306,12 @@ A stronger version of this note should eventually do four things:
 1. Map Wolfram concepts to closure-machine concepts:
 
    ```text
-   ruliad -> unpruned possibility space
+   ruliad -> unpruned possibility space / universal walk
    branchial graph -> observer-facing relation graph
    rulial space -> generator-space coordinate system
    observer slice -> rendered internal perspective
    causal graph -> process accounting trace
+   early closure -> quantum receipt before classical geometry
    ```
 
 2. Map 't Hooft concepts to closure-machine concepts:
@@ -226,6 +322,8 @@ A stronger version of this note should eventually do four things:
    Hilbert space -> analysis/rendering layer
    superdeterminism -> selection-history constraint
    holography -> boundary accounting pressure
+   early closure class -> quantum receipt/statistical layer
+   late closure class -> classical geometry/accounting limit
    ```
 
 3. Identify acceptance tests:
@@ -237,6 +335,7 @@ A stronger version of this note should eventually do four things:
    What produces quantum statistics?
    What renders geometry and time?
    What distinguishes physical universe from formal possibility space?
+   Where does early closure become quantum rather than classical?
    ```
 
 4. Connect this note to the doctrine cluster:
