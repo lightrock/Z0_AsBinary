@@ -260,6 +260,58 @@ Compact line:
 
 > They found heat coming off the machine. We still need the engine.
 
+### Kitada / Dugić + Kitada
+
+Win:
+
+```text
+local time, not universal Newtonian background time
+time attached to finite local quantum systems or approximately closed systems
+quantum mechanics and relativity pressure relieved through system-relative time
+pointer-basis and open-system-like behavior tied to local-time structure
+```
+
+Gap:
+
+```text
+local clock is not yet the underlying process drive
+system-relative time still needs a rule selecting the system
+closure/admissibility must be prior to local-time attribution
+local time explains clock faces, but not yet the tick generator
+```
+
+Compact line:
+
+> Kitada found local clocks. Dugić + Kitada made time system-relative. We still need the process-ordering rule that selects the system and drives the clock.
+
+Friendly nuke:
+
+```text
+Kitada kills the universal clock.
+Dugić helps make time local to quantum structure.
+Good. Very good.
+But local time is still a clock face.
+We need the tick generator: the process-ordering rule that lets closure, subsystem selection, records, and local clocks exist at all.
+```
+
+Reference hook:
+
+```text
+Hitoshi Kitada,
+"Theory of Local Times",
+Il Nuovo Cimento B 109, 281-302 (1994),
+arXiv:astro-ph/9309051.
+
+H. Kitada, J. Jeknic-Dugic, M. Arsenijevic, M. Dugic,
+"A minimalist approach to conceptualization of time in quantum theory",
+Physics Letters A 380, 3970-3972 (2016),
+arXiv:1606.04759.
+
+J. Jeknic-Dugic, M. Arsenijevic, M. Dugic,
+"A local-time-induced unique pointer basis",
+arXiv:1401.2938.
+```
+
 ### Penrose
 
 Win:
@@ -375,9 +427,10 @@ Compact line:
 2. Everett + Deutsch together
 3. Sorkin / causal sets separately
 4. Jacobson + Verlinde + Padmanabhan together
-5. Rovelli + Smolin together
-6. Friston separately
-7. Feynman separately, carefully, because he is dangerous in a good way
+5. Kitada / Dugić + Kitada, friendly and carefully
+6. Rovelli + Smolin together
+7. Friston separately
+8. Feynman separately, carefully, because he is dangerous in a good way
 ```
 
 ---
@@ -401,6 +454,10 @@ Compact line:
 > Causal sets give the skeleton.
 >
 > Thermodynamic gravity gives the exhaust heat.
+>
+> Kitada gives local clocks.
+>
+> Dugić + Kitada give system-relative time.
 >
 > Friston gives persistence.
 >
