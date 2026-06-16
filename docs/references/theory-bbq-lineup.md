@@ -171,20 +171,31 @@ Win:
 
 ```text
 no collapse magic
-branching process
+relative-state structure
+branching as a possible decoherence/closure partition
 universal quantum computation pressure
 ```
 
 Gap:
 
 ```text
+branching is structure-relative unless an admissible decomposition is selected
+Dugic/Francom-style objections press exactly here: mutually irreducible subsystem decompositions can block one clean universal branching story
+branching may be a type of closure, but it still needs closure criteria, preferred/admissible structure, persistence, and observer-rendered records
 no physical pruning/admissibility rule if everything persists equally
-branching is not enough without closure selection and observer-rendered records
 ```
 
 Compact line:
 
-> Everett found branching. He did not find closure selection.
+> Everett found branching-as-closure, but not the rule that selects which closures count as physical worlds.
+
+Reference hook:
+
+```text
+J. Jeknic-Dugic, M. Dugic, A. Francom,
+"Quantum Structures of a Model-Universe: An Inconsistency with Everett Interpretation of Quantum Mechanics",
+arXiv:1109.6424.
+```
 
 ### Sorkin / causal sets
 
@@ -363,7 +374,7 @@ Compact line:
 >
 > Tegmark gives the library.
 >
-> Everett gives the branches.
+> Everett gives branching-as-closure but not branch admissibility.
 >
 > Causal sets give the skeleton.
 >
