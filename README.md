@@ -247,6 +247,27 @@ python -m unittest discover -s tests -p "test_*.py"
   central thesis: physical constants are compressed information artifacts before
   they are physics classroom objects, and unit objections must be tested as
   encoding transformations rather than used as a dismissal.
+- [Process-First Physics](docs/references/process-first-physics.md) captures the
+  doctrine that process is already running, while space and coordinate time are
+  rendered accounting layers of relation, delay, closure, persistence, and
+  observer-facing records.
+- [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md) is the concise index
+  of process-first critiques and repairs across string theory, LQG, Wolfram,
+  't Hooft, Wheeler, Tegmark, Everett, causal sets, thermodynamic gravity,
+  Friston, Feynman, and related approaches.
+- [Computational Process Lineage](docs/references/computational-process-lineage.md)
+  compares Wolfram and 't Hooft as near process-first ancestors: one finds the
+  everything-generator, the other the machine-instinct, while both still need
+  closure, pruning, persistence, and rendered observer geometry/time.
+- [String Theory, Holography, and the Closure Machine](docs/references/string-theory-closure-machine.md)
+  argues that string/M-theory is best repaired as a holographic/geometric
+  rendering language for finite closure, not as the substrate itself.
+- [Loop Quantum Gravity and the Closure Machine](docs/references/lqg-closure-machine.md)
+  treats LQG as a serious discrete receipt layer that still needs the deeper
+  event machine: closure, admissibility, persistence, and process ordering.
+- [Fundamental Pi](docs/references/fundamentalPi.md) asks what physical machine
+  produces the closure represented by `π`, `2π`, phase, rotation, and emergent
+  geometry, without treating the symbol as the substrate.
 - [Maxwell Machine Completion Note](docs/references/maxwell-machine-completion-note.md)
   preserves the project posture that Heaviside gives the public interface of
   electromagnetism, while Maxwell preserves the unfinished machine question that
