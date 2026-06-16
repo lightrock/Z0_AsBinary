@@ -195,6 +195,8 @@ Reference hook:
 ```text
 J. Jeknic-Dugic, M. Dugic, A. Francom,
 "Quantum Structures of a Model-Universe: An Inconsistency with Everett Interpretation of Quantum Mechanics",
+International Journal of Theoretical Physics 53, 169-181 (2014),
+DOI: 10.1007/s10773-013-1794-x,
 arXiv:1109.6424.
 
 The point is not an interpretive prose objection. The model-universe argument uses
