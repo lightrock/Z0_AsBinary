@@ -95,6 +95,58 @@ surface equations. It is a relation-preserving machine that:
 Those are machine behaviors. The modern equations describe them compactly, but
 compression should not be mistaken for completion.
 
+## What Fundamental Pi Adds
+
+The companion note [How Could the Universe Produce Pi When It Needs It?](fundamentalPi.md)
+changes the machine question.
+
+It says the deeper machine is not a gear train, an ether substance, or a stored
+copy of decimal pi. The more general machine is:
+
+```text
+state
+-> transformation accumulator
+-> return comparison
+-> closure class
+```
+
+In that light, Maxwell's old machine question should be upgraded:
+
+```text
+old Maxwell question:
+What medium mechanically carries electromagnetic stress?
+
+better Maxwell question:
+What substrate accumulates transformation and detects closure?
+```
+
+This does not discard Maxwell. It meets Maxwell at the point where his physical
+intuition was strongest: electromagnetism needs an underlying relation process,
+not merely a symbolic surface description.
+
+It also repositions Heaviside. The Heaviside vector form gives an extraordinarily
+successful notation and calculation layer, but it can hide the closure machine
+inside divergence, curl, radians, continuum geometry, and field notation.
+
+So the relationship becomes:
+
+```text
+Maxwell asks for the machine.
+Heaviside gives the notation.
+fundamentalPi asks what physical closure operation makes the notation legitimate.
+```
+
+The resulting complaint is not that Heaviside was wrong. The complaint is that a
+compact rendering can make the generating machine disappear.
+
+For the `Z0` project, the synthesis is:
+
+```text
+Complete Maxwell by finding the closure machine.
+Audit Heaviside by separating physical cycles from their continuum/radian rendering.
+Test Z0 as a possible receipt left by the electromagnetic closure machine.
+```
+
 ## Completing Maxwell
 
 To complete Maxwell, in this project's vocabulary, is not to restore his old
@@ -147,6 +199,7 @@ The difference matters. The first can be tested. The second is rhetoric.
 
 ## References For Context
 
+- [How Could the Universe Produce Pi When It Needs It?](fundamentalPi.md).
 - James Clerk Maxwell, "On Physical Lines of Force" (1861-1862).
 - James Clerk Maxwell, "A Dynamical Theory of the Electromagnetic Field" (1865).
 - James Clerk Maxwell, "A Treatise on Electricity and Magnetism" (1873).
