@@ -95,6 +95,10 @@ as a pion-like or potential-pion-like site:
 each Z0 bit = one candidate pion-site in the impedance substrate
 ```
 
+It is also possible that the first and/or last two bits of the impedance
+structure are the pion or pions. That narrower boundary interpretation should be
+tested separately from the broader one-bit/one-pion-site rule.
+
 Use that rule as a generator of experiments, not as a conclusion.
 
 The rule becomes more interesting if it produces testable consequences, such as:
