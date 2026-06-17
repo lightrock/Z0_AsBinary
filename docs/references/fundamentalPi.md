@@ -1,6 +1,24 @@
-# How Could the Universe Produce π When It Needs It?
+# Fundamental Pi: Closure Machines Before Radians
 
-## Original question
+## Status
+
+This is a research-position note for replacing primitive pi in phase,
+amplitude, and probability language with lower-level closure machines before
+attempting to derive ordinary spatial geometry.
+
+Core thesis:
+
+```text
+Do not begin with pi, radians, photons-in-flight, or primitive 3D geometry.
+Begin with relation update, transformation accumulation, closure comparison,
+and physical readout.
+```
+
+The goal is not to reject existing physics. The goal is to separate the
+successful public rendering from the lower-level machine that could make the
+rendering legitimate.
+
+## Original Prompt
 
 Jim/Claude apparently fixed the formal π issue in the QLF repository. The remaining physical question is deeper:
 
