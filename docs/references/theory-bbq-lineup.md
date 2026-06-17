@@ -161,6 +161,41 @@ It is the thermostat reading of a system already holding together.
 The deeper machine is the closure process that makes a system possible before it can minimize anything.
 ```
 
+### Carver Mead - Gold star
+
+Win:
+
+```text
+collective electrodynamics
+phase-first electromagnetism
+photon as transaction/handshake, not projectile
+vector potential and phase treated as physically central
+quantum matter behavior before Maxwell-form rendering
+```
+
+Gap:
+
+```text
+phase continuity is not yet substrate
+transaction is not yet closure derivation
+collective electron behavior is not the universal physics machine
+vector-potential reality is not pointer-swap substrate proof
+```
+
+Compact line:
+
+> Mead found the phase handshake. We still need the machine that makes handshakes physically admissible.
+
+Gold star note:
+
+```text
+Do not BBQ Mead like a map-worshipper.
+Keep him near the controls.
+He is strong evidence that projectile/object-first electromagnetism is the wrong picture.
+The remaining question is not whether phase matters.
+The remaining question is what physical closure machine makes phase-handshakes real.
+```
+
 ---
 
 ## Next targets
@@ -690,6 +725,8 @@ Compact line:
 > LQG gives too much geometric accounting.
 >
 > Friston gives persistence after system closure, not the root closure machine.
+>
+> Mead gives the phase handshake; closure must explain why the handshake is physically admissible.
 >
 > Wheeler gives the slogan.
 >
