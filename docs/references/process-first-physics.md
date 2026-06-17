@@ -49,6 +49,26 @@ space is the rendered accounting of those running relations
 
 So the issue is not merely continuum space versus discrete space. The issue is whether space is being treated as a stage instead of as an output.
 
+There is a second version of the same error: hearing "process" and immediately trying to re-establish spatial space, or immediately demanding to see the run button visibly running in familiar geometry. That still skips the first question.
+
+The first question is not:
+
+```text
+where is the new space?
+how do I picture the running thing right away?
+which geometry do I draw?
+```
+
+The first question is:
+
+```text
+what kind of thing can even run?
+what primitive permits update, comparison, closure, and persistence?
+what makes a transition admissible before there is a rendered stage?
+```
+
+If the answer begins by rebuilding the stage, the process-first inversion has already been lost.
+
 ---
 
 ## 2. The machine is already running
@@ -299,6 +319,10 @@ The short version:
 Or even shorter:
 
 > Do not wait for physics to happen in space. Find the process whose accounting appears as space.
+
+The run-capability version:
+
+> Do not rush to redraw space or demand the visible run button. First ask what kind of thing can even run.
 
 The receipt version:
 
