@@ -18,14 +18,6 @@ The goal is not to reject existing physics. The goal is to separate the
 successful public rendering from the lower-level machine that could make the
 rendering legitimate.
 
-## Original Prompt
-
-Jim/Claude apparently fixed the formal π issue in the QLF repository. The remaining physical question is deeper:
-
-> What known physical "doodad" can replace that logic? Is there a finite physical machine, available throughout the universe, that produces the closure represented in our mathematics by π, 2π, 3π, 4π, and so on?
-
-The strongest current answer is that the universe probably does not store or calculate the decimal digits of π. It repeatedly performs closure operations. π then appears when those operations are rendered as phase, rotation, or emergent isotropic geometry.
-
 ---
 
 ## 1. The phase-closure machine
