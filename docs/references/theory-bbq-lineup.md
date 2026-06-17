@@ -107,6 +107,52 @@ The repair is to give Smolin the missing machine:
 time as process drive -> closure/admissibility -> persistence receipts -> rendered geometry/time.
 ```
 
+### Wojciech Zurek - gold star
+
+Gold star reason:
+
+```text
+decoherence
+einselection
+pointer states
+environment as witness
+quantum Darwinism
+classical objectivity as redundant records
+```
+
+Remaining gap:
+
+```text
+system/environment split is assumed too early
+pointer basis selection still depends on a chosen decomposition
+redundant records are receipts, not the root closure machine
+environment as witness is not yet pointer-swap substrate
+```
+
+Compact line:
+
+> Zurek found the receipt-copying layer of classical reality. Closure still has to explain why there is a system, environment, and pointer basis to copy.
+
+Dugić/Francom note:
+
+```text
+Dugić/Francom pressure lands directly on this inheritance:
+if mutually irreducible decompositions can support parallel decoherence,
+then decoherence/einselection cannot by itself license one clean Everett branch structure.
+Zurek remains gold-star important because he identifies the record-copying layer,
+but QLF/Fundamental Pi still need the admissibility rule that selects the structure.
+```
+
+Gold star note:
+
+```text
+Do not BBQ Zurek as a failure.
+He is one of the best receipt-layer theorists we have.
+The issue is not that pointer states, einselection, or quantum Darwinism are useless.
+The issue is that records are downstream of closure.
+The missing machine must select admissible systems and pointer bases before records can proliferate.
+```
+
 ---
 
 ## Already BBQ'd / expanded
@@ -385,6 +431,30 @@ Compact line:
 
 > Landauer put information back into physics. Now make information close, persist, and run.
 
+### Anton Zeilinger
+
+Win:
+
+```text
+quantum information foundations
+elementary system carries one bit
+measurement/proposition framing
+serious experimental quantum information credibility
+```
+
+Gap:
+
+```text
+one bit of information is not the running substrate
+proposition is post-closure
+measurement answer is not the machine
+information principle still needs process drive and pointer-swap closure underneath
+```
+
+Compact line:
+
+> Zeilinger found the one-bit proposition. We need the pre-logical bit-swap machine that lets propositions exist.
+
 ### Bell
 
 Win:
@@ -530,6 +600,29 @@ The hydrogen-atom paper supplies the positive side of the same issue: multiple
 quantum structures are available, while environment, operation, and access select
 which structure becomes physically usable.
 ```
+
+### H. Dieter Zeh
+
+Win:
+
+```text
+decoherence ancestor
+Everett-compatible branching pressure
+direction of time
+classical appearance without literal collapse
+```
+
+Gap:
+
+```text
+decoherence explains effective branching but not admissible structure selection
+branching still needs closure criteria
+records still need the process drive that makes time-ordering physical
+```
+
+Compact line:
+
+> Zeh helped show how branches become effectively classical. Closure still has to explain why branches, records, and time-ordering are physically admissible.
 
 ### Sorkin / causal sets
 
@@ -727,12 +820,12 @@ Compact line:
 
 ```text
 1. Bohr / Copenhagen + Von Neumann together
-2. Shannon + Landauer together
+2. Shannon + Landauer + Zeilinger together
 3. Bell separately
 4. Bekenstein + Hawking + Susskind together
 5. Maldacena + Witten together
 6. Wheeler + Tegmark together
-7. Everett + Deutsch together
+7. Everett + Deutsch + Zeh together
 8. Einstein / General Relativity separately and carefully
 9. Sorkin / causal sets separately
 10. Jacobson + Verlinde + Padmanabhan together
@@ -760,6 +853,8 @@ Compact line:
 >
 > Smolin says time is real and rejects timeless math worship; closure must make real time physically operative.
 >
+> Zurek gives pointer states, einselection, and redundant records; closure must select the system and pointer basis before records multiply.
+>
 > Wheeler gives the slogan.
 >
 > Tegmark gives the library.
@@ -772,6 +867,8 @@ Compact line:
 >
 > Landauer makes information physical, but not yet self-closing.
 >
+> Zeilinger gives the one-bit proposition, not the pre-logical bit-swap machine.
+>
 > Bell kills fake locality, but does not identify the pointer-swap machine.
 >
 > Black-hole information gives the receipt wall.
@@ -783,6 +880,8 @@ Compact line:
 > Everett gives branching-as-closure but not branch admissibility.
 >
 > Deutsch gives task possibility but not closure selection.
+>
+> Zeh gives decoherence and branch pressure, but not admissible structure selection.
 >
 > Einstein gives dynamical metric accounting, but not the process engine.
 >
