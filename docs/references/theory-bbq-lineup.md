@@ -248,6 +248,8 @@ It is: what already-running physical structure did that bit select?
 
 Gold star reason:
 
+Win: 
+
 ```text
 gauge invariance
 local reference freedom
@@ -256,6 +258,7 @@ connection as the rule between neighboring points
 force as consistency bookkeeping
 ancestor of the Standard Model gauge picture
 ```
+Gap:
 
 ```text
 Gauge invariance is not the machine.
@@ -267,13 +270,10 @@ But the deeper machine still has to derive the relation, the comparison,
 the allowed transport, and the physical closure test.
 ```
 
-```text
+Compact line:
 
-Also update the master line with:
+>Weyl gives gauge connection and local reference freedom; closure must derive the links, comparisons, and loop receipts underneath.
 
-```text
-Weyl gives gauge connection and local reference freedom; closure must derive the links, comparisons, and loop receipts underneath.
-```
 
 ---
 
