@@ -238,6 +238,10 @@ controls.
   preserves the project posture that Heaviside gives the public interface of
   electromagnetism, while Maxwell preserves the unfinished machine question that
   `Z0` may help turn into testable information-substrate experiments.
+- [Carver Mead, Pointer-Swap Closure, and Z0](docs/references/mead-pointer-swap-z0.md)
+  connects Mead's phase-handshake electrodynamics to the pointer-swap closure
+  model and reframes `Z0` as a possible catalog-visible impedance receipt of EM
+  phase-matching, not as a sacred ohm value.
 
 ### Process / Closure Doctrine
 
