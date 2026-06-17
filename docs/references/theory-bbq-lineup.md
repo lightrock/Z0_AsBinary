@@ -169,6 +169,188 @@ Compact line:
 
 > Tegmark found the library. He did not find the executable.
 
+### Bohr / Copenhagen
+
+Win:
+
+```text
+operational discipline
+measurement humility
+refusal to overclaim hidden classical pictures
+kept physics tied to what can be said from experiments
+```
+
+Gap:
+
+```text
+measurement becomes a fog boundary
+observer/classical cut is not the machine
+operational rules are not closure dynamics
+shut-up-and-calculate culture can freeze the substrate question
+```
+
+Compact line:
+
+> Copenhagen protected the receipts, then hid the machine behind the counter.
+
+### Von Neumann
+
+Win:
+
+```text
+Hilbert-space discipline
+measurement-chain formalism
+clear separation of unitary evolution and projection
+mathematical language for quantum states and operators
+```
+
+Gap:
+
+```text
+collapse/postulate boundary is a bookkeeping scar
+projection is not a physical closure mechanism by itself
+measurement chain still needs admissible subsystem selection
+```
+
+Compact line:
+
+> Von Neumann gave the measurement chain. We still need the closure event that makes the chain settle.
+
+### Shannon
+
+Win:
+
+```text
+clean information measure
+communication theory without metaphysical noise
+channel/noise/coding discipline
+```
+
+Gap:
+
+```text
+communication information is not running physical closure
+bits counted are not bits executed
+entropy measure is not the process engine
+```
+
+Compact line:
+
+> Shannon measured the message. We need the machine that makes messages physically persist.
+
+### Landauer
+
+Win:
+
+```text
+information is physical
+erasure has thermodynamic cost
+computation cannot be detached from embodiment
+```
+
+Gap:
+
+```text
+physical information still needs the substrate rule
+thermodynamic cost is a receipt, not the root process
+persistence and closure are prior to bookkeeping cost
+```
+
+Compact line:
+
+> Landauer put information back into physics. Now make information close, persist, and run.
+
+### Bell
+
+Win:
+
+```text
+forced locality assumptions into the open
+showed hidden-variable comfort stories do not survive untouched
+made entanglement physically unavoidable
+```
+
+Gap:
+
+```text
+nonlocal correlation theorem is not the swap machine
+violation of classical locality does not identify closure dynamics
+entanglement still needs pointer-swap accounting and admissibility
+```
+
+Compact line:
+
+> Bell broke the fake locality story. Now find the pointer-swap machine underneath the correlations.
+
+### Bekenstein / Hawking / Susskind
+
+Win:
+
+```text
+black-hole entropy
+information cannot simply disappear
+holographic accounting
+area law pressure against naive volume ontology
+```
+
+Gap:
+
+```text
+boundary accounting is not yet the full machine
+entropy is a receipt after process is already running
+holographic storage still needs closure/admissibility dynamics
+```
+
+Compact line:
+
+> Black-hole physics found the receipt wall. We still need the machine printing receipts.
+
+### Maldacena / Witten
+
+Win:
+
+```text
+AdS/CFT as a serious boundary/bulk dictionary
+mathematical unification pressure
+holography made technically precise
+string/M-theory depth at its strongest
+```
+
+Gap:
+
+```text
+dictionary is not substrate
+maximal elegance can still be rendering-layer worship
+boundary/bulk equivalence still needs the running closure machine
+```
+
+Compact line:
+
+> Maldacena and Witten made the dictionary magnificent. The dictionary still is not the engine.
+
+### Gell-Mann
+
+Win:
+
+```text
+quarks
+eightfold way / classification discipline
+effective theories
+complex adaptive systems instinct
+```
+
+Gap:
+
+```text
+classification is not substrate
+behavioral compression is not pointer-swap machinery
+quark bookkeeping still needs the process that makes confinement and records physical
+```
+
+Compact line:
+
+> Gell-Mann named the patterns. We need the process that makes the patterns hold.
+
 ### Everett / Deutsch
 
 Companion note: [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md)
@@ -180,6 +362,7 @@ no collapse magic
 relative-state structure
 branching as a possible decoherence/closure partition
 universal quantum computation pressure
+constructor-theory pressure toward possible/impossible task language
 ```
 
 Gap:
@@ -190,12 +373,13 @@ Dugic/Francom-style objections press exactly here through linear canonical trans
 mutually irreducible subsystem decompositions can allow parallel decoherence while blocking one clean universal branching story
 the hydrogen-atom companion paper gives the positive example: structure-selection is physical and operational, not merely verbal
 branching may be a type of closure, but it still needs closure criteria, preferred/admissible structure, persistence, and observer-rendered records
+possible/impossible tasks still need closure-admissibility underneath
 no physical pruning/admissibility rule if everything persists equally
 ```
 
 Compact line:
 
-> Everett found branching-as-closure, but not the rule that selects which closures count as physical worlds.
+> Everett found branching-as-closure, and Deutsch sharpened task possibility; neither supplies the rule that selects which closures count as physical worlds.
 
 Reference hook:
 
@@ -461,15 +645,21 @@ Compact line:
 ## Recommended BBQ order
 
 ```text
-1. Wheeler + Tegmark together
-2. Everett + Deutsch together
-3. Einstein / General Relativity separately and carefully
-4. Sorkin / causal sets separately
-5. Jacobson + Verlinde + Padmanabhan together
-6. Kitada / Dugić + Kitada, friendly and carefully
-7. Rovelli + Smolin together
-8. Friston separately
-9. Feynman separately, carefully, because he is dangerous in a good way
+1. Bohr / Copenhagen + Von Neumann together
+2. Shannon + Landauer together
+3. Bell separately
+4. Bekenstein + Hawking + Susskind together
+5. Maldacena + Witten together
+6. Wheeler + Tegmark together
+7. Everett + Deutsch together
+8. Einstein / General Relativity separately and carefully
+9. Sorkin / causal sets separately
+10. Jacobson + Verlinde + Padmanabhan together
+11. Kitada / Dugić + Kitada, friendly and carefully
+12. Rovelli + Smolin together
+13. Gell-Mann separately
+14. Friston separately
+15. Feynman separately, carefully, because he is dangerous in a good way
 ```
 
 ---
@@ -488,7 +678,25 @@ Compact line:
 >
 > Tegmark gives the library.
 >
+> Copenhagen protects receipts while hiding the machine.
+>
+> Von Neumann gives the measurement chain, not the closure event.
+>
+> Shannon measures messages, not running physical closure.
+>
+> Landauer makes information physical, but not yet self-closing.
+>
+> Bell kills fake locality, but does not identify the pointer-swap machine.
+>
+> Black-hole information gives the receipt wall.
+>
+> Maldacena and Witten give the dictionary.
+>
+> Gell-Mann gives classification and pattern discipline.
+>
 > Everett gives branching-as-closure but not branch admissibility.
+>
+> Deutsch gives task possibility but not closure selection.
 >
 > Einstein gives dynamical metric accounting, but not the process engine.
 >
