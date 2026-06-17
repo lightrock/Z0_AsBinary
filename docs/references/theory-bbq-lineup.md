@@ -244,6 +244,37 @@ The closure question is not merely: how many bits were sent?
 It is: what already-running physical structure did that bit select?
 ```
 
+### Hermann Weyl - gold star
+
+Gold star reason:
+
+```text
+gauge invariance
+local reference freedom
+phase/reference comparison instead of absolute labels
+connection as the rule between neighboring points
+force as consistency bookkeeping
+ancestor of the Standard Model gauge picture
+```
+
+```text
+Gauge invariance is not the machine.
+It is the public accounting rule that says local descriptions may vary
+as long as the connection preserves observable closure.
+The gauge field is not merely a force-object.
+It is a receipt of relational consistency.
+But the deeper machine still has to derive the relation, the comparison,
+the allowed transport, and the physical closure test.
+```
+
+```text
+
+Also update the master line with:
+
+```text
+Weyl gives gauge connection and local reference freedom; closure must derive the links, comparisons, and loop receipts underneath.
+```
+
 ---
 
 ## Already BBQ'd / expanded
