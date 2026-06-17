@@ -23,16 +23,16 @@ It currently provides:
 
 ## Start Here
 
+- Initial Observation: Z0 Binary Structure: read [Z0 Binary Structure, open
+  [Z0 Binary Structure](https://lightrock.github.io/CharacteristicImpedancePython/z0-binary-structure.html).
+- Interesting so far, "quark data compression" of fundamental constants: open
+  [Z0 Quark GeneZip Compression](https://lightrock.github.io/CharacteristicImpedancePython/z0-genezip-compression.html).
 - For the anchor computation, read [Known Verified Result](#known-verified-result).
 - For the evidence files, read [Evidence Chain](#evidence-chain).
 - For the hypothesis, read [Claim Under Test](#claim-under-test) and [Thesis](#thesis).
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
-- Z0 Binary Structure, read [Z0 Binary Structure, open
-  [Z0 Binary Structure](https://lightrock.github.io/CharacteristicImpedancePython/z0-binary-structure.html).
-- For the runnable quark/subsystem compression workbench, open
-  [Z0 Quark GeneZip Compression](https://lightrock.github.io/CharacteristicImpedancePython/z0-genezip-compression.html).
 
 ## Research Posture
 
