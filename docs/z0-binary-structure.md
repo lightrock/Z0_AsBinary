@@ -36,6 +36,53 @@ gcd(233635311620, 295533873261, 376730313461) = 1
 
 That matters because odd primes congruent to `1 mod 4` can appear as the hypotenuse in a primitive Pythagorean triple. In this framing, the Z0 significant-digit integer is not just a 39-bit seed; it is a prime seed with a geometric sum-of-squares identity.
 
+## Standard Chart
+
+Observe carefully the significant digits of the quark mass values in the
+standard chart context available when the project made its initial observations
+using the pre-2019 CODATA value for the characteristic impedance of vacuum.
+
+![Standard quark chart](images/standard_quarks.png)
+
+## What Happened To CODATA After 2019?
+
+The 2019 SI redefinition changed the status of several constants. The defining
+constants `h`, `e`, `k`, `N_A`, `c`, `Delta nu_Cs`, and `K_cd` were assigned
+exact numerical values. As a result, the vacuum electromagnetic constants no
+longer occupy exactly the same evidence position they occupied in the pre-2019
+CODATA tables.
+
+For this project, the important example is the characteristic impedance of
+vacuum, `Z0`. Before the 2019 SI revision, the published CODATA value preserved
+a particular historical mixture of measurement, theory, convention,
+uncertainty, and consensus. After the revision, `Z0` is more directly tied to
+the measured fine-structure constant and to the exact values assigned to `h`,
+`e`, and `c`.
+
+That does not make the pre-2019 value more physically true. It makes it a
+different kind of information artifact.
+
+Why should pre-2019 CODATA still matter? Because it captured a mature physics
+catalog before the redefinition compressed several relationships into exact
+defining constants. Some entries still carried visible traces of how theory,
+experiment, unit convention, uncertainty, and consensus were being stitched
+together. This project is asking whether that published symbolic layer contains
+structure that has not been inspected as an information substrate before.
+
+The claim is therefore not:
+
+```text
+pre-2019 units are sacred
+```
+
+The claim is:
+
+```text
+pre-2019 CODATA is a historically specific receipt of theory and measurement,
+and the Z0 receipt may preserve structure worth testing before later SI
+normalization hides it.
+```
+
 ## Proto-Geometry Note
 
 If a fundamental constant of physics is truly fundamental, then a structural or geometric trace inside its information form would not be absurd in advance. In this reading, Z0 is not only a numeric seed; it also looks like proto-geometry: a compact binary object with edge bits, interior word-structure, a central gap, and orientation-dependent layouts.
