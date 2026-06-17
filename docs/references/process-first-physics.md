@@ -93,11 +93,11 @@ Geometry appears later as a stable rendering of closure statistics and relationa
 
 So the point is not:
 
-> π is stored in matter.
+> `real.pi` is a stored object, constant cache, or hidden ingredient inside matter.
 
 The point is:
 
-> π is one of the stable invariants that appears when running processes return, compare, and render closure under appropriate conditions.
+> `real.pi(...)` is a closure/return function: an operation that becomes meaningful when a running process accumulates transformation, returns, compares, and emits the stable receipt rendered as `π`, phase, rotation, or geometry.
 
 ---
 
