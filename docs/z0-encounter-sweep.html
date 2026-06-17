@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z0 XOR Encounter Sweep</title>
+  <style>
+    :root {
+      --bg: #05070a;
+      --panel: #0b111b;
+      --panel2: #101823;
+      --line: #28485b;
+      --ink: #e8f4ff;
+      --muted: #9fb5c3;
+      --cyan: #00e5ff;
+      --green: #54ff9b;
+      --orange: #ffb84d;
+      --magenta: #ff39b7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at 65% 20%, rgba(0, 229, 255, 0.10), transparent 34%), var(--bg);
+      color: var(--ink);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.45;
+    }
+
+    body.busy {
+      cursor: wait;
+    }
+
+    body.busy button {
+      cursor: wait;
+      opacity: 0.62;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    a { color: #8ab4ff; font-weight: 700; }
+    h1 { margin: 12px 0 6px; font-size: clamp(1.9rem, 4vw, 3.2rem); letter-spacing: -0.04em; }
+    h2 { margin: 0 0 10px; font-size: 1rem; color: var(--orange); text-transform: uppercase; letter-spacing: 0.08em; }
+    p { color: var(--muted); margin: 0; }
+
+    .lede { max-width: 940px; font-size: 1rem; }
+    .layout { display: grid; grid-template-columns: 360px 1fr; gap: 16px; margin-top: 20px; align-items: start; }
+    .panel {
+      background: rgba(11, 17, 27, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22);
+    }
+
+    .seed {
+      margin-top: 10px;
+      padding: 10px;
+      background: #020406;
+      border: 1px solid rgba(0, 229, 255, 0.28);
+      color: var(--cyan);
+      overflow-wrap: anywhere;
+      border-radius: 6px;
+      font-size: 0.82rem;
+    }
+
+    .stat-grid { display: grid; gap: 8px; margin-top: 12px; }
+    .stat {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 7px 8px;
+      background: rgba(255, 255, 255, 0.035);
+      border-radius: 4px;
+      font-size: 0.84rem;
+    }
+
+    .stat span:first-child { color: var(--muted); }
+    .stat span:last-child { color: var(--cyan); font-weight: 700; text-align: right; }
+
+    .controls { display: grid; gap: 10px; margin-top: 14px; }
+    button {
+      min-height: 42px;
+      border: 1px solid var(--cyan);
+      background: rgba(0, 229, 255, 0.08);
+      color: var(--cyan);
+      border-radius: 6px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover { background: rgba(0, 229, 255, 0.16); }
+    button.orange { border-color: var(--orange); color: var(--orange); background: rgba(255, 184, 77, 0.08); }
+    button.magenta { border-color: var(--magenta); color: var(--magenta); background: rgba(255, 57, 183, 0.08); }
+
+    .busy-note {
+      display: none;
+      margin-top: 10px;
+      padding: 9px 10px;
+      border: 1px solid rgba(255, 184, 77, 0.38);
+      background: rgba(255, 184, 77, 0.08);
+      color: var(--orange);
+      border-radius: 6px;
+      font-size: 0.82rem;
+    }
+
+    body.busy .busy-note {
+      display: block;
+    }
+
+    .report {
+      min-height: 530px;
+      white-space: pre-wrap;
+      background: #020406;
+      border: 1px solid rgba(84, 255, 155, 0.24);
+      border-radius: 8px;
+      padding: 16px;
+      color: #dbeafe;
+      font-size: 0.86rem;
+      overflow-x: auto;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .mini-card {
+      border: 1px solid rgba(0, 229, 255, 0.22);
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 6px;
+      padding: 12px;
+    }
+
+    .mini-card strong { display: block; color: var(--green); font-size: 1.4rem; }
+    .mini-card span { color: var(--muted); font-size: 0.78rem; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 0.82rem;
+    }
+
+    th, td {
+      border: 1px solid rgba(0, 229, 255, 0.18);
+      padding: 7px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th { color: var(--orange); background: rgba(255, 184, 77, 0.05); }
+    td code { color: var(--cyan); }
+
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="index.html">Back to docs index</a>
+    <h1>Z0 XOR Encounter Sweep</h1>
+    <p class="lede">
+      This page asks a plainer question than the Lorenz visualizer: when a 39-bit seed runs through the circular XOR machine,
+      does its XOR-generated pile of linear bits encounter more known physics bit-objects than ordinary 39-bit seeds do?
+    </p>
+
+    <div class="layout">
+      <section class="panel">
+        <h2>Seed Under Test</h2>
+        <p>The current seed is compared against random 39-bit runners. Each runner becomes one big linear XOR pile made by concatenating every generated state until the loop closes.</p>
+        <div class="seed" id="seedBits"></div>
+
+        <div class="stat-grid">
+          <div class="stat"><span>Seed kind</span><span id="seedKind">Z0 anchor</span></div>
+          <div class="stat"><span>Seed length</span><span>39 bits</span></div>
+          <div class="stat"><span>XOR period</span><span id="period">-</span></div>
+          <div class="stat"><span>Collapsed to zero</span><span id="collapsed">-</span></div>
+          <div class="stat"><span>Unique states</span><span id="uniqueStates">-</span></div>
+          <div class="stat"><span>Seed quark marks</span><span id="quarkAbility">-</span></div>
+          <div class="stat"><span>Eligible constants</span><span id="eligibleCount">-</span></div>
+          <div class="stat"><span>Min token length</span><span id="minLenLabel">15 bits</span></div>
+        </div>
+
+        <div class="controls">
+          <button id="loadZ0">Load Z0</button>
+          <button class="orange" id="loadRandom">Load True Rando</button>
+          <button class="magenta" id="sweepRandoms">Sweep 64 Randos</button>
+          <button id="min15">Use Constants 15+ Bits</button>
+          <button id="min17">Use Constants 17+ Bits</button>
+          <button id="min20">Use Constants 20+ Bits</button>
+          <button id="min25">Use Constants 25+ Bits</button>
+          <button id="min30">Use Constants 30+ Bits</button>
+          <button id="toggleQuarkGate">Require Quark Step In Target: ON</button>
+          <button id="toggleRandoQuarkGate">Require Rando Has Z0 Quarks: ON</button>
+        </div>
+        <div class="busy-note" id="busyNote">Working through XOR orbits and catalog encounters...</div>
+      </section>
+
+      <section class="panel">
+        <h2>Encounter Report</h2>
+        <div class="card-grid">
+          <div class="mini-card"><strong id="uniqueTokens">-</strong><span>unique catalog tokens encountered</span></div>
+          <div class="mini-card"><strong id="score">-</strong><span>weighted encounter score</span></div>
+          <div class="mini-card"><strong id="longHits">-</strong><span id="thresholdHitLabel">hits on constants 15 bits or longer</span></div>
+        </div>
+        <pre class="report" id="report"></pre>
+        <div id="hitTable"></div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+  "use strict";
+
+  const Z0_BITS = "101011110110110111000000110001011110101";
+  const MAX_STEPS = 4096;
+  const ORIENTATION_NAMES = ["forward", "reverse", "inverse", "inverse_reverse"];
+  const CATALOG = [{"name":"CODATA_1_220_lattice_spacing_of_silicon","bits":"1110010011100110100000001000010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_2_alpha_particle_electron_mass_ratio","bits":"1010100111010101011010011100111001011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_3_alpha_particle_mass","bits":"110001100000011010110110001001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_4_alpha_particle_mass_energy_equivalent","bits":"101100011111101000100010011100001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_5_alpha_particle_mass_energy_equivalent_in_MeV","bits":"11011110001010110100101110110010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_6_alpha_particle_mass_in_u","bits":"111010001110101100010110101011100000110111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_7_alpha_particle_molar_mass","bits":"111010001110101100010110101011100000110111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_8_alpha_particle_proton_mass_ratio","bits":"101110001111110100010100001000110001011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_9_Angstrom_star","bits":"101111101011110011011010111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_10_atomic_mass_constant","bits":"1100010111110011101000010100000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_11_atomic_mass_constant_energy_equivalent","bits":"1011000111101000111111000001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_12_atomic_mass_constant_energy_equivalent_in_MeV","bits":"1000101011001101101011100000011010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_13_atomic_mass_unit_electron_volt_relationship","bits":"1000101011001101101011100000011010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_14_atomic_mass_unit_hartree_relationship","bits":"11111111000010111110111011010000110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_15_atomic_mass_unit_hertz_relationship","bits":"10100111110100000000011100110000110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_16_atomic_mass_unit_inverse_meter_relationship","bits":"1000101111110000110011101010011110110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_17_atomic_mass_unit_joule_relationship","bits":"1011000111101000111111000001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_18_atomic_mass_unit_kelvin_relationship","bits":"110011100010110011111001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_19_atomic_mass_unit_kilogram_relationship","bits":"1100010111110011101000010100000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_20_atomic_unit_of_1st_hyperpolarizability","bits":"10111111000111010011000011110001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_21_atomic_unit_of_2nd_hyperpolarizability","bits":"101110011101010000101100101110101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_22_atomic_unit_of_action","bits":"111110110110110111110100011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_23_atomic_unit_of_charge","bits":"1110111010111110001100000001000000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_24_atomic_unit_of_charge_density","bits":"1010000100011100100110001111011010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_25_atomic_unit_of_current","bits":"110001010110011000110010010000111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_26_atomic_unit_of_electric_dipole_mom","bits":"111111001010110010110100010010000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_27_atomic_unit_of_electric_field","bits":"100110010011111111101100011110011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_28_atomic_unit_of_electric_field_gradient","bits":"1001000011001100110010111010110100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_29_atomic_unit_of_electric_polarizability","bits":"1111010110101111110111001000111011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_30_atomic_unit_of_electric_potential","bits":"10100010001100010100011110101010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_31_atomic_unit_of_electric_quadrupole_mom","bits":"100001011011010110101011110111100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_32_atomic_unit_of_energy","bits":"100000011110111000110110010001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_33_atomic_unit_of_force","bits":"110001000110110100101101010000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_34_atomic_unit_of_length","bits":"110001010010001001000101011111101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_35_atomic_unit_of_mag_dipole_mom","bits":"1101110100011100000100001001111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_36_atomic_unit_of_mag_flux_density","bits":"10001100000110100000110100101110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_37_atomic_unit_of_magnetizability","bits":"1001001011111011011001010000010111110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_38_atomic_unit_of_mass","bits":"110110010010111101000011110100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_39_atomic_unit_of_mom_um","bits":"1110110110010001000000110101010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_40_atomic_unit_of_permittivity","bits":"1000010010100011011000101001000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_41_atomic_unit_of_time","bits":"100011001100110000101111011011010001101101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_42_atomic_unit_of_velocity","bits":"11001011101111101001111111001110000101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_43_Avogadro_constant","bits":"101100110111100101001001110111001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_44_Bohr_magneton","bits":"1000101000110001100010100110001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_45_Bohr_magneton_in_eV_T","bits":"110101111010001001001111100000011100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_46_Bohr_magneton_in_Hz_T","bits":"1101000010001111011100000000110010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_47_Bohr_magneton_in_inverse_meters_per_tesla","bits":"100010110010001011101110111001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_48_Bohr_magneton_in_K_T","bits":"100000000001111010001001101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_49_Bohr_radius","bits":"110001010010001001000101011111101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_50_Boltzmann_constant","bits":"1000001110101011001111010100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_51_Boltzmann_constant_in_eV_K","bits":"101001000101110011001110111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_52_Boltzmann_constant_in_Hz_K","bits":"1001111011111000100000100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_53_Boltzmann_constant_in_inverse_meters_per_kelvin","bits":"100001001001000100111100001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_54_characteristic_impedance_of_vacuum","bits":"101011110110110111000000110001011110101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_55_classical_electron_radius","bits":"11010001111100111111001000111011011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_56_Compton_wavelength","bits":"10110100110001100011000111110011111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_57_Compton_wavelength_over_2_pi","bits":"100011111101101100000100011111101100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_58_conductance_quantum","bits":"1001000001010001110001111100100111110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_59_conventional_value_of_Josephson_constant","bits":"10010011100101010001011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_60_conventional_value_of_von_Klitzing_constant","bits":"1100010011101111101000111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_61_Cu_x_unit","bits":"101111110010000110001010001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_62_deuteron_electron_mag_mom_ratio","bits":"100010110000001000100001110111111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_63_deuteron_electron_mass_ratio","bits":"101010101110101110010001000100101010001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_64_deuteron_g_factor","bits":"111111111000100101011000011100111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_65_deuteron_mag_mom","bits":"100000010001000011100010111000000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_66_deuteron_mag_mom_to_Bohr_magneton_ratio","bits":"100010110010101101100110010111010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_67_deuteron_mag_mom_to_nuclear_magneton_ratio","bits":"111111111000100101011000011100111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_68_deuteron_mass","bits":"11000111010010110000100111100111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_69_deuteron_mass_energy_equivalent","bits":"10110011000111011010000000001111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_70_deuteron_mass_energy_equivalent_in_MeV","bits":"1101111110010111001010100000000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_71_deuteron_mass_in_u","bits":"11101010011010001000111111011110101001001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_72_deuteron_molar_mass","bits":"11101010011010001000111111011110101001001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_73_deuteron_neutron_mag_mom_ratio","bits":"10101010111110100010101100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_74_deuteron_proton_mag_mom_ratio","bits":"10110110111111100101100001011101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_75_deuteron_proton_mass_ratio","bits":"10111010001011000000110110000100000111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_76_deuteron_rms_charge_radius","bits":"101001110100101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_77_electric_constant","bits":"1000001111110000000010111100101001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_78_electron_charge_to_mass_quotient","bits":"1101000110101010111011010111000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_79_electron_deuteron_mag_mom_ratio","bits":"1111111110010011010110100101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_80_electron_deuteron_mass_ratio","bits":"100111101001010101000110110010001100011100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_81_electron_g_factor","bits":"101101100001110000100001000101100001101001010110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_82_electron_gyromag_ratio","bits":"1101000111101001001010111111100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_83_electron_gyromag_ratio_over_2_pi","bits":"10100111000010101010111010111100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_84_electron_helion_mass_ratio","bits":"11010011110100101001101111111100000100110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_85_electron_mag_mom","bits":"1000101001011010100100001111001100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_86_electron_mag_mom_anomaly","bits":"1101100000000000100001100110100101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_87_electron_mag_mom_to_Bohr_magneton_ratio","bits":"10110110000111000010000100010110000110100101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_88_electron_mag_mom_to_nuclear_magneton_ratio","bits":"10101011001101000000111010111101110010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_89_electron_mass","bits":"110110010010111101000011110100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_90_electron_mass_energy_equivalent","bits":"110000110011001000100000100101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_91_electron_mass_energy_equivalent_in_MeV","bits":"100110000100101000100000001010101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_92_electron_mass_in_u","bits":"111111110111001111010010001110111001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_93_electron_molar_mass","bits":"111111110111001111010010001110111001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_94_electron_muon_mag_mom_ratio","bits":"1111011001111100010001101111000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_95_electron_muon_mass_ratio","bits":"11100110100111010100000010010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_96_electron_neutron_mag_mom_ratio","bits":"101101110100011111110010010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_97_electron_neutron_mass_ratio","bits":"110010101001101100111011010101011100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_98_electron_proton_mag_mom_ratio","bits":"110001000010100101111101011110010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_99_electron_proton_mass_ratio","bits":"111111011001101101101000011111110101000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_100_electron_tau_mass_ratio","bits":"1000110001101101000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_101_electron_to_alpha_particle_mass_ratio","bits":"10011111100110010000000011110111001101110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_102_electron_to_shielded_helion_mag_mom_ratio","bits":"110011100000000111101110010001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_103_electron_to_shielded_proton_mag_mom_ratio","bits":"110001000010101011000111110000011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_104_electron_triton_mass_ratio","bits":"11010011110010000110001100000001011111011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_105_electron_volt","bits":"1110111010111110001100000001000000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_106_electron_volt_atomic_mass_unit_relationship","bits":"1001111111111000011101010011010001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_107_electron_volt_hartree_relationship","bits":"11011011000010110000010000011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_108_electron_volt_hertz_relationship","bits":"10010000000111111001011010001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_109_electron_volt_inverse_meter_relationship","bits":"111100000101111100110111101000101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_110_electron_volt_joule_relationship","bits":"1110111010111110001100000001000000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_111_electron_volt_kelvin_relationship","bits":"110111010101011010110100101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_112_electron_volt_kilogram_relationship","bits":"1101010010000010100001100010011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_113_elementary_charge","bits":"1110111010111110001100000001000000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_114_elementary_charge_over_h","bits":"10010000000111111001011010001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_115_Faraday_constant","bits":"1000111111000110001110111100101001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_116_Faraday_constant_for_conventional_electric_current","bits":"111001100000100111111000000011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_117_Fermi_coupling_constant","bits":"101100011111100110101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_118_fine_structure_constant","bits":"1000011111101100011111010001010100000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_119_first_radiation_constant","bits":"11011111000001101110100000001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_120_first_radiation_constant_for_spectral_radiance","bits":"1000110111111011101111110001001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_121_hartree_atomic_mass_unit_relationship","bits":"11011001101001101010100000101011101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_122_hartree_electron_volt_relationship","bits":"10100010001100010100011110101010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_123_Hartree_energy","bits":"100000011110111000110110010001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_124_Hartree_energy_in_eV","bits":"10100010001100010100011110101010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_125_hartree_hertz_relationship","bits":"1011111101111110011101110010000101101000111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_126_hartree_inverse_meter_relationship","bits":"11111111100000001000100110000101111100110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_127_hartree_joule_relationship","bits":"100000011110111000110110010001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_128_hartree_kelvin_relationship","bits":"1111000011101010110101001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_129_hartree_kilogram_relationship","bits":"100100001001000100110011101110001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_130_helion_electron_mass_ratio","bits":"111111111110110000001110110101100110010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_131_helion_g_factor","bits":"11111101101000011111100010111000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_132_helion_mag_mom","bits":"1000000000011010101110010110010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_133_helion_mag_mom_to_Bohr_magneton_ratio","bits":"1000101000100001111101111011110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_134_helion_mag_mom_to_nuclear_magneton_ratio","bits":"1111110110100001111110001011100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_135_helion_mass","bits":"100101010011001111100101110011100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_136_helion_mass_energy_equivalent","bits":"100001100001100011000010110001101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_137_helion_mass_energy_equivalent_in_MeV","bits":"10100111011001001010011110100010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_138_helion_mass_in_u","bits":"100011000110010011001011000010011100001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_139_helion_molar_mass","bits":"100011000110010011001011000010011100001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_140_helion_proton_mass_ratio","bits":"100010110110000100101001000010111100110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_141_hertz_atomic_mass_unit_relationship","bits":"101001010110010101110000010110101000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_142_hertz_electron_volt_relationship","bits":"11110110100000010100011111001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_143_hertz_hartree_relationship","bits":"11011101001010100001001011100100111110111000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_144_hertz_inverse_meter_relationship","bits":"11000110110100011101011101110111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_145_hertz_joule_relationship","bits":"110001010111100011100111000011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_146_hertz_kelvin_relationship","bits":"10110111000100111001111111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_147_hertz_kilogram_relationship","bits":"110110111011011110110000100110001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_148_inverse_fine_structure_constant","bits":"1111111100111111110110110011110100011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_149_inverse_meter_atomic_mass_unit_relationship","bits":"1111011111101100001110000101111000100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_150_inverse_meter_electron_volt_relationship","bits":"1011100011000000001101111100011011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_151_inverse_meter_hartree_relationship","bits":"1000010010011011010101111101000010100011111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_152_inverse_meter_hertz_relationship","bits":"10001110111100111100001001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_153_inverse_meter_joule_relationship","bits":"1110110011001101100001000000000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_154_inverse_meter_kelvin_relationship","bits":"1000100100110110011001101000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_155_inverse_meter_kilogram_relationship","bits":"10000011101111010100010000110001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_156_inverse_of_conductance_quantum","bits":"1111000001100110100001110101110011110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_157_Josephson_constant","bits":"100100000001111110010110100011101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_158_joule_atomic_mass_unit_relationship","bits":"110001111011000100000111001000011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_159_joule_electron_volt_relationship","bits":"101110100000001011101111100000110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_160_joule_hartree_relationship","bits":"10001000101101110100010110111101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_161_joule_hertz_relationship","bits":"1011001111101000110101000111101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_162_joule_inverse_meter_relationship","bits":"100101100000011101000011000101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_163_joule_kelvin_relationship","bits":"100010100010011000010100011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_164_joule_kilogram_relationship","bits":"1000010010100011011000101001000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_165_kelvin_atomic_mass_unit_relationship","bits":"101100000111001101001111010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_166_kelvin_electron_volt_relationship","bits":"101001000101110011001110111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_167_kelvin_hartree_relationship","bits":"1111000110011011110001001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_168_kelvin_hertz_relationship","bits":"1001111011111000100000100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_169_kelvin_inverse_meter_relationship","bits":"100001001001000100111100001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_170_kelvin_joule_relationship","bits":"1000001110101011001111010100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_171_kelvin_kilogram_relationship","bits":"1001001010000000010111001001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_172_kilogram_atomic_mass_unit_relationship","bits":"101100110111100101001001110111001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_173_kilogram_electron_volt_relationship","bits":"101001110010110111000011110101010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_174_kilogram_hartree_relationship","bits":"1111010110111111100011011111111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_175_kilogram_hertz_relationship","bits":"1010000110110001110100001000000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_176_kilogram_inverse_meter_relationship","bits":"100001101101011010111001110001011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_177_kilogram_joule_relationship","bits":"1000010111101100110010100000101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_178_kilogram_kelvin_relationship","bits":"11111000010100101110010011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_179_lattice_parameter_of_silicon","bits":"101000011101101101100101111011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_180_Loschmidt_constant_273_15_K_100_kPa","bits":"1100101001001101111110011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_181_Loschmidt_constant_273_15_K_101_325_kPa","bits":"1100110011111100001100011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_182_mag_constant","bits":"1011101101000000111001100100110110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_183_mag_flux_quantum","bits":"1111011010000001010001111100111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_184_molar_gas_constant","bits":"100111101001010111110010110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_185_molar_mass_constant","bits":"1","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_186_molar_mass_of_carbon_12","bits":"1100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_187_molar_Planck_constant","bits":"100101001010011010010110011001000110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_188_molar_Planck_constant_times_c","bits":"1101111011010010011001000011111001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_189_molar_volume_of_ideal_gas_273_15_K_100_kPa","bits":"1010110101000101010100011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_190_molar_volume_of_ideal_gas_273_15_K_101_325_kPa","bits":"1010101100000001010001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_191_molar_volume_of_silicon","bits":"1000111111000000101000101001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_192_Mo_x_unit","bits":"101111110010001010100100000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_193_muon_Compton_wavelength","bits":"1000101111100010101011000001111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_194_muon_Compton_wavelength_over_2_pi","bits":"1101111010100010011101001000100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_195_muon_electron_mass_ratio","bits":"1111011001111100101011000001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_196_muon_g_factor","bits":"10010101001011110111001011110010010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_197_muon_mag_mom","bits":"11010110000111110000101011010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_198_muon_mag_mom_anomaly","bits":"110111100110000110111011001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_199_muon_mag_mom_to_Bohr_magneton_ratio","bits":"11100110111000100001010111000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_200_muon_mag_mom_to_nuclear_magneton_ratio","bits":"110100111111011111100101111001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_201_muon_mass","bits":"1110000010001000110100101001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_202_muon_mass_energy_equivalent","bits":"1100100111001101001011111101110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_203_muon_mass_energy_equivalent_in_MeV","bits":"111110111110100011000001000001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_204_muon_mass_in_u","bits":"1000011100110111110000101101001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_205_muon_molar_mass","bits":"1000011100110111110000101101001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_206_muon_neutron_mass_ratio","bits":"1000011000001110011001010001111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_207_muon_proton_mag_mom_ratio","bits":"10111101101111011111110111110110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_208_muon_proton_mass_ratio","bits":"1000011000111101101100110011110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_209_muon_tau_mass_ratio","bits":"10010001001011011001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_210_natural_unit_of_action","bits":"111110110110110111110100011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_211_natural_unit_of_action_in_eV_s","bits":"110001000010100110010110001011010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_212_natural_unit_of_energy","bits":"110000110011001000100000100101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_213_natural_unit_of_energy_in_MeV","bits":"100110000100101000100000001010101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_214_natural_unit_of_length","bits":"100011111101101100000100011111101100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_215_natural_unit_of_mass","bits":"110110010010111101000011110100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_216_natural_unit_of_mom_um","bits":"10100010110001101001100111001000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_217_natural_unit_of_mom_um_in_MeV_c","bits":"100110000100101000100000001010101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_218_natural_unit_of_time","bits":"1110111111101100110110101001110011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_219_natural_unit_of_velocity","bits":"10001110111100111100001001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_220_neutron_Compton_wavelength","bits":"1111010111001010111111110110100110001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_221_neutron_Compton_wavelength_over_2_pi","bits":"10011100011110100000011001000100000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_222_neutron_electron_mag_mom_ratio","bits":"110001100111110111101000010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_223_neutron_electron_mass_ratio","bits":"10101011001111011010001001110101001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_224_neutron_g_factor","bits":"10110110011100010010010100001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_225_neutron_gyromag_ratio","bits":"1010111011000010000101000100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_226_neutron_gyromag_ratio_over_2_pi","bits":"10001011000100010110111010101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_227_neutron_mag_mom","bits":"101110000100101110000100010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_228_neutron_mag_mom_to_Bohr_magneton_ratio","bits":"110001101011100011010101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_229_neutron_mag_mom_to_nuclear_magneton_ratio","bits":"1011011001110001001001010001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_230_neutron_mass","bits":"1100011110101010101110101101111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_231_neutron_mass_energy_equivalent","bits":"1011001101110011101000001101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_232_neutron_mass_energy_equivalent_in_MeV","bits":"1000110000000001100100110111110101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_233_neutron_mass_in_u","bits":"1011101111100000111001000010011000100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_234_neutron_molar_mass","bits":"1011101111100000111001000010011000100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_235_neutron_muon_mass_ratio","bits":"110101000000001101101010011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_236_neutron_proton_mag_mom_ratio","bits":"100000101010011001000001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_237_neutron_proton_mass_difference","bits":"1101101111100000011011000001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_238_neutron_proton_mass_difference_energy_equivalent","bits":"1100010110011101100000101101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_239_neutron_proton_mass_difference_energy_equivalent_in_MeV","bits":"111101101010111011111010101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_240_neutron_proton_mass_difference_in_u","bits":"1000010001101001101011100100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_241_neutron_proton_mass_ratio","bits":"1011101010000101011100011010011101010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_242_neutron_tau_mass_ratio","bits":"10000001000110010110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_243_neutron_to_shielded_proton_mag_mom_ratio","bits":"100000101010011100011101110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_244_Newtonian_constant_of_gravitation","bits":"10100010111100010000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_245_Newtonian_constant_of_gravitation_over_h_bar_c","bits":"10100011110010001101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_246_nuclear_magneton","bits":"100101101000011001101011111010011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_247_nuclear_magneton_in_eV_T","bits":"11101010111000000011110001100100110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_248_nuclear_magneton_in_inverse_meters_per_tesla","bits":"10010111100011010101101011001000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_249_nuclear_magneton_in_K_T","bits":"10001011100011010100100010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_250_nuclear_magneton_in_MHz_T","bits":"111000110010101111000101100000101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_251_Planck_constant","bits":"110001010111100011100111000011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_252_Planck_constant_in_eV_s","bits":"11110110100000010100011111001110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_253_Planck_constant_over_2_pi","bits":"111110110110110111110100011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_254_Planck_constant_over_2_pi_in_eV_s","bits":"110001000010100110010110001011010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_255_Planck_constant_over_2_pi_times_c_in_MeV_fm","bits":"1110101100111011011010100011100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_256_Planck_length","bits":"110001010100101100101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_257_Planck_mass","bits":"1000010011010111010110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_258_Planck_mass_energy_equivalent_in_GeV","bits":"100101010000100101110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_259_Planck_temperature","bits":"101011001111001101000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_260_Planck_time","bits":"10000011100111101100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_261_proton_charge_to_mass_quotient","bits":"1000111010111100010110010101001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_262_proton_Compton_wavelength","bits":"1111011000100001101110110110000110100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_263_proton_Compton_wavelength_over_2_pi","bits":"11000011110111011000110100110000011101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_264_proton_electron_mass_ratio","bits":"10101011000000010100101010001000111101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_265_proton_g_factor","bits":"101001100111011101110111111101110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_266_proton_gyromag_ratio","bits":"10011111011101001010010110001100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_267_proton_gyromag_ratio_over_2_pi","bits":"11111101110010000001001110110100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_268_proton_mag_mom","bits":"1101001000110010011000001110100001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_269_proton_mag_mom_to_Bohr_magneton_ratio","bits":"1110001010100110110001100010000101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_270_proton_mag_mom_to_nuclear_magneton_ratio","bits":"11010000000101010101010111110100100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_271_proton_mag_shielding_correction","bits":"110010001011011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_272_proton_mass","bits":"1100011101100100010111101001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_273_proton_massNEW","bits":"1001111110000011011111110000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_274_proton_mass_energy_equivalent","bits":"1011001100110100011001000011001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_275_proton_mass_energy_equivalent_in_MeV","bits":"1000101111010000001111010100101101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_276_proton_mass_in_u","bits":"1110101010000110010110110010001010111111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_277_proton_molar_mass","bits":"1110101010000110010110110010001010111111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_278_proton_muon_mass_ratio","bits":"110100111011100010110100010010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_279_proton_neutron_mag_mom_ratio","bits":"1000101100111010000010101101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_280_proton_neutron_mass_ratio","bits":"1011101000000010000101000000001000100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_281_proton_rms_charge_radius","bits":"10001000101111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_282_proton_tau_mass_ratio","bits":"10000000111010111111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_283_quantum_of_circulation","bits":"100001110111110010100010011110011110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_284_quantum_of_circulation_times_2","bits":"1000011101111100101000100111100111100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_285_Rydberg_constant","bits":"10011111101100000101010111110011101101111100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_286_Rydberg_constant_times_c_in_Hz","bits":"101111110111111001110111001000010110100011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_287_Rydberg_constant_times_hc_in_eV","bits":"1100101010111101100110011001010001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_288_Rydberg_constant_times_hc_in_J","bits":"10000001111011100011011001000101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_289_Sackur_Tetrode_constant_1_K_100_kPa","bits":"101011111011110010011100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_290_Sackur_Tetrode_constant_1_K_101_325_kPa","bits":"101100011011111011001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_291_second_radiation_constant","bits":"1000100100110110011001101000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_292_shielded_helion_gyromag_ratio","bits":"1111001011101111100110110111001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_293_shielded_helion_gyromag_ratio_over_2_pi","bits":"11000001010100101000001000101110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_294_shielded_helion_mag_mom","bits":"1000000000011000110000011111000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_295_shielded_helion_mag_mom_to_Bohr_magneton_ratio","bits":"1000101000011111110110001101111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_296_shielded_helion_mag_mom_to_nuclear_magneton_ratio","bits":"1111110110011110000100111111000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_297_shielded_helion_to_proton_mag_mom_ratio","bits":"111000110000011000101101001000011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_298_shielded_helion_to_shielded_proton_mag_mom_ratio","bits":"111000110000011110101011011000001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_299_shielded_proton_gyromag_ratio","bits":"10011111011100111001100100010011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_300_shielded_proton_gyromag_ratio_over_2_pi","bits":"11111101110001100110100001101011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_301_shielded_proton_mag_mom","bits":"1010100000100111001100100110011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_302_shielded_proton_mag_mom_to_Bohr_magneton_ratio","bits":"1011010101010001000001101101000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_303_shielded_proton_mag_mom_to_nuclear_magneton_ratio","bits":"10100110011101100101111110110000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_304_speed_of_light_in_vacuum","bits":"10001110111100111100001001010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_305_standard_acceleration_of_gravity","bits":"11101111011010111001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_306_standard_atmosphere","bits":"11000101111001101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_307_standard_state_pressure","bits":"11000011010100000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_308_Stefan_Boltzmann_constant","bits":"10101101000010111011111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_309_tau_Compton_wavelength","bits":"10101010010110111011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_310_tau_Compton_wavelength_over_2_pi","bits":"11011000111010000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_311_tau_electron_mass_ratio","bits":"1010100111001000011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_312_tau_mass","bits":"1001101010101001011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_313_tau_mass_energy_equivalent","bits":"1000101100000000110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_314_tau_mass_energy_equivalent_in_MeV","bits":"101011011000010010","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_315_tau_mass_in_u","bits":"101110100100011101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_316_tau_molar_mass","bits":"101110100100011101","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_317_tau_muon_mass_ratio","bits":"101001000011100111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_318_tau_neutron_mass_ratio","bits":"101110001010110111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_319_tau_proton_mass_ratio","bits":"101110001110111100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_320_Thomson_cross_section","bits":"111101111101001011001010010010010110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_321_triton_electron_mass_ratio","bits":"111111111111100001101001001111011110100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_322_triton_g_factor","bits":"101100011000111101011100000111000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_323_triton_mag_mom","bits":"1011001101011101000010011011111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_324_triton_mag_mom_to_Bohr_magneton_ratio","bits":"1111000111000001011010000001101000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_325_triton_mag_mom_to_nuclear_magneton_ratio","bits":"10110001100011110101110000011100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_326_triton_mass","bits":"100101010011101100011001011111001","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_327_triton_mass_energy_equivalent","bits":"100001100001111100111011110010111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_328_triton_mass_energy_equivalent_in_MeV","bits":"10100111011011001011110000011000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_329_triton_mass_in_u","bits":"100011000110101110010001110111101010000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_330_triton_molar_mass","bits":"100011000110101110010001110111101010000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_331_triton_proton_mass_ratio","bits":"100010110110011111100011010110000110100","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_332_unified_atomic_mass_unit","bits":"1100010111110011101000010100000","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_333_von_Klitzing_constant","bits":"11110000011001101000011101011100111011","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_334_weak_mixing_angle","bits":"100010101111","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_335_Wien_frequency_displacement_law_constant","bits":"11100000010000110101110110","role":"CODATA 2014 fundamental constants table"},{"name":"CODATA_336_Wien_wavelength_displacement_law_constant","bits":"1101110100010101001000001","role":"CODATA 2014 fundamental constants table"},{"name":"LEGACY_FIXED_PlanckTime","bits":"11001101101010000000111101","role":"legacy fixed Planck-time token"},{"name":"LEGACY_Q_CesiumSecond","bits":"1000100011111011000110110111011010","role":"legacy time-standard token"},{"name":"LEGACY_J_Psion3_096916","bits":"1011110100000101010100","role":"legacy hadron token"},{"name":"LEGACY_Q_38MeV","bits":"100110","role":"legacy low-energy mass token"},{"name":"LEGACY_bbg10_061","bits":"10011101001101","role":"legacy mass token"},{"name":"LEGACY_Q_UP","bits":"10110","role":"quark mass-signature token"},{"name":"LEGACY_Q_DOWN","bits":"101111","role":"quark mass-signature token"},{"name":"LEGACY_Q_STRANGE","bits":"1100000","role":"quark mass-signature token"},{"name":"LEGACY_Q_CHARM","bits":"10011111011","role":"quark mass-signature token"},{"name":"LEGACY_Q_BOTTOM","bits":"110100010","role":"quark mass-signature token"},{"name":"LEGACY_Q_TOP","bits":"11011000011","role":"quark mass-signature token"},{"name":"LEGACY_Q_TETRA","bits":"1010111000000","role":"legacy tetraquark candidate token"},{"name":"LEGACY_Q_Penta4380","bits":"1000100011100","role":"legacy pentaquark candidate token"},{"name":"LEGACY_Q_Penta4450","bits":"1000101100010","role":"legacy pentaquark candidate token"},{"name":"LEGACY_Q_sds","bits":"10100101001","role":"legacy quark-composition token"},{"name":"LEGACY_Q_dds","bits":"10111011000101","role":"legacy quark-composition token"},{"name":"LEGACY_Q_ddu","bits":"10010010110100","role":"legacy quark-composition token"},{"name":"LEGACY_Q_dsu","bits":"10101110010100","role":"legacy quark-composition token"},{"name":"LEGACY_Q_dsu_2","bits":"10111010010101","role":"legacy quark-composition token"},{"name":"LEGACY_Q_ssu","bits":"10100100011","role":"legacy quark-composition token"},{"name":"LEGACY_Q_usu","bits":"10111001110110","role":"legacy quark-composition token"},{"name":"LEGACY_Q_udu","bits":"10010010100111","role":"legacy quark-composition token"},{"name":"LEGACY_Q_u_d","bits":"10101110100","role":"legacy meson/composition token"},{"name":"LEGACY_Q_d_s","bits":"1001101110001","role":"legacy meson/composition token"},{"name":"LEGACY_Q_s_s","bits":"1010101100110","role":"legacy meson/composition token"},{"name":"LEGACY_Q_s_u","bits":"1001101001001","role":"legacy meson/composition token"},{"name":"LEGACY_Q_u_u","bits":"10101000110","role":"legacy meson/composition token"},{"name":"LEGACY_Q_s_s_2","bits":"10010101101000","role":"legacy meson/composition token"},{"name":"LEGACY_Q_u_s","bits":"1001101001001","role":"legacy meson/composition token"},{"name":"LEGACY_Q_d_u","bits":"11110010000","role":"legacy meson/composition token"},{"name":"LEGACY_Q_s_d","bits":"1001101001001","role":"legacy meson/composition token"},{"name":"LEGACY_Q_udc","bits":"110111110100100110","role":"legacy baryon/composition token"},{"name":"LEGACY_Q_udb","bits":"1101101110001010","role":"legacy baryon/composition token"},{"name":"LEGACY_Q_89","bits":"1011001","role":"legacy external-theory token"},{"name":"LEGACY_Q_191","bits":"10111111","role":"legacy external-theory token"},{"name":"LEGACY_Q_383","bits":"101111111","role":"legacy external-theory token"},{"name":"LEGACY_Q_938","bits":"1110101010","role":"legacy external-theory token"},{"name":"LEGACY_Q_1836","bits":"11100101100","role":"legacy external-theory token"},{"name":"LEGACY_Q_1232","bits":"10011010000","role":"legacy external-theory token"}];
+
+  let currentSeed = Z0_BITS;
+  let currentKind = "Z0 anchor";
+  let minTokenLength = 15;
+  let randomRun = 0;
+  let requireTargetQuarkStep = true;
+  let requireRandoZ0Quarks = true;
+
+  function invert(bits) {
+    return bits.split("").map((bit) => bit === "1" ? "0" : "1").join("");
+  }
+
+  function reverse(bits) {
+    return bits.split("").reverse().join("");
+  }
+
+  function orientations(bits) {
+    const inv = invert(bits);
+    return {
+      forward: bits,
+      reverse: reverse(bits),
+      inverse: inv,
+      inverse_reverse: reverse(inv)
+    };
+  }
+
+  function xorStep(bits) {
+    let next = "";
+    for (let i = 0; i < bits.length; i += 1) {
+      next += bits[i] === bits[(i + 1) % bits.length] ? "0" : "1";
+    }
+    return next;
+  }
+
+  function xorRun(seed) {
+    const seen = new Map();
+    const states = [];
+    let current = seed;
+
+    for (let step = 0; step <= MAX_STEPS; step += 1) {
+      if (seen.has(current)) {
+        return {
+          states,
+          period: step - seen.get(current),
+          repeatedAt: step,
+          closedLoop: current === seed,
+          collapsed: current.split("").every((bit) => bit === "0")
+        };
+      }
+
+      seen.set(current, step);
+      states.push(current);
+      current = xorStep(current);
+    }
+
+    return {
+      states,
+      period: states.length,
+      repeatedAt: states.length,
+      closedLoop: false,
+      collapsed: false
+    };
+  }
+
+  function buildPiles(run) {
+    return {
+      forward: run.states.join(""),
+      reverse: run.states.map(reverse).join(""),
+      inverse: run.states.map(invert).join(""),
+      inverse_reverse: run.states.map((state) => reverse(invert(state))).join("")
+    };
+  }
+
+  function buildMatcher(activeCatalog) {
+    const root = { next: Object.create(null), fail: null, tokens: [] };
+
+    for (const token of activeCatalog) {
+      let node = root;
+      for (const bit of token.bits) {
+        if (!node.next[bit]) {
+          node.next[bit] = { next: Object.create(null), fail: null, tokens: [] };
+        }
+        node = node.next[bit];
+      }
+      node.tokens.push(token);
+    }
+
+    const queue = [];
+    for (const bit of ["0", "1"]) {
+      if (root.next[bit]) {
+        root.next[bit].fail = root;
+        queue.push(root.next[bit]);
+      } else {
+        root.next[bit] = root;
+      }
+    }
+
+    while (queue.length) {
+      const current = queue.shift();
+      for (const bit of ["0", "1"]) {
+        const child = current.next[bit];
+        if (!child) {
+          current.next[bit] = current.fail.next[bit];
+          continue;
+        }
+
+        child.fail = current.fail.next[bit];
+        child.tokens = child.tokens.concat(child.fail.tokens);
+        queue.push(child);
+      }
+    }
+
+    return root;
+  }
+
+  function scanPile(pile, activeCatalog, orientationName, hits) {
+    const matcher = buildMatcher(activeCatalog);
+    let node = matcher;
+
+    for (let index = 0; index < pile.length; index += 1) {
+      node = node.next[pile[index]];
+      if (!node.tokens.length) {
+        continue;
+      }
+
+      for (const token of node.tokens) {
+        const start = index - token.bits.length + 1;
+        if (!hits.has(token.name)) {
+          hits.set(token.name, {
+            token,
+            count: 0,
+            positions: [],
+            stateIndexes: new Set(),
+            orientations: new Set()
+          });
+        }
+
+        const hit = hits.get(token.name);
+        hit.count += 1;
+        if (hit.positions.length < 12) {
+          hit.positions.push(`${orientationName}:${start}`);
+        }
+        hit.stateIndexes.add(Math.floor(start / Z0_BITS.length));
+        hit.orientations.add(orientationName);
+      }
+    }
+  }
+
+  function quarkTokens() {
+    return CATALOG.filter((token) => token.name.startsWith("LEGACY_Q_")
+      && /quark|baryon|meson|hadron|tetraquark|pentaquark/i.test(token.role)
+      && token.bits.length >= 5);
+  }
+
+  function seedQuarkAbility(seed) {
+    const seedOrientations = orientations(seed);
+    const tokens = quarkTokens();
+    const hits = [];
+
+    for (const [orientationName, bits] of Object.entries(seedOrientations)) {
+      const doubled = bits + bits.slice(0, Math.max(...tokens.map((token) => token.bits.length), 1) - 1);
+      for (const token of tokens) {
+        for (let start = 0; start < bits.length; start += 1) {
+          if (doubled.startsWith(token.bits, start)) {
+            hits.push({ token, orientationName, start });
+            break;
+          }
+        }
+      }
+    }
+
+    return hits;
+  }
+
+  function targetQuarkSteps(bits) {
+    const targetOrientations = orientations(bits);
+    const tokens = quarkTokens();
+    const hits = [];
+
+    for (const [orientationName, orientedBits] of Object.entries(targetOrientations)) {
+      if (!orientedBits.length) {
+        continue;
+      }
+
+      const doubled = orientedBits + orientedBits.slice(0, Math.max(...tokens.map((token) => token.bits.length), 1) - 1);
+      for (const token of tokens) {
+        if (token.bits.length > orientedBits.length) {
+          continue;
+        }
+
+        for (let start = 0; start < orientedBits.length; start += 1) {
+          if (doubled.startsWith(token.bits, start)) {
+            hits.push({ token, orientationName, start });
+            break;
+          }
+        }
+      }
+    }
+
+    return hits;
+  }
+
+  function z0QuarkSet() {
+    return new Set(seedQuarkAbility(Z0_BITS).map((hit) => hit.token.name));
+  }
+
+  function seedHasZ0QuarkSet(seed) {
+    const required = z0QuarkSet();
+    const present = new Set(seedQuarkAbility(seed).map((hit) => hit.token.name));
+    for (const tokenName of required) {
+      if (!present.has(tokenName)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function eligibleCatalog() {
+    return CATALOG.filter((token) => token.bits.length >= minTokenLength
+      && (!requireTargetQuarkStep || targetQuarkSteps(token.bits).length > 0));
+  }
+
+  function scanEncounters(seed) {
+    const run = xorRun(seed);
+    const activeCatalog = eligibleCatalog();
+    const piles = buildPiles(run);
+    const pileLength = Object.values(piles).reduce((sum, pile) => sum + pile.length, 0);
+    const hits = new Map();
+
+    for (const [orientationName, pile] of Object.entries(piles)) {
+      scanPile(pile, activeCatalog, orientationName, hits);
+    }
+
+    const hitList = Array.from(hits.values()).map((hit) => ({
+      name: hit.token.name,
+      bits: hit.token.bits,
+      length: hit.token.bits.length,
+      role: hit.token.role,
+      count: hit.count,
+      stateCount: hit.stateIndexes.size,
+      orientationCount: hit.orientations.size,
+      firstPosition: hit.positions[0],
+      firstState: Math.floor(Number(hit.positions[0].split(":")[1]) / Z0_BITS.length),
+      orientations: Array.from(hit.orientations).join(", "),
+      positions: hit.positions.join(", ")
+    })).sort((a, b) => b.length - a.length || b.orientationCount - a.orientationCount || b.stateCount - a.stateCount || a.name.localeCompare(b.name));
+
+    const uniqueTokens = hitList.length;
+    const weightedScore = hitList.reduce((sum, hit) => sum + hit.length * Math.min(hit.stateCount, 24), 0);
+    const thresholdHits = hitList.filter((hit) => hit.length >= minTokenLength).reduce((sum, hit) => sum + hit.stateCount, 0);
+
+    return { run, pileLength, hitList, uniqueTokens, weightedScore, longHits: thresholdHits };
+  }
+
+  function seededRandom(seed) {
+    let state = seed >>> 0;
+    return () => {
+      state = (1664525 * state + 1013904223) >>> 0;
+      return state / 4294967296;
+    };
+  }
+
+  function randomSeed(index) {
+    const random = seededRandom(0x39f00d + index * 104729 + minTokenLength * 4099);
+    return Array.from({ length: Z0_BITS.length }, () => random() >= 0.5 ? "1" : "0").join("");
+  }
+
+  function plainRank(beaten, total) {
+    const ratio = beaten / Math.max(total, 1);
+    if (ratio >= 0.94) return "very high";
+    if (ratio >= 0.75) return "high";
+    if (ratio <= 0.06) return "very low";
+    if (ratio <= 0.25) return "low";
+    return "normal";
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function setBusy(isBusy) {
+    document.body.classList.toggle("busy", isBusy);
+    for (const button of document.querySelectorAll("button")) {
+      button.disabled = isBusy;
+    }
+  }
+
+  function updateSeedReadout(result) {
+    document.getElementById("seedBits").innerText = currentSeed;
+    document.getElementById("seedKind").innerText = currentKind;
+    document.getElementById("period").innerText = String(result.run.period);
+    document.getElementById("collapsed").innerText = result.run.collapsed ? "yes" : "no";
+    document.getElementById("uniqueStates").innerText = String(result.run.states.length);
+    document.getElementById("quarkAbility").innerText = `${seedQuarkAbility(currentSeed).length} seed hits`;
+    document.getElementById("eligibleCount").innerText = String(eligibleCatalog().length);
+    document.getElementById("minLenLabel").innerText = `${minTokenLength} bits`;
+    document.getElementById("uniqueTokens").innerText = String(result.uniqueTokens);
+    document.getElementById("score").innerText = String(result.weightedScore);
+    document.getElementById("longHits").innerText = String(result.longHits);
+    document.getElementById("thresholdHitLabel").innerText = `state hits on constants ${minTokenLength} bits or longer`;
+  }
+
+  function renderHitTable(hitList) {
+    const rows = hitList.slice(0, 24).map((hit) => `
+      <tr>
+        <td>${escapeHtml(hit.name)}</td>
+        <td><code>${escapeHtml(hit.bits)}</code></td>
+        <td>${hit.length}</td>
+        <td>${hit.stateCount}</td>
+        <td>${hit.firstState}</td>
+        <td>${escapeHtml(hit.orientations)}</td>
+        <td>${escapeHtml(hit.positions)}</td>
+      </tr>
+    `).join("");
+
+    document.getElementById("hitTable").innerHTML = `
+      <table>
+        <thead>
+          <tr>
+            <th>Token</th>
+            <th>Bits</th>
+            <th>Len</th>
+            <th>States hit</th>
+            <th>First state</th>
+            <th>Orientations</th>
+            <th>First pile positions</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    `;
+  }
+
+  function renderCurrent() {
+    const result = scanEncounters(currentSeed);
+    updateSeedReadout(result);
+    renderHitTable(result.hitList);
+    document.getElementById("report").innerText = [
+      `${currentKind} run audit`,
+      "",
+      `This seed ran for ${result.run.states.length} unique states before repeat.`,
+      `It generated four orientation piles totaling ${result.pileLength} bits.`,
+      `It ${result.run.collapsed ? "collapsed to zero" : "did not collapse to zero"}.`,
+      `It encountered ${result.uniqueTokens} catalog constants using bitstrings ${minTokenLength}+ bits.`,
+      `Weighted encounter score: ${result.weightedScore}.`,
+      `Threshold state hits, ${minTokenLength}+ bits: ${result.longHits}.`,
+      "",
+      "Kindergarten read:",
+      "This is the count of physics-looking bit words found inside the four big XOR orientation piles.",
+      "A seed can run for a long time and still have a boring encounter trail.",
+      requireTargetQuarkStep
+        ? "This run only counts target constants that have at least one quark-compression step available."
+        : "This run counts every target constant at the selected bit length.",
+      "The sweep button asks whether Z0 bumps into the eligible catalog more than ordinary 39-bit runners."
+    ].join("\n");
+  }
+
+  function runSweepRandoms() {
+    const z0 = scanEncounters(Z0_BITS);
+    const controls = [];
+    let splattedMissingZ0Quarks = 0;
+    const targetControls = 64;
+
+    for (let index = 1; index <= targetControls; index += 1) {
+      const candidate = randomSeed(index);
+      if (requireRandoZ0Quarks && !seedHasZ0QuarkSet(candidate)) {
+        splattedMissingZ0Quarks += 1;
+        controls.push({
+          run: { states: [], period: 0, collapsed: true },
+          pileLength: 0,
+          hitList: [],
+          uniqueTokens: 0,
+          weightedScore: 0,
+          longHits: 0,
+          splatted: true
+        });
+        continue;
+      }
+      controls.push(scanEncounters(candidate));
+    }
+
+    const tokenBeaten = controls.filter((item) => z0.uniqueTokens > item.uniqueTokens).length;
+    const scoreBeaten = controls.filter((item) => z0.weightedScore > item.weightedScore).length;
+    const longBeaten = controls.filter((item) => z0.longHits > item.longHits).length;
+    const avg = (key) => controls.reduce((sum, item) => sum + item[key], 0) / controls.length;
+    const max = (key) => Math.max(...controls.map((item) => item[key]));
+    const min = (key) => Math.min(...controls.map((item) => item[key]));
+
+    currentSeed = Z0_BITS;
+    currentKind = "Z0 anchor";
+    updateSeedReadout(z0);
+    renderHitTable(z0.hitList);
+
+    document.getElementById("report").innerText = [
+      `Z0 XOR encounter sweep against 64 true random 39-bit runners`,
+      `Minimum constant bit length: ${minTokenLength} bits`,
+      `Z0 orientation-pile length: ${z0.pileLength} bits`,
+      `Target quark-step gate: ${requireTargetQuarkStep ? "ON - constants with no quark compression step are removed" : "OFF - every constant at this bit length is counted"}`,
+      `Rando Z0-quark gate: ${requireRandoZ0Quarks ? "ON - randos missing Z0's quark set go splat" : "OFF - random seeds need not carry Z0's quark set"}`,
+      `Required Z0 quark set: ${Array.from(z0QuarkSet()).join(", ") || "(none)"}`,
+      `Eligible catalog constants: ${eligibleCatalog().length}`,
+      `Random controls tested: ${controls.length}`,
+      `Quarkless splats scored as zero: ${splattedMissingZ0Quarks}`,
+      "",
+      "Plain English:",
+      requireTargetQuarkStep
+        ? "A target constant only counts if its own bits can be compressed at least one step with real quark bits. Quarkless targets are outside this comparison."
+        : "The target quark-step gate is off, so every catalog constant at this bit length is counted.",
+      requireRandoZ0Quarks
+        ? "A random control missing Z0's quark token set is not replaced. It goes splat and receives zero encounter score."
+        : "Random controls are not required to contain Z0's quark token set.",
+      `Z0 beat ${tokenBeaten} of ${controls.length} eligible random seeds for number of distinct catalog constants (${plainRank(tokenBeaten, controls.length)}).`,
+      `Z0 beat ${scoreBeaten} of ${controls.length} eligible random seeds for weighted encounter score (${plainRank(scoreBeaten, controls.length)}).`,
+      `Z0 beat ${longBeaten} of ${controls.length} eligible random seeds for threshold state hits, ${minTokenLength}+ bits (${plainRank(longBeaten, controls.length)}).`,
+      "",
+      scoreBeaten >= controls.length * 0.75 || longBeaten >= controls.length * 0.75
+        ? "Mortal read: Z0 is not just running; it is encountering the physics-token catalog unusually often under this scoring rule."
+        : "Mortal read: Z0 runs, but this scoring rule does not yet make ordinary random runners look clearly worse.",
+      "",
+      "Numbers:",
+      `Z0 distinct tokens: ${z0.uniqueTokens}`,
+      `Control distinct tokens: avg ${avg("uniqueTokens").toFixed(2)}, min ${min("uniqueTokens")}, max ${max("uniqueTokens")}`,
+      `Z0 weighted score: ${z0.weightedScore}`,
+      `Control weighted score: avg ${avg("weightedScore").toFixed(2)}, min ${min("weightedScore")}, max ${max("weightedScore")}`,
+      `Z0 threshold state hits: ${z0.longHits}`,
+      `Control threshold state hits: avg ${avg("longHits").toFixed(2)}, min ${min("longHits")}, max ${max("longHits")}`,
+      "",
+      "Declared brake pedal:",
+      "Short words are easy to encounter by chance. This page floors encounters at 15+ bits and lets you tighten to 17+, 20+, 25+, or 30+ bits.",
+      "With the target quark-step gate on, a target constant is eligible only if real quark bits can compress at least one step of that target.",
+      "With the rando Z0-quark gate on, random controls missing Z0's quark set are counted as zero-score splats, not replaced.",
+      "This page scans the full pre-2019 CODATA 2014 binary table plus the legacy physics token catalog embedded in this repo page."
+    ].join("\n");
+  }
+
+  function sweepRandoms() {
+    setBusy(true);
+    document.getElementById("report").innerText = "Working through 64 random 39-bit XOR runners...\n\nThe page is not stuck; it is scanning generated orbits against the embedded physics catalog.";
+    window.setTimeout(() => {
+      try {
+        runSweepRandoms();
+      } finally {
+        setBusy(false);
+      }
+    }, 25);
+  }
+
+  document.getElementById("loadZ0").addEventListener("click", () => {
+    currentSeed = Z0_BITS;
+    currentKind = "Z0 anchor";
+    renderCurrent();
+  });
+
+  document.getElementById("loadRandom").addEventListener("click", () => {
+    randomRun += 1;
+    currentSeed = randomSeed(1000 + randomRun);
+    currentKind = `true rando #${randomRun}`;
+    renderCurrent();
+  });
+
+  document.getElementById("sweepRandoms").addEventListener("click", sweepRandoms);
+
+  document.getElementById("min15").addEventListener("click", () => {
+    minTokenLength = 15;
+    renderCurrent();
+  });
+
+  document.getElementById("min17").addEventListener("click", () => {
+    minTokenLength = 17;
+    renderCurrent();
+  });
+
+  document.getElementById("min20").addEventListener("click", () => {
+    minTokenLength = 20;
+    renderCurrent();
+  });
+
+  document.getElementById("min25").addEventListener("click", () => {
+    minTokenLength = 25;
+    renderCurrent();
+  });
+
+  document.getElementById("min30").addEventListener("click", () => {
+    minTokenLength = 30;
+    renderCurrent();
+  });
+
+  document.getElementById("toggleQuarkGate").addEventListener("click", () => {
+    requireTargetQuarkStep = !requireTargetQuarkStep;
+    document.getElementById("toggleQuarkGate").innerText =
+      `Require Quark Step In Target: ${requireTargetQuarkStep ? "ON" : "OFF"}`;
+    renderCurrent();
+  });
+
+  document.getElementById("toggleRandoQuarkGate").addEventListener("click", () => {
+    requireRandoZ0Quarks = !requireRandoZ0Quarks;
+    document.getElementById("toggleRandoQuarkGate").innerText =
+      `Require Rando Has Z0 Quarks: ${requireRandoZ0Quarks ? "ON" : "OFF"}`;
+  });
+
+  renderCurrent();
+  </script>
+</body>
+</html>

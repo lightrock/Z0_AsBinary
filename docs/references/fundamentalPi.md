@@ -809,6 +809,134 @@ If QLF derives such behavior rather than inserting it, the unfinished geometry b
 
 ---
 
+## 13. Maxwell, Mead, and electromagnetic closure receipts
+
+The Maxwell-machine completion note sharpens the electromagnetic side of this
+document. Maxwell should not be read as a reason to restore a nineteenth-century
+ether model. The useful point is narrower:
+
+```text
+Maxwell preserved the machine question.
+Heaviside preserved the compact public equations.
+fundamentalPi asks what closure operation makes the notation legitimate.
+```
+
+Modern vector electromagnetism is not wrong. It is a successful compression
+layer:
+
+```text
+divergence
+curl
+sources
+displacement
+propagation
+constitutive response
+```
+
+But that interface can hide the substrate question. The machine-level question
+is not merely how `E` and `B` relate at the surface. It is:
+
+```text
+what accumulates transformation?
+what preserves current closure across apparent gaps?
+what stores phase or potential history?
+what carries induction and flux linkage?
+what reconciles local update with global closure?
+what makes the vacuum electric/magnetic impedance relation natural?
+```
+
+This is where the Carver-Mead-style photon objection belongs. If no one catches
+a photon in flight, but only registers endpoint events where charged systems
+exchange energy and momentum, then the primitive electromagnetic receipt is not
+necessarily:
+
+```text
+photon bead moving through already-given 3D space
+```
+
+The lower-level receipt can be:
+
+```text
+charged endpoint event
+-> relation / delay / phase / impedance ledger
+-> charged endpoint event
+-> conserved momentum-energy closure
+```
+
+Forced into dimensional language, this is not yet ordinary spatial dimension.
+It is closer to:
+
+```text
+0D endpoint events
++ one relational exchange edge
++ cycle/phase closure state
++ receipt statistics
+```
+
+The familiar pictures then arrive as renderings:
+
+```text
+endpoint exchange receipt -> photon path
+relation closure          -> wave phase
+boundary/screen receipt   -> interference pattern
+field-interface API       -> Maxwell/Heaviside equations
+3D propagation picture    -> reconstructed spacetime rendering
+```
+
+This makes electromagnetism the strongest available testbed for the closure
+machine:
+
+| Object | Machine role |
+| --- | --- |
+| `h` | action ledger for completed cycles |
+| `e` | charge coupling token |
+| `h/e` | flux-phase closure unit |
+| `h/(2e)` | superconducting pair closure unit |
+| `2e/h` | Josephson phase-clock conversion |
+| `h/e^2` | matter-side quantum impedance |
+| `Z0` | vacuum-side electromagnetic impedance |
+| `alpha` | dimensionless coupling ratio |
+| `c` | rendered propagation constraint |
+
+So the electromagnetic section is nearly doctrine-complete:
+
+```text
+do not begin with a photon object
+begin with charge endpoints, relation update, phase closure, impedance, and
+exchange receipt
+```
+
+It is not recovery-complete. To finish it scientifically, the closure machine
+must still recover the successful public interface:
+
+```text
+Coulomb behavior
+inverse-square appearance after spatial rendering
+Maxwell wave propagation
+transverse polarization
+Lorentz covariance
+gauge freedom as receipt redundancy
+QED scattering amplitudes as endpoint exchange statistics
+alpha as measured coupling strength
+Z0 as vacuum-side transaction impedance
+```
+
+The safe completion slogan is therefore:
+
+```text
+Complete Maxwell by finding the closure machine.
+Audit Heaviside by separating physical cycles from continuum/radian rendering.
+Test Z0 as a possible receipt left by the electromagnetic closure machine.
+```
+
+That closes the intended low-level pi issue. It does not prove that `Z0` is the
+machine. It says that the electromagnetic path is the right first place to test
+whether closure, phase, impedance, and endpoint receipts can replace primitive
+pi, primitive photons-in-flight, and primitive 3D geometry as the starting
+point.
+
+---
+
 ## References
 
 - BIPM, *The International System of Units (SI Brochure)*: distinction between frequency in hertz and angular frequency in radians per second.

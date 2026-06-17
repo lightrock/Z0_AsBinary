@@ -14,6 +14,12 @@ from .core import (
     xor_ring_run,
     xor_ring_step,
 )
+from .closure import (
+    ClosureRegister,
+    RelationClosureEvent,
+    RelationClosureTrace,
+    run_relation_closure_trace,
+)
 from .z0_geometry import (
     KNOWN_FORWARD_LAYOUT,
     TRAVERSAL_PATHS,
@@ -62,6 +68,10 @@ __all__ = [
     "reverse_bits",
     "xor_ring_run",
     "xor_ring_step",
+    "ClosureRegister",
+    "RelationClosureEvent",
+    "RelationClosureTrace",
+    "run_relation_closure_trace",
     "KNOWN_FORWARD_LAYOUT",
     "TRAVERSAL_PATHS",
     "Z0_ORIENTATIONS",
