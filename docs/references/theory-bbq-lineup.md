@@ -23,6 +23,92 @@ Longer companion notes already exist for several entries:
 
 ---
 
+## Gold star / near the controls
+
+### Carver Mead
+
+Longer note: [`mead-pointer-swap-z0.md`](mead-pointer-swap-z0.md)
+
+Gold star reason:
+
+```text
+phase-first electromagnetism
+photon as transaction/handshake, not projectile
+vector potential and phase treated as physically central
+quantum matter behavior before Maxwell-form rendering
+strong bridge to pointer-swap closure and Z0
+```
+
+Remaining gap:
+
+```text
+phase continuity is not yet substrate
+transaction is not yet closure derivation
+collective electron behavior is not the universal physics machine
+vector-potential reality is not pointer-swap substrate proof
+```
+
+Compact line:
+
+> Mead found the phase handshake. We still need the machine that makes handshakes physically admissible.
+
+Pointer-swap/Z0 note:
+
+```text
+Mead gives the electromagnetic face of pointer-swap closure:
+photon exchange as phase-handshake receipt, not projectile travel.
+That makes Z0 interesting as a possible catalog-visible impedance receipt
+of the EM phase-matching closure rule, not as a sacred ohm value.
+```
+
+Gold star note:
+
+```text
+Do not BBQ Mead like a map-worshipper.
+Keep him near the controls.
+He is strong evidence that projectile/object-first electromagnetism is the wrong picture.
+The remaining question is not whether phase matters.
+The remaining question is what physical closure machine makes phase-handshakes real.
+```
+
+### Lee Smolin - qualified gold star
+
+Gold star reason:
+
+```text
+time is real
+anti-Platonic pressure
+laws may evolve
+background independence
+strong critique of string overreach
+refusal of timeless mathematical object worship
+```
+
+Remaining gap:
+
+```text
+real time still needs the process drive
+evolving laws still need closure/admissibility machinery
+background independence is not yet substrate derivation
+anti-Platonism must become executable process physics
+```
+
+Compact line:
+
+> Smolin gets the gold star for refusing timeless math worship. He still needs the closure machine that makes real time physically operative.
+
+Gold star note:
+
+```text
+Do not collapse Smolin into LQG.
+LQG is the discrete geometric receipt program.
+Smolin is broader: time is real, laws may evolve, and physics should not be timeless Platonism.
+The repair is to give Smolin the missing machine:
+time as process drive -> closure/admissibility -> persistence receipts -> rendered geometry/time.
+```
+
+---
+
 ## Already BBQ'd / expanded
 
 ### String theory / M-theory
@@ -160,92 +246,6 @@ Friendly nuke:
 Free energy is not the engine.
 It is the thermostat reading of a system already holding together.
 The deeper machine is the closure process that makes a system possible before it can minimize anything.
-```
-
----
-
-## Gold star / near the controls
-
-### Carver Mead
-
-Longer note: [`mead-pointer-swap-z0.md`](mead-pointer-swap-z0.md)
-
-Gold star reason:
-
-```text
-phase-first electromagnetism
-photon as transaction/handshake, not projectile
-vector potential and phase treated as physically central
-quantum matter behavior before Maxwell-form rendering
-strong bridge to pointer-swap closure and Z0
-```
-
-Remaining gap:
-
-```text
-phase continuity is not yet substrate
-transaction is not yet closure derivation
-collective electron behavior is not the universal physics machine
-vector-potential reality is not pointer-swap substrate proof
-```
-
-Compact line:
-
-> Mead found the phase handshake. We still need the machine that makes handshakes physically admissible.
-
-Pointer-swap/Z0 note:
-
-```text
-Mead gives the electromagnetic face of pointer-swap closure:
-photon exchange as phase-handshake receipt, not projectile travel.
-That makes Z0 interesting as a possible catalog-visible impedance receipt
-of the EM phase-matching closure rule, not as a sacred ohm value.
-```
-
-Gold star note:
-
-```text
-Do not BBQ Mead like a map-worshipper.
-Keep him near the controls.
-He is strong evidence that projectile/object-first electromagnetism is the wrong picture.
-The remaining question is not whether phase matters.
-The remaining question is what physical closure machine makes phase-handshakes real.
-```
-
-### Lee Smolin - qualified gold star
-
-Gold star reason:
-
-```text
-time is real
-anti-Platonic pressure
-laws may evolve
-background independence
-strong critique of string overreach
-refusal of timeless mathematical object worship
-```
-
-Remaining gap:
-
-```text
-real time still needs the process drive
-evolving laws still need closure/admissibility machinery
-background independence is not yet substrate derivation
-anti-Platonism must become executable process physics
-```
-
-Compact line:
-
-> Smolin gets the gold star for refusing timeless math worship. He still needs the closure machine that makes real time physically operative.
-
-Gold star note:
-
-```text
-Do not collapse Smolin into LQG.
-LQG is the discrete geometric receipt program.
-Smolin is broader: time is real, laws may evolve, and physics should not be timeless Platonism.
-The repair is to give Smolin the missing machine:
-time as process drive -> closure/admissibility -> persistence receipts -> rendered geometry/time.
 ```
 
 ---
