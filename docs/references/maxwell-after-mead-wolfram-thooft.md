@@ -560,21 +560,41 @@ Each gold-star person preserves one part of the missing machine question, and
 each still leaves a gap that the Maxwell completion program must not hand-wave
 away.
 
+Boltzmann and Gibbs must be read here as a direct reference back to the
+[entropy-to-bits receipt](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md),
+not as generic thermodynamics. Their lens is the exact state-counting bridge:
+
+```text
+Boltzmann: S = k_B ln W
+bits:      B = log2 W
+Gibbs:     S = -k_B sum_i p_i ln p_i
+Shannon:   H = -sum_i p_i log2 p_i
+```
+
+So their gold-star role is to force the ensemble question before interpretation:
+
+```text
+What is W?
+What alternatives were available?
+How many binary distinctions does the observed receipt actually select?
+```
+
 The compact map is:
 
 ```text
-Mead    -> phase handshake
-Smolin  -> real time / anti-Platonism
-Zurek   -> pointer records / environment as witness
-Boltzmann/Gibbs -> entropy-to-bits state-counting and ensemble discipline
-Shannon -> information discipline, not ontology
-Weyl    -> reference/gauge comparison bookkeeping
+Mead            -> phase handshake
+Smolin          -> real time / anti-Platonism
+Zurek           -> pointer records / environment as witness
+Boltzmann/Gibbs -> entropy-to-bits state-counting, what-is-W ensemble discipline
+Shannon         -> information discipline, not ontology
+Weyl            -> reference/gauge comparison bookkeeping
 ```
 
 Together they point toward the same missing primitive:
 
 ```text
-running closure with admissibility, persistence, receipts, and rendered observer geometry/time
+running closure with admissibility, persistence, receipts, ensemble discipline,
+and rendered observer geometry/time
 ```
 
 ---
