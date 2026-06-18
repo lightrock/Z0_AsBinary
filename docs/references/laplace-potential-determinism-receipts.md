@@ -168,23 +168,78 @@ mathematical grammar that later lets Maxwell write machine receipts as equations
 
 ---
 
+## Kitada / Dugić correction: no outside clock for the whole
+
+The companion note [Kitada / Dugić Local-Time Receipts](kitada-dugic-local-time-receipts.md)
+adds the missing correction to Laplace's Demon.
+
+Laplace's Demon assumes:
+
+```text
+the whole universe can be known at a time
+```
+
+But for the universe-as-one, there is no outside clock or outside comparator to
+make that sentence operational. Kitada's local-time framework treats time as
+local to quantum-mechanical systems, while the total universe has no associated
+time. The later Kitada / Jeknić-Dugić / Arsenijević / Dugić minimalist approach
+similarly treats time as neither fundamental nor universal, but attributable to
+approximately closed systems and subsystems.
+
+Through this repo's lens:
+
+```text
+Universe-as-one -> no outside comparator -> no global Laplace clock
+subsystem split -> local comparison -> local time / record / change receipt
+```
+
+That is the sober physics version of the yin/yang point:
+
+```text
+the universe must express at least relational difference for anything like time,
+record, or change to be meaningful from the inside
+```
+
+Not necessarily two substances. Not metaphysical dualism. But at least two
+roles that can be compared:
+
+```text
+clock / system
+observer / observed
+record / recorded
+inside / boundary
+state / comparator
+yin / yang
+```
+
+So the correction is:
+
+```text
+Laplace gives state + law.
+Kitada / Dugić demand local comparator structure.
+The Maxwell-completion machine must generate time and records from inside, not borrow them from an impossible outside.
+```
+
+---
+
 ## Relation to Wolfram and 't Hooft
 
 Laplace is an older ancestor of both Wolfram and 't Hooft in this project.
 
 ```text
 Laplace: complete state + law should determine evolution.
+Kitada/Dugić: time is local/relational; no global outside clock for the whole.
 Wolfram: small explicit rules can generate complex behavior and must be run.
 't Hooft: quantum formalism may render a deeper update engine.
 Z0_AsBinary: preserve a seed, run a rule, inspect closure, then demand controls.
 ```
 
 The difference is that Laplace imagines continuous classical determinism, while
-this project is open to discrete, informational, boundary, or closure-machine
-forms.
+this project is open to discrete, informational, boundary, relational-time, or
+closure-machine forms.
 
 The useful inheritance is not classical certainty. It is the demand for explicit
-state and explicit law.
+state, explicit law, and explicit comparator/boundary structure.
 
 ---
 
@@ -200,6 +255,7 @@ calculation is not execution
 potential is not the machine
 boundary solution is not closure proof
 complete state knowledge may be impossible or physically ill-posed
+whole-universe prediction assumes an unavailable outside clock/comparator
 probability may reflect real physical structure, not only ignorance
 ```
 
@@ -207,6 +263,7 @@ Through the BBQ lens:
 
 ```text
 Laplace gives the dream of the fully calculable machine.
+Kitada/Dugić deny the hidden outside time-comparator for the whole universe.
 Smolin reminds us the machine must actually run in time.
 Zurek reminds us records and observers are produced, not assumed.
 Weyl reminds us description choices can be fake structure.
@@ -234,12 +291,19 @@ pre-2019 Z0 significant-digit artifact
 -> controls against coincidence and post-selection
 ```
 
-The Laplace lesson is:
+The Kitada / Dugić correction adds that none of this is meaningful as a lone
+string viewed from nowhere. The seed becomes machine-like only through relation:
+
+```text
+seed + orientation + comparator + update + return -> receipt candidate
+```
+
+The combined lesson is:
 
 ```text
 state the seed,
 state the rule,
-state the boundary conditions,
+state the boundary/comparator conditions,
 run the consequence,
 then use probability discipline to decide whether the result is receipt or artifact
 ```
@@ -252,9 +316,10 @@ That is exactly the posture this repo needs.
 
 ```text
 Laplace belongs in the Maxwell-completion lineage as the state/potential/boundary
-determinism ancestor: he teaches us to specify the complete state, rule, source,
-and boundary conditions before claiming a machine, while probability discipline
-keeps the resulting pattern from being mistaken for proof.
+determinism ancestor, but Kitada / Dugić supply the needed correction: the whole
+universe has no outside time-comparator, so any real machine must generate local
+subsystem comparison, records, and time from inside before prediction or closure
+can mean anything.
 ```
 
 ---
@@ -263,9 +328,12 @@ keeps the resulting pattern from being mistaken for proof.
 
 - [Maxwell After the BBQ Gold-Star Lineup](maxwell-after-mead-wolfram-thooft.md)
 - [Pre-Maxwell Electromagnetic Receipt Ledger](pre-maxwell-electromagnetic-receipt-ledger.md)
+- [Kitada / Dugić Local-Time Receipts](kitada-dugic-local-time-receipts.md)
 - [History of Z0 up to the 2019 SI Break](z0-history-to-2019.md)
 - [Computational Process Lineage](computational-process-lineage.md)
 - Pierre-Simon Laplace, *Mécanique céleste*, 1799-1825.
 - Pierre-Simon Laplace, *Théorie analytique des probabilités*, 1812.
 - Pierre-Simon Laplace, *Essai philosophique sur les probabilités*, 1814.
+- Hitoshi Kitada, "Theory of Local Times," arXiv:astro-ph/9309051, 1993.
+- Hitoshi Kitada, J. Jeknić-Dugić, M. Arsenijević, and M. Dugić, "A minimalist approach to conceptualization of time in quantum theory," *Physics Letters A* 380, 3970, 2016.
 - Historical accounts of Laplace's equation, potential theory, and the Laplacian operator.
