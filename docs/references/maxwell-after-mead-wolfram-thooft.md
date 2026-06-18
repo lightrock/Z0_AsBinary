@@ -235,6 +235,55 @@ Z0_AsBinary: a physical constant's binary form can be tested as runnable closure
 
 ---
 
+## Gell-Mann as classification / state-grammar receipt
+
+Murray Gell-Mann belongs here as a classification-receipt thinker. The companion
+note [Gell-Mann Classification Receipts](gell-mann-classification-receipts.md)
+keeps the useful point: a messy catalog may be a surface trace of hidden state
+grammar.
+
+The sober contribution is:
+
+```text
+Gell-Mann showed that the particle zoo was not random.
+Classification exposed hidden state grammar.
+The quark model turned a confusing catalog into a generative receipt structure.
+```
+
+Through this lens:
+
+```text
+particle zoo          -> messy empirical catalog
+strangeness/hypercharge -> conserved-label custody rules
+Eightfold Way / SU(3) -> relation-preserving classification
+quark model           -> generative grammar behind the hadron catalog
+missing slots         -> catalog pattern becomes prediction pressure
+```
+
+This matters for `Z0_AsBinary` because the repo also treats a catalog as a
+possible receipt surface:
+
+```text
+CODATA catalog -> possible receipt surface
+Z0 bit behavior -> possible special seed behavior
+constant matches / token hits -> possible classification pattern
+controls -> determine whether the pattern is physical receipt or artifact
+```
+
+The guardrail is just as important:
+
+```text
+classification is not substrate
+symmetry is not execution
+quark bookkeeping is not automatically pointer-swap closure
+catalog compression is not proof of physical ontology
+```
+
+Gell-Mann teaches the project to take catalog structure seriously while not
+falling in love with the catalog itself.
+
+---
+
 ## Implementation-neutral posture
 
 This note should not trap the Maxwell completion program inside one experiment,
@@ -599,6 +648,7 @@ Pre-Maxwell experimenters expose the receipts Maxwell must preserve.
 Tesla makes phase, induction, resonance, impedance, and boundary behavior run in apparatus.
 Einstein exposes quantized threshold transfer at the matter/light boundary.
 Leibniz and yin/yang preserve binary as generative running distinction.
+Gell-Mann shows that a messy particle catalog can hide state grammar.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
@@ -646,6 +696,7 @@ Do not worship the cellular automaton.
 Do not worship the number.
 Do not worship the information measure.
 Do not worship the record-copying layer.
+Do not worship the classification.
 Find out what can actually run, what closes, and what receipts survive controls.
 However you can do that, do that.
 ```
@@ -717,10 +768,11 @@ For the current repo, that open program begins with a concrete implementation:
 Maxwell wanted the engine; the pre-Maxwell experimenters exposed the receipts;
 Tesla made phase and resonance run as apparatus; Einstein exposed quantized
 threshold transfer at the matter/light boundary; Leibniz and yin/yang remind us
-that binary is a running generative distinction, not only stored difference; the
-BBQ gold-star lineup tells us what a real answer must preserve; Z0_AsBinary is
-the first concrete closure-receipt search that started this investigation, but
-the Maxwell completion program remains open to any method that can expose the
+that binary is a running generative distinction, not only stored difference;
+Gell-Mann reminds us that a messy catalog may hide state grammar; the BBQ
+gold-star lineup tells us what a real answer must preserve; Z0_AsBinary is the
+first concrete closure-receipt search that started this investigation, but the
+Maxwell completion program remains open to any method that can expose the
 running machine and survive controls.
 ```
 
@@ -732,6 +784,7 @@ running machine and survive controls.
 - [Tesla Apparatus Receipts](tesla-apparatus-receipts.md)
 - [Einstein Photoelectric Transfer Receipt](einstein-photoelectric-transfer-receipt.md)
 - [Leibniz, Binary, Yin/Yang, and Process Receipts](leibniz-binary-yinyang-process-receipt.md)
+- [Gell-Mann Classification Receipts](gell-mann-classification-receipts.md)
 - [Maxwell Machine Completion Note](maxwell-machine-completion-note.md)
 - [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md)
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
@@ -740,6 +793,9 @@ running machine and survive controls.
 - Gottfried Wilhelm Leibniz, "Explication de l'Arithmétique Binaire," 1703.
 - Albert Einstein, "On a Heuristic Point of View Concerning the Production and Transformation of Light," 1905.
 - Nobel Prize in Physics 1921, awarded to Einstein especially for the law of the photoelectric effect.
+- Murray Gell-Mann, Nobel Prize in Physics 1969, for classification of elementary particles and their interactions.
+- Murray Gell-Mann, "The Eightfold Way: A Theory of Strong Interaction Symmetry," 1961.
+- Murray Gell-Mann, "A Schematic Model of Baryons and Mesons," 1964.
 - Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National Academy of Sciences*, 1997.
 - Carver A. Mead, *Collective Electrodynamics: Quantum Foundations of Electromagnetism*, MIT Press, 2000.
 - Lee Smolin, *Time Reborn*, Houghton Mifflin Harcourt, 2013.
