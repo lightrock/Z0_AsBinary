@@ -17,6 +17,7 @@ materials resist and conduct
 currents produce magnetic action
 changing magnetic relations induce current
 field-like relations carry stress, memory, and closure
+source, boundary, and potential relations constrain field behavior
 ```
 
 Maxwell's genius was not that he invented every receipt. His genius was that he
@@ -253,6 +254,34 @@ Maxwell pressure:
 ```text
 any deeper machine must reproduce Coulomb behavior as a stable limit, while not
 mistaking the static law for the whole electromagnetic process
+```
+
+---
+
+## Pierre-Simon Laplace: potential, boundary, and deterministic state discipline
+
+Historical observation:
+
+```text
+potential theory, Laplace's equation, celestial mechanics, and probability made
+state, source, boundary, and lawful calculation into a general mathematical
+physics posture
+```
+
+Machine receipt:
+
+```text
+source-free regions and boundary/source conditions can determine interior field
+behavior;
+complete state plus explicit law becomes a machine-shaped ideal
+```
+
+Maxwell pressure:
+
+```text
+Maxwell inherits not only experimental receipts, but also Laplacian mathematical
+discipline: state the source, state the boundary, state the law, and preserve
+what follows without mistaking equation-solving for the running substrate
 ```
 
 ---
@@ -618,6 +647,7 @@ magnetic action from current geometry
 induction and electromagnetic memory
 opposition / energy custody in induced currents
 boundary and flux accounting
+source-free potential / boundary-value discipline
 circuit closure rules
 field-line intuition
 ```
@@ -646,6 +676,7 @@ interface of electric and magnetic field amplitudes.
 In this ledger's language:
 
 ```text
+Laplace exposes state/rule/boundary discipline.
 Volta and Ohm expose running current and resistance.
 Ørsted and Ampère expose the magnetic face of current.
 Faraday and Henry expose induction and field memory.
@@ -665,9 +696,13 @@ completion program must stop at binary `Z0` experiments.
 - [Maxwell After the BBQ Gold-Star Lineup](maxwell-after-mead-wolfram-thooft.md)
 - [Maxwell Machine Completion Note](maxwell-machine-completion-note.md)
 - [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md)
+- [Laplace Potential and Determinism Receipts](laplace-potential-determinism-receipts.md)
 - William Gilbert, *De Magnete*, 1600.
 - Benjamin Franklin, *Experiments and Observations on Electricity*, 1751-1754.
 - Charles-Augustin de Coulomb, 1785 torsion-balance memoirs on electric force.
+- Pierre-Simon Laplace, *Mécanique céleste*, 1799-1825.
+- Pierre-Simon Laplace, *Théorie analytique des probabilités*, 1812.
+- Pierre-Simon Laplace, *Essai philosophique sur les probabilités*, 1814.
 - Alessandro Volta, 1800 Royal Society letter on the voltaic pile.
 - Hans Christian Ørsted, 1820 report on current and the magnetic needle.
 - André-Marie Ampère, 1820s memoirs on electrodynamic action.
