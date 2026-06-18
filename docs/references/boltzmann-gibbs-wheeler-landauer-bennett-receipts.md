@@ -13,6 +13,10 @@ Gibbs     -> ensemble entropy / probability distribution over states
 Wheeler   -> yes/no question receipts / it-from-bit pressure
 Landauer  -> information erasure has physical cost
 Bennett   -> reversible computation and logical/thermodynamic distinction
+Lloyd     -> universe-as-information-processing popular/technical receipt
+Vedral    -> universe-as-quantum-information / entropy-information bridge
+Seife     -> information-theory lens across physics
+Gleick    -> history of information, Maxwell's demon, and entropy tolls
 ```
 
 Boltzmann and Gibbs are especially important here because they do not merely
@@ -75,7 +79,8 @@ entropy -> how much state multiplicity is hidden behind the same visible surface
 bits -> how many binary distinctions are needed to specify the hidden choice
 ```
 
-That is exactly the bridge to Shannon, Wheeler, Landauer, Bennett, and Lloyd.
+That is exactly the bridge to Shannon, Wheeler, Landauer, Bennett, Lloyd,
+Vedral, Seife, and Gleick.
 
 ---
 
@@ -322,6 +327,52 @@ reversibility.
 
 ---
 
+## Yellow-cover / popular-information-physics receipt trail
+
+The likely remembered book is Vlatko Vedral's `Decoding Reality: The Universe as
+Quantum Information`. The Oxford Landmark Science paperback is visually a strong
+match for the remembered yellow-cover clue, and its purpose is close to Lloyd:
+read physics through quantum information rather than treating information as
+secondary bookkeeping.
+
+The useful receipt is:
+
+```text
+Vedral -> information is a candidate primitive lens for physical reality
+Seife  -> information theory explains physics from entropy to black holes
+Gleick -> Maxwell's demon / information history makes entropy-information visible
+Lloyd  -> physical systems register/process information through state evolution
+```
+
+The math they are circling is the same receipt already above:
+
+```text
+Boltzmann: S = k_B ln W
+bits:      B = log2 W
+Gibbs:     S = -k_B sum p ln p
+Shannon:   H = -sum p log2 p
+```
+
+The repo should treat these books as useful popular/bridge receipts, not as final
+substrate proofs.
+
+```text
+right move:  keep the same-math bridge explicit
+wrong move:  jump from information-language to "bits are the substrate"
+repair:      require physical closure, cost, ensemble, and records
+```
+
+For `Z0_AsBinary`, the yellow-cover lesson is:
+
+```text
+a pattern is not merely a visual coincidence;
+it is a selection from alternatives
+but the alternatives must be specified
+so the immediate audit question remains: what is W?
+```
+
+---
+
 ## Combined receipt
 
 Together:
@@ -331,6 +382,9 @@ Boltzmann -> entropy as hidden physical multiplicity, S = k_B ln W
 Gibbs     -> ensemble/probability entropy, S = -k_B sum p ln p
 Shannon   -> same entropy form in bits, H = -sum p log2 p
 Lloyd     -> physical systems register and process information
+Vedral    -> quantum-information framing of reality
+Seife     -> broad information-theory reading of modern physics
+Gleick    -> history/Maxwell-demon receipt for entropy-information costs
 Wheeler   -> yes/no question pressure
 Landauer  -> information operation has physical cost
 Bennett   -> reversibility/erasure distinction
@@ -358,6 +412,8 @@ The `Z0` bit pattern must be treated with this whole stack:
 Boltzmann/Gibbs -> compare against ensembles and multiplicities
 Shannon         -> count information carefully
 Lloyd           -> treat bits as physical state/register/process candidates
+Vedral          -> keep quantum-information reality framing in scope
+Seife/Gleick    -> keep the public entropy-information receipts visible
 Wheeler         -> yes/no distinctions may matter
 Landauer        -> bits as operations must have physical accounting
 Bennett         -> update/reversal/erasure are different receipts
@@ -388,9 +444,10 @@ its ensemble, cost, reversibility, record, and selection context are audited.
 ```text
 Boltzmann and Gibbs are already doing bit math: S = k_B ln W is bits = log2 W
 with thermodynamic units attached, and Gibbs entropy is Shannon entropy times
-k_B ln 2; Wheeler, Lloyd, Landauer, and Bennett then force those bits to become
-physical yes/no, registered, cost-bearing, reversible-or-irreversible processes
-rather than free-floating bit mysticism.
+k_B ln 2; Lloyd, Vedral, Seife, and Gleick keep that same-math bridge visible,
+while Wheeler, Landauer, and Bennett force those bits to become physical yes/no,
+registered, cost-bearing, reversible-or-irreversible processes rather than
+free-floating bit mysticism.
 ```
 
 ---
@@ -405,6 +462,9 @@ rather than free-floating bit mysticism.
 - J. Willard Gibbs, ensemble methods and statistical mechanics.
 - Claude Shannon, information entropy.
 - Seth Lloyd, `Programming the Universe` and physical limits / computational capacity of the universe.
+- Vlatko Vedral, `Decoding Reality: The Universe as Quantum Information`.
+- Charles Seife, `Decoding the Universe: How the New Science of Information Is Explaining Everything in the Cosmos, from Our Brains to Black Holes`.
+- James Gleick, `The Information: A History, a Theory, a Flood`.
 - John Archibald Wheeler, "It from bit" / yes-no question framing.
 - Rolf Landauer, information erasure and physical cost.
 - Charles Bennett, reversible computation.
