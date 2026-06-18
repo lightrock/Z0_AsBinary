@@ -18,6 +18,25 @@ That matters because this project is also suspicious of catalogs. A catalog may
 look like a list of facts, but sometimes the list is a surface trace of an
 underlying grammar.
 
+For `Z0_AsBinary`, Gell-Mann may be more than a background reference. He may be
+one of the most important ancestors of the initial observation, because the first
+spark of the project was not merely:
+
+```text
+Z0 has interesting bits
+```
+
+It was closer to:
+
+```text
+Z0 bits appear to intersect / compress / organize quark-related signatures in a
+way that made the constants catalog look less like a list and more like a
+receipt surface.
+```
+
+That is exactly Gell-Mann territory: the moment when a messy catalog starts to
+look like hidden grammar.
+
 ---
 
 ## Historical anchor
@@ -39,6 +58,49 @@ attention to the relation between simple laws and complex systems
 The important point is not merely that he named quarks. The deeper point is that
 he showed how a mess of observed particles could be reorganized as evidence of a
 hidden state grammar.
+
+---
+
+## Why Gell-Mann may be central to Z0_AsBinary
+
+The initial `Z0_AsBinary` observation was not born from an abstract love of
+binary numerology. It was born from a concrete surprise:
+
+```text
+characteristic impedance of vacuum
+-> published significant digits
+-> binary form
+-> visible quark / hadron / mass-signature structure
+-> compression-like behavior
+-> question: is the catalog preserving a deeper receipt?
+```
+
+That makes Gell-Mann unusually relevant.
+
+He is the physicist of this move:
+
+```text
+do not panic when the catalog is messy
+look for hidden classification grammar
+use conserved labels and multiplets as receipts
+let missing or compressed structure create prediction pressure
+then demand a deeper dynamics
+```
+
+For this repo, the analogous move is:
+
+```text
+CODATA constants / legacy token catalog
+-> bit strings and named physical tokens
+-> Z0 orbit / orientation behavior
+-> quark-related matches and compression claims
+-> controls to decide receipt versus artifact
+-> only then: physical interpretation
+```
+
+So if Mead is the strongest electromagnetic phase-handshake bridge, Gell-Mann may
+be the strongest catalog/classification bridge for the observation that started
+this project.
 
 ---
 
@@ -86,8 +148,10 @@ For `Z0_AsBinary`, the relevant translation is:
 
 ```text
 CODATA catalog -> possible receipt surface
+legacy quark/hadron tokens -> named particle-classification probes
 Z0 bit behavior -> possible special seed behavior
 constant matches / token hits -> possible classification pattern
+compression effects -> possible hidden grammar pressure
 controls -> determine whether the pattern is physical receipt or artifact
 ```
 
@@ -136,6 +200,9 @@ to show itself.
 
 Gell-Mann inherited the particle zoo and saw hidden classification structure.
 
+`Z0_AsBinary` inherited a constants/token catalog and saw a possible quark-facing
+compression pattern.
+
 The shared move is:
 
 ```text
@@ -175,9 +242,10 @@ controls.
 ## One-line version
 
 ```text
-Gell-Mann teaches that a messy catalog may be a receipt surface for hidden state
-grammar, but classification still needs the running machine that makes the
-patterns hold.
+Gell-Mann may be central to Z0_AsBinary because the project began when a quark-facing
+catalog pattern seemed to appear inside the Z0 binary receipt surface; his lesson
+is to treat that as classification pressure, then demand controls and a running
+machine.
 ```
 
 ---
@@ -187,6 +255,8 @@ patterns hold.
 - [Maxwell After the BBQ Gold-Star Lineup](maxwell-after-mead-wolfram-thooft.md)
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
 - [Leibniz, Binary, Yin/Yang, and Process Receipts](leibniz-binary-yinyang-process-receipt.md)
+- [Z0 Binary Structure](../z0-binary-structure.md)
+- [Legacy Physics Token Catalog](../tokens/legacy-physics-token-catalog.md)
 - Murray Gell-Mann, Nobel Prize in Physics 1969, for classification of elementary particles and their interactions.
 - Murray Gell-Mann, "The Eightfold Way: A Theory of Strong Interaction Symmetry," 1961.
 - Murray Gell-Mann, "A Schematic Model of Baryons and Mesons," 1964.
