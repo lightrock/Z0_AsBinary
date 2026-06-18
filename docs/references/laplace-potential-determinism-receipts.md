@@ -212,11 +212,31 @@ state / comparator
 yin / yang
 ```
 
+---
+
+## Smolin correction: the local relation must really become
+
+The companion note [Smolin Real-Time Receipts](smolin-real-time-receipts.md)
+adds the next pressure over the Laplace / Kitada-Dugić result.
+
+Kitada / Dugić prevent the impossible outside view:
+
+```text
+no external whole-universe clock
+```
+
+Smolin prevents the frozen-library escape:
+
+```text
+time is real; the machine must actually run
+```
+
 So the correction is:
 
 ```text
 Laplace gives state + law.
 Kitada / Dugić demand local comparator structure.
+Smolin demands that the local comparator relation be real becoming, not merely a static correlation.
 The Maxwell-completion machine must generate time and records from inside, not borrow them from an impossible outside.
 ```
 
@@ -229,17 +249,19 @@ Laplace is an older ancestor of both Wolfram and 't Hooft in this project.
 ```text
 Laplace: complete state + law should determine evolution.
 Kitada/Dugić: time is local/relational; no global outside clock for the whole.
+Smolin: local temporal relation is real becoming, not a bookkeeping illusion.
 Wolfram: small explicit rules can generate complex behavior and must be run.
 't Hooft: quantum formalism may render a deeper update engine.
 Z0_AsBinary: preserve a seed, run a rule, inspect closure, then demand controls.
 ```
 
 The difference is that Laplace imagines continuous classical determinism, while
-this project is open to discrete, informational, boundary, relational-time, or
-closure-machine forms.
+this project is open to discrete, informational, boundary, relational-time, real
+becoming, or closure-machine forms.
 
 The useful inheritance is not classical certainty. It is the demand for explicit
-state, explicit law, and explicit comparator/boundary structure.
+state, explicit law, explicit comparator/boundary structure, and a real run
+button.
 
 ---
 
@@ -256,6 +278,7 @@ potential is not the machine
 boundary solution is not closure proof
 complete state knowledge may be impossible or physically ill-posed
 whole-universe prediction assumes an unavailable outside clock/comparator
+static correlation is not yet real temporal becoming
 probability may reflect real physical structure, not only ignorance
 ```
 
@@ -264,7 +287,7 @@ Through the BBQ lens:
 ```text
 Laplace gives the dream of the fully calculable machine.
 Kitada/Dugić deny the hidden outside time-comparator for the whole universe.
-Smolin reminds us the machine must actually run in time.
+Smolin reminds us the machine must actually run in real time.
 Zurek reminds us records and observers are produced, not assumed.
 Weyl reminds us description choices can be fake structure.
 Shannon reminds us information accounting is not ontology.
@@ -298,6 +321,12 @@ string viewed from nowhere. The seed becomes machine-like only through relation:
 seed + orientation + comparator + update + return -> receipt candidate
 ```
 
+Smolin adds that the update is not decorative:
+
+```text
+if it does not actually run, it is not the machine
+```
+
 The combined lesson is:
 
 ```text
@@ -305,6 +334,7 @@ state the seed,
 state the rule,
 state the boundary/comparator conditions,
 run the consequence,
+check the return record,
 then use probability discipline to decide whether the result is receipt or artifact
 ```
 
@@ -316,10 +346,10 @@ That is exactly the posture this repo needs.
 
 ```text
 Laplace belongs in the Maxwell-completion lineage as the state/potential/boundary
-determinism ancestor, but Kitada / Dugić supply the needed correction: the whole
-universe has no outside time-comparator, so any real machine must generate local
-subsystem comparison, records, and time from inside before prediction or closure
-can mean anything.
+determinism ancestor, but Kitada / Dugić and Smolin supply the needed correction:
+the whole universe has no outside time-comparator, so any real machine must
+generate local subsystem comparison, records, real time, and actual becoming from
+inside before prediction or closure can mean anything.
 ```
 
 ---
@@ -329,6 +359,7 @@ can mean anything.
 - [Maxwell After the BBQ Gold-Star Lineup](maxwell-after-mead-wolfram-thooft.md)
 - [Pre-Maxwell Electromagnetic Receipt Ledger](pre-maxwell-electromagnetic-receipt-ledger.md)
 - [Kitada / Dugić Local-Time Receipts](kitada-dugic-local-time-receipts.md)
+- [Smolin Real-Time Receipts](smolin-real-time-receipts.md)
 - [History of Z0 up to the 2019 SI Break](z0-history-to-2019.md)
 - [Computational Process Lineage](computational-process-lineage.md)
 - Pierre-Simon Laplace, *Mécanique céleste*, 1799-1825.
@@ -336,4 +367,8 @@ can mean anything.
 - Pierre-Simon Laplace, *Essai philosophique sur les probabilités*, 1814.
 - Hitoshi Kitada, "Theory of Local Times," arXiv:astro-ph/9309051, 1993.
 - Hitoshi Kitada, J. Jeknić-Dugić, M. Arsenijević, and M. Dugić, "A minimalist approach to conceptualization of time in quantum theory," *Physics Letters A* 380, 3970, 2016.
+- Lee Smolin, *Time Reborn*, 2013.
+- Roberto Mangabeira Unger and Lee Smolin, *The Singular Universe and the Reality of Time*, 2014.
+- Lee Smolin, "Unification of the state with the dynamical law," arXiv:1201.2632, 2012.
+- Lee Smolin, "Temporal relationalism," arXiv:1805.12468, 2018.
 - Historical accounts of Laplace's equation, potential theory, and the Laplacian operator.
