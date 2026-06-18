@@ -250,14 +250,25 @@ Classification exposed hidden state grammar.
 The quark model turned a confusing catalog into a generative receipt structure.
 ```
 
+For the general Maxwell-completion program, that is methodological. For
+`Z0_AsBinary`, it may be one of the central origin receipts, because the initial
+spark was not simply "Z0 has bits." It was:
+
+```text
+Z0 bits appear to intersect / compress / organize quark-related signatures in a
+way that made the constants catalog look less like a list and more like a
+receipt surface.
+```
+
 Through this lens:
 
 ```text
-particle zoo          -> messy empirical catalog
+particle zoo            -> messy empirical catalog
 strangeness/hypercharge -> conserved-label custody rules
-Eightfold Way / SU(3) -> relation-preserving classification
-quark model           -> generative grammar behind the hadron catalog
-missing slots         -> catalog pattern becomes prediction pressure
+Eightfold Way / SU(3)   -> relation-preserving classification
+quark model             -> generative grammar behind the hadron catalog
+missing slots           -> catalog pattern becomes prediction pressure
+Z0 quark-token behavior -> possible classification pressure in the constants catalog
 ```
 
 This matters for `Z0_AsBinary` because the repo also treats a catalog as a
@@ -265,8 +276,10 @@ possible receipt surface:
 
 ```text
 CODATA catalog -> possible receipt surface
+legacy quark/hadron tokens -> named particle-classification probes
 Z0 bit behavior -> possible special seed behavior
 constant matches / token hits -> possible classification pattern
+compression effects -> possible hidden grammar pressure
 controls -> determine whether the pattern is physical receipt or artifact
 ```
 
@@ -279,8 +292,13 @@ quark bookkeeping is not automatically pointer-swap closure
 catalog compression is not proof of physical ontology
 ```
 
-Gell-Mann teaches the project to take catalog structure seriously while not
-falling in love with the catalog itself.
+Gell-Mann may be central to the original observation, but the lesson is still not
+"believe the pattern." The lesson is:
+
+```text
+treat the quark-facing catalog pattern as classification pressure, then demand
+controls and a running machine.
+```
 
 ---
 
@@ -648,7 +666,8 @@ Pre-Maxwell experimenters expose the receipts Maxwell must preserve.
 Tesla makes phase, induction, resonance, impedance, and boundary behavior run in apparatus.
 Einstein exposes quantized threshold transfer at the matter/light boundary.
 Leibniz and yin/yang preserve binary as generative running distinction.
-Gell-Mann shows that a messy particle catalog can hide state grammar.
+Gell-Mann shows that a messy catalog can hide state grammar; for Z0_AsBinary,
+he may be central because the initial spark was quark-facing catalog compression.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
@@ -769,11 +788,11 @@ Maxwell wanted the engine; the pre-Maxwell experimenters exposed the receipts;
 Tesla made phase and resonance run as apparatus; Einstein exposed quantized
 threshold transfer at the matter/light boundary; Leibniz and yin/yang remind us
 that binary is a running generative distinction, not only stored difference;
-Gell-Mann reminds us that a messy catalog may hide state grammar; the BBQ
-gold-star lineup tells us what a real answer must preserve; Z0_AsBinary is the
-first concrete closure-receipt search that started this investigation, but the
-Maxwell completion program remains open to any method that can expose the
-running machine and survive controls.
+Gell-Mann may be central because the initial Z0_AsBinary spark was quark-facing
+catalog compression; the BBQ gold-star lineup tells us what a real answer must
+preserve; Z0_AsBinary is the first concrete closure-receipt search that started
+this investigation, but the Maxwell completion program remains open to any
+method that can expose the running machine and survive controls.
 ```
 
 ---
