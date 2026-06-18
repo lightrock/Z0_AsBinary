@@ -1,10 +1,9 @@
 # Z0_AsBinary
 
-> Physics often treats a successful predictive formalism as though it were the machine itself. Shouldn't we know better than to allow that?
+> The so called "Characteristic Impedance of Vacuum... however that's not what it appears to say about itself in its own words.
+> Meanwhile, physics often treats a successful predictive formalism as though it were the machine itself. Shouldn't we know better than to allow that?
 
-Python-first research instrument for testing whether the characteristic impedance
-of vacuum behaves like an unusually generative information substrate inside the
-published catalog of fundamental physical constants.
+A fundamental observation of the pre-2019 CODATA value for the Characteristic Impedance of Vacuum is very intereseting and has opened up can of worms.
 
 ## What This Repo Is
 
