@@ -34,7 +34,6 @@ It currently provides:
   [Known Verified Result](#known-verified-result).
 
 - For the evidence files, read [Evidence Chain](#evidence-chain).
-- For the hypothesis, read [Claim Under Test](#claim-under-test) and [Thesis](#thesis).
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
