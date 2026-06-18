@@ -1,4 +1,4 @@
-# Characteristic Impedance Python
+# Z0_AsBinary
 
 > Physics often treats a successful predictive formalism as though it were the machine itself. Shouldn't we know better than to allow that?
 
@@ -23,20 +23,21 @@ It currently provides:
 
 ## Start Here
 
-- Initial Observation: Z0 Binary Structure: 
-  [Z0 Binary Structure](https://lightrock.github.io/CharacteristicImpedancePython/z0-binary-structure.html).
+- Initial Observation: Z0 Binary Structure:
+  [Z0 Binary Structure](https://lightrock.github.io/Z0_AsBinary/z0-binary-structure.html).
 
-- Interesting so far, "quark data compression" of fundamental constants: 
-  [Z0 Quark GeneZip Compression](https://lightrock.github.io/CharacteristicImpedancePython/z0-genezip-compression.html).
+- Interesting so far, "quark data compression" of fundamental constants:
+  [Z0 Quark GeneZip Compression](https://lightrock.github.io/Z0_AsBinary/z0-genezip-compression.html).
 
-- An intial attempt to "run" Z0 as Software/Hardware:
+- An initial attempt to "run" Z0 as software/hardware:
   [Known Verified Result](#known-verified-result).
-  
+
 - For the evidence files, read [Evidence Chain](#evidence-chain).
 - For the hypothesis, read [Claim Under Test](#claim-under-test) and [Thesis](#thesis).
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
+- For the Maxwell/Mead/Wolfram/'t Hooft synthesis, read [Maxwell After Mead, Wolfram, and 't Hooft](docs/references/maxwell-after-mead-wolfram-thooft.md).
 
 ## Research Posture
 
@@ -246,6 +247,10 @@ controls.
   preserves the project posture that Heaviside gives the public interface of
   electromagnetism, while Maxwell preserves the unfinished machine question that
   `Z0` may help turn into testable information-substrate experiments.
+- [Maxwell After Mead, Wolfram, and 't Hooft](docs/references/maxwell-after-mead-wolfram-thooft.md)
+  states the direct completion frame: Maxwell asks for the engine, Mead points
+  to phase handshake, Wolfram and 't Hooft make executable substructure
+  respectable, and `Z0_AsBinary` tests whether `Z0` left a binary closure receipt.
 - [Carver Mead, Pointer-Swap Closure, and Z0](docs/references/mead-pointer-swap-z0.md)
   connects Mead's phase-handshake electrodynamics to the pointer-swap closure
   model and reframes `Z0` as a possible catalog-visible impedance receipt of EM
@@ -406,4 +411,6 @@ python -m unittest discover -s tests -p "test_*.py"
 - BIPM, [The International System of Units (SI)](https://www.bipm.org/en/measurement-units).
 - NIST, [SI Redefinition](https://www.nist.gov/si-redefinition).
 - Pierre Fayet, [Completing the International System of units with c = hbar = mu0 = epsilon0 = kB = NA = 1](https://arxiv.org/abs/1906.05123), arXiv:1906.05123.
-- Wolfram, [Wolfram Science](https://www.wolfram.com/wolfram-science/).
+- Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National Academy of Sciences*, 1997.
+- Stephen Wolfram, [Wolfram Science](https://www.wolfram.com/wolfram-science/).
+- Gerard 't Hooft, *The Cellular Automaton Interpretation of Quantum Mechanics*, Springer, 2016.
