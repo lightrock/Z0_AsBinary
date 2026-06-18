@@ -976,57 +976,92 @@ If another route exposes stronger closure receipts, use it.
 
 ## Immediate research program
 
-The completion program is open-ended but disciplined:
+Make Maxwell's question this:
 
-1. State the candidate machine question clearly.
-2. Identify the physical, mathematical, experimental, or information object being tested.
-3. Preserve provenance and description choices.
-4. Define the transformation, interaction, update, or derivation rule explicitly.
-5. Look for return, closure, persistence, phase, impedance, boundary, or record receipts.
-6. Track orientation, complement, encoding, gauge, unit, and precision choices as
-   descriptions, not hidden assumptions.
-7. Treat hits as Zurek-style receipts requiring custody, not as proof.
-8. Ask Shannon-style whether a pattern is payload, key, index, trigger, or
-   admissibility selector.
-9. Ask Boltzmann/Gibbs-style what the ensemble is: what is W?
-10. Add controls against random artifact, post-selection, and description-choice
-   dependence.
-11. Translate surviving structure into Mead/Maxwell language only after the
-   controls justify that translation.
+```text
+What must be physically running such that charge, current, induction, displacement,
+magnetic action, propagation, phase, impedance, energy flow, quantized transfer,
+and stable records appear as one electromagnetic interface?
+```
 
-For the current repo, that open program begins with a concrete implementation:
+The answer candidate is:
 
-1. Preserve the pre-2019 `Z0` significant-digit record and conversion rule.
-2. Run the circular-XOR orbit and preserve the known period result.
-3. Run the same transformations across the full CODATA catalog.
-4. Add randomized bitstrings with matched length and density.
-5. Add shuffled-catalog and shuffled-bit controls.
-6. Add precision-cut and unit-translation controls.
-7. Add explicit entropy/information ensemble tests: what is W, and how many bits
-   does the observed receipt select?
-8. Add symmetry/conservation, entropy/information, physical-computation, and
-   scale/coarse-graining audits from the additional closure receipt layer.
+```text
+Electromagnetism is the observer-facing surface of a phase-closure process.
+```
+
+The primitive is not field substance, not geometry, not bits, not particles. The
+primitive is admissible relation-update:
+
+```text
+state differences try to close under local comparison rules,
+and only closure patterns that preserve phase, action, conservation,
+impedance, and recordability become visible as electromagnetic events.
+```
+
+More concretely:
+
+1. There are distinguishable states.
+2. Distinguishable states can be compared.
+3. Comparison has phase/orientation.
+4. Local comparison updates must preserve consistency around loops.
+5. Failed loop consistency appears as curvature/field.
+6. Stable repeated comparison appears as record/object/classicality.
+7. Boundary closure determines transfer.
+8. Impedance is the ratio condition for admissible exchange between electric and
+   magnetic faces of the same propagation process.
+9. Quantization appears when transfer closure has indivisible admissible events.
+10. Maxwell's equations are the continuum public API of this deeper closure
+    bookkeeping.
+
+So the machine Maxwell was reaching for is not an ether gearwork. It is a
+closure/admissibility engine.
+
+In short:
+
+```text
+Maxwell's equations describe what the rendered electromagnetic surface must obey.
+They do not, by themselves, identify the running process that makes the surface renderable.
+The missing machine is the process that decides which phase relations close,
+persist, transfer, and become records.
+```
+
+`Z0` is then one suspicious receipt because it sits exactly at the free-space
+exchange condition:
+
+```text
+Z0 = electric-field face / magnetic-field face
+```
+
+But the real target is broader:
+
+```text
+Find the admissibility rule that makes EM propagation, phase, impedance,
+quantized boundary transfer, and stable detector records all consequences of
+one closure process.
+```
+
+If going straight at it, build the theory around four invariants:
+
+```text
+phase closure
+energy/action custody
+boundary-transfer admissibility
+record stability
+```
+
+Reject any proposed solution that cannot produce all four.
 
 ---
 
 ## One-line version
 
 ```text
-Maxwell wanted the engine; the pre-Maxwell experimenters exposed the receipts;
-Tesla made phase and resonance run as apparatus; Einstein exposed quantized
-threshold transfer at the matter/light boundary; Leibniz and yin/yang remind us
-that binary is a running generative distinction, not only stored difference;
-Gell-Mann may be central because the initial Z0_AsBinary spark was quark-facing
-catalog compression; accelerators and detectors remind us that particle catalogs
-are prepared and read through EM fields, material boundary responses, and stable
-records; Boltzmann and Gibbs show that entropy is already logarithmic state-counting
-and converts directly to bits; Lloyd, Vedral, Seife, and Gleick keep the
-information-physics bridge visible; the additional closure ledger adds
-conservation, energy-flow, quantum, entropy/information, computation, and scale
-audits; the BBQ gold-star lineup tells us what a real answer must preserve;
-Z0_AsBinary is the first concrete closure-receipt search that started this
-investigation, but the Maxwell completion program remains open to any method
-that can expose the running machine and survive controls.
+Electromagnetism is phase-consistent recordable closure: Maxwell is the smooth-field
+interface, the machine underneath is an admissibility process over comparisons,
+and Z0, photons, detector events, vector-potential phase, gauge invariance, and
+impedance are different receipts of that same closure machinery. Z0 is a door,
+not the house.
 ```
 
 ---
