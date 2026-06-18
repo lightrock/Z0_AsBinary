@@ -18,6 +18,7 @@ Longer companion notes already exist for several entries:
 - [`computational-process-lineage.md`](computational-process-lineage.md)
 - [`friston-free-energy-closure-machine.md`](friston-free-energy-closure-machine.md)
 - [`mead-pointer-swap-z0.md`](mead-pointer-swap-z0.md)
+- [`smolin-real-time-receipts.md`](smolin-real-time-receipts.md)
 - [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md)
 - [`fundamentalPi.md`](fundamentalPi.md)
 - [`boltzmann-gibbs-wheeler-landauer-bennett-receipts.md`](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md)
@@ -72,17 +73,28 @@ The remaining question is not whether phase matters.
 The remaining question is what physical closure machine makes phase-handshakes real.
 ```
 
-### Lee Smolin - qualified gold star
+### Lee Smolin - qualified double gold star
 
-Gold star reason:
+Longer note: [`smolin-real-time-receipts.md`](smolin-real-time-receipts.md)
+
+Double-gold-star reason:
 
 ```text
 time is real
+Time Reborn pressure against the timeless block-universe reflex
 anti-Platonic pressure
 laws may evolve
+temporal naturalism
 background independence
 strong critique of string overreach
 refusal of timeless mathematical object worship
+```
+
+Why two gold stars:
+
+```text
+Gold star 1: Time Reborn makes time physically real again, not merely a coordinate inside a finished block.
+Gold star 2: Temporal naturalism refuses to freeze law into a dead Platonic object outside the universe.
 ```
 
 Remaining gap:
@@ -92,11 +104,12 @@ real time still needs the process drive
 evolving laws still need closure/admissibility machinery
 background independence is not yet substrate derivation
 anti-Platonism must become executable process physics
+temporal naturalism still needs operational receipts
 ```
 
 Compact line:
 
-> Smolin gets the gold star for refusing timeless math worship. He still needs the closure machine that makes real time physically operative.
+> Smolin gets two gold stars: one for making time physically real again, and one for refusing timeless law worship. He still needs the closure/admissibility machine that makes real time physically operative.
 
 Gold star note:
 
@@ -1047,7 +1060,7 @@ Compact line:
 >
 > Mead gives the phase handshake; closure must explain why the handshake is physically admissible.
 >
-> Smolin says time is real and rejects timeless math worship; closure must make real time physically operative.
+> Smolin gets two gold stars: Time Reborn makes time physically real again, and temporal naturalism refuses timeless law worship; closure must make real time physically operative.
 >
 > Zurek gives pointer states, einselection, and redundant records; closure must select the system and pointer basis before records multiply.
 >
