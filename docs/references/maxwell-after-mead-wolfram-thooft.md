@@ -1,17 +1,22 @@
-# Maxwell After Mead, Wolfram, and 't Hooft
+# Maxwell After the BBQ Gold-Star Lineup
 
 ## Status
 
-This is a research-position note for `Z0_AsBinary`. It is not a claim that Maxwell,
-Mead, Wolfram, or 't Hooft already proved the project's hypothesis.
+This is a research-position note for `Z0_AsBinary`. It is not a claim that
+Maxwell, Mead, Smolin, Zurek, Shannon, Weyl, Wolfram, or 't Hooft already proved
+the project's hypothesis.
 
 The purpose is narrower:
 
 ```text
 Use Maxwell's unfinished machine question as the target.
-Use Mead to repair the electromagnetic picture around phase and vector potential.
-Use Wolfram to permit small executable rules as serious science objects.
-Use 't Hooft to keep open the possibility that quantum formalism is a description layer.
+Use the BBQ gold-star people as repair lenses.
+Use Mead for phase-first electromagnetism.
+Use Smolin for real time and anti-Platonic pressure.
+Use Zurek for pointer states, einselection, and receipt-copying.
+Use Shannon for information discipline, while refusing to mistake payload for substrate.
+Use Weyl for gauge/reference bookkeeping, while refusing to mistake gauge for substrate.
+Use Wolfram and 't Hooft as executable-rule / update-engine support.
 Then test whether Z0 behaves like a closure receipt, rather than declaring that it does.
 ```
 
@@ -46,7 +51,31 @@ look inevitable to observers inside the rendered model
 
 ---
 
-## What Mead adds
+## The BBQ gold-star repair lenses
+
+The BBQ file does not give one guru to worship. It gives a control-room lineup.
+Each gold-star person preserves one part of the missing machine question, and
+each still leaves a gap that `Z0_AsBinary` must not hand-wave away.
+
+The compact map is:
+
+```text
+Mead    -> phase handshake
+Smolin  -> real time / anti-Platonism
+Zurek   -> pointer records / environment as witness
+Shannon -> information discipline, not ontology
+Weyl    -> reference/gauge comparison bookkeeping
+```
+
+Together they point toward the same missing primitive:
+
+```text
+running closure with admissibility, persistence, receipts, and rendered observer geometry/time
+```
+
+---
+
+## What Mead adds: phase handshake
 
 Carver Mead moves electromagnetism away from the projectile picture and toward a
 phase-first picture.
@@ -84,12 +113,171 @@ So Mead supplies the electromagnetic face of the problem, not the final machine.
 
 ---
 
-## What Wolfram adds
+## What Smolin adds: real time and anti-Platonism
 
-Wolfram's useful contribution is permission to take very small rules seriously.
-A tiny executable rule can generate unexpectedly rich behavior, and the result
-may be computationally irreducible: the only honest way to know what it does is
-to run it.
+Lee Smolin is useful here because he refuses the timeless-math picture. That
+matters for Maxwell completion because a machine cannot be only a finished
+mathematical object. A machine has to run.
+
+The useful Smolin pressure is:
+
+```text
+time is real
+laws may evolve
+background independence matters
+physics should not be timeless mathematical object worship
+```
+
+Project translation:
+
+```text
+Smolin: do not replace running physics with timeless structure.
+Z0_AsBinary: an orbit, a period, and a closure receipt are process facts before they are pretty math.
+```
+
+The gap Smolin leaves open:
+
+```text
+real time still needs the process drive
+evolving laws still need closure/admissibility machinery
+anti-Platonism must become executable process physics
+```
+
+So Smolin supplies the anti-Tegmark vaccine: no beautiful library without a run
+button.
+
+---
+
+## What Zurek adds: pointer records and environment as witness
+
+Wojciech Zurek is useful because he gives the receipt-copying layer: decoherence,
+einselection, pointer states, environment as witness, and quantum Darwinism.
+
+The useful Zurek pressure is:
+
+```text
+classical objectivity appears through redundant records
+pointer states matter
+environment can act as witness
+records are not optional decoration
+```
+
+Project translation:
+
+```text
+Zurek: reality-for-observers requires stable copied receipts.
+Z0_AsBinary: token hits, period closure, and catalog reconstruction must be treated as receipts requiring custody.
+```
+
+The gap Zurek leaves open:
+
+```text
+system/environment split is assumed too early
+pointer basis selection still depends on decomposition
+records are downstream of closure, not the root machine
+```
+
+So Zurek supplies the receipt discipline. The project still has to ask what
+closure process selects the system, the pointer basis, and the admissible records
+before those records multiply.
+
+---
+
+## What Shannon adds: information discipline without information worship
+
+Claude Shannon is useful because he made information exact for communication. He
+is dangerous only when later physics promotes that engineering abstraction into
+ontology.
+
+The useful Shannon pressure is:
+
+```text
+separate signal, channel, code, and noise
+measure payload uncertainty cleanly
+keep the information object inspectable
+```
+
+Project translation:
+
+```text
+Shannon: count the bits cleanly.
+Z0_AsBinary: preserve the exact published significant digits, conversion rule, seed, orbit, and controls.
+```
+
+But the BBQ correction matters:
+
+```text
+A bit is not only a payload unit.
+A bit can be a trigger, key, index, or admissibility selector.
+```
+
+The gap Shannon leaves open:
+
+```text
+communication information is not running physical closure
+message length is not causal reach
+entropy measure is not the process engine
+receiver ignorance is not physical nonexistence
+```
+
+So Shannon supplies evidence hygiene. `Z0_AsBinary` asks the next question:
+
+```text
+If the Z0 bit pattern is not merely payload, what already-running physical grammar
+could it select, confirm, or unlock?
+```
+
+---
+
+## What Weyl adds: gauge/reference bookkeeping
+
+Hermann Weyl is useful because gauge invariance teaches a hard lesson: absolute
+labels are not observables. Only comparison-preserving receipts survive a change
+of description.
+
+The useful Weyl pressure is:
+
+```text
+local reference freedom
+phase/reference comparison instead of absolute labels
+connection as comparison bookkeeping
+gauge-invariant quantities as surviving receipts
+```
+
+Project translation:
+
+```text
+Weyl: fake label motion must cancel.
+Z0_AsBinary: orientation, complement, unit, precision, and encoding choices must be audited as descriptions, not silently promoted to ontology.
+```
+
+The gap Weyl leaves open:
+
+```text
+gauge invariance is not substrate
+"local gauge at each point" already assumes rendered spacetime language
+connection is not yet the pointer-swap machine
+loop receipts still need a pre-geometric closure derivation
+```
+
+So Weyl supplies the comparison discipline. The project still has to derive
+adjacency, comparison, transport, loop receipts, and closure/admissibility before
+calling the result a smooth field or force law.
+
+---
+
+## What Wolfram adds: executable-rule seriousness
+
+Wolfram is not listed in the BBQ gold-star block, but he remains essential to
+this file because `Z0_AsBinary` begins by running a very small rule.
+
+The useful Wolfram pressure is:
+
+```text
+very small executable rules can generate unexpectedly rich behavior
+some behavior must be run, not guessed
+computation can be a scientific object, not merely an implementation detail
+```
 
 That matters because `Z0_AsBinary` does not begin with a grand symbolic physics
 model. It begins with a small rule:
@@ -118,11 +306,11 @@ pruning, admissibility, provenance, and controls.
 
 ---
 
-## What 't Hooft adds
+## What 't Hooft adds: update-engine seriousness
 
-Gerard 't Hooft keeps alive the suspicion that quantum mechanics may be a
-powerful description language for a deeper deterministic or cellular process,
-rather than the final substrate vocabulary.
+Gerard 't Hooft is also not in the BBQ gold-star block, but he remains important
+because he keeps alive the suspicion that quantum mechanics may be a powerful
+description language for a deeper deterministic or cellular process.
 
 The useful 't Hooft pressure is:
 
@@ -161,6 +349,10 @@ The synthesis is:
 Maxwell asks for the machine.
 Heaviside gives the public electromagnetic API.
 Mead restores phase-handshake behavior to the center.
+Smolin insists the machine must actually run in real process-time.
+Zurek demands receipt custody through pointer records and environment witnesses.
+Shannon demands clean information handling without mistaking information for substrate.
+Weyl demands reference/gauge comparison discipline without mistaking gauge for substrate.
 Wolfram says small executable rules can generate serious structure.
 't Hooft says quantum formalism may be a description layer over a deeper update.
 Z0_AsBinary tests whether Z0 behaves like an impedance receipt of EM closure.
@@ -188,6 +380,8 @@ Do not worship the field equations.
 Do not worship the gauge.
 Do not worship the cellular automaton.
 Do not worship the number.
+Do not worship the information measure.
+Do not worship the record-copying layer.
 Find out what can actually run, what closes, and what receipts survive controls.
 ```
 
@@ -224,19 +418,25 @@ The completion program is executable:
 4. Add randomized bitstrings with matched length and density.
 5. Add shuffled-catalog and shuffled-bit controls.
 6. Add precision-cut and unit-translation controls.
-7. Try adjacent rule families only after preregistering why they belong.
-8. Treat token hits as receipts requiring controls, not as proof.
-9. Translate surviving structure into Mead/Maxwell language only after the
-   controls justify that translation.
+7. Track orientation, complement, encoding, and unit choices as Weyl-style
+   description choices, not hidden assumptions.
+8. Treat token hits as Zurek-style receipts requiring custody, not as proof.
+9. Ask Shannon-style whether a bit pattern is payload, key, index, trigger, or
+   admissibility selector.
+10. Try adjacent rule families only after preregistering why they belong.
+11. Translate surviving structure into Mead/Maxwell language only after the
+    controls justify that translation.
 
 ---
 
 ## One-line version
 
 ```text
-Maxwell wanted the engine; Mead points to phase handshake; Wolfram and 't Hooft
-make executable substructure respectable; Z0_AsBinary tests whether the vacuum
-impedance constant left a binary closure receipt.
+Maxwell wanted the engine; Mead points to phase handshake; Smolin demands a real
+running process; Zurek demands receipt custody; Shannon demands information
+hygiene; Weyl demands comparison discipline; Wolfram and 't Hooft make executable
+substructure respectable; Z0_AsBinary tests whether the vacuum impedance constant
+left a binary closure receipt.
 ```
 
 ---
@@ -250,5 +450,9 @@ impedance constant left a binary closure receipt.
 - [Fundamental Pi](fundamentalPi.md)
 - Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National Academy of Sciences*, 1997.
 - Carver A. Mead, *Collective Electrodynamics: Quantum Foundations of Electromagnetism*, MIT Press, 2000.
+- Lee Smolin, *Time Reborn*, Houghton Mifflin Harcourt, 2013.
+- Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics*, 2003.
+- Claude E. Shannon, "A Mathematical Theory of Communication," *Bell System Technical Journal*, 1948.
+- Hermann Weyl, *Space-Time-Matter*, 1918.
 - Stephen Wolfram, *A New Kind of Science*, Wolfram Media, 2002.
 - Gerard 't Hooft, *The Cellular Automaton Interpretation of Quantum Mechanics*, Springer, 2016.
