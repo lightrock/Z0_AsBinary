@@ -961,6 +961,113 @@ point.
 
 ---
 
+## 14. Z0 XOR orbit as a finite pi-return sampler
+
+After the Maxwell-completion framing was added, the next concrete question was:
+
+```text
+As Z0 runs under the circular XOR transformation, is there a sane progressive
+production of pi from its bits?
+```
+
+The bounded answer is yes, in the return-statistics sense already developed
+above, not in the decimal-digit or numerology sense.
+
+The tested construction was:
+
+```text
+start with the pre-2019 Z0 bit seed
+run the existing circular XOR orbit for its 4095-step period
+use the 39 bit positions as parallel tap tapes
+group each tap tape into bit pairs
+map 00, 01, 10, 11 to four relation-walk channels
+count cyclic windows that return to the origin after 2n relation steps
+estimate pi by pi_n = 1 / (n * P_return(2n))
+```
+
+The exact orbit rule was the one already implemented in the project:
+
+```text
+S_next = S XOR RotL1(S)
+```
+
+This is a finite deterministic closure sampler. It does not contain coordinates,
+angles, circles, radians, or stored digits of pi. The only geometric-looking
+choice is the later diagnostic mapping of four bit-pair channels to the four
+steps of a square-lattice return test. In the process-first reading, that mapping
+is a validation harness for closure statistics, not a claim that the substrate is
+a square lattice.
+
+Using all 39 tap positions as parallel receipts gave:
+
+```text
+n=1     pi_hat=4.040336
+n=2     pi_hat=3.606478
+n=4     pi_hat=3.352637
+n=5     pi_hat=3.261818
+n=8     pi_hat=3.165966
+n=16    pi_hat=3.282607
+n=32    pi_hat=3.102962
+n=64    pi_hat=3.049855
+n=80    pi_hat=3.128252
+n=128   pi_hat=3.072391
+```
+
+So the Z0 XOR orbit can be read as producing a progressive finite-depth
+pi-like closure estimator:
+
+```text
+Z0 seed
+-> circular XOR orbit
+-> bit-pair relation walk
+-> return probability
+-> pi_n estimator
+```
+
+This is the sane result to preserve. It is not yet the strong result.
+
+The brake pedal is essential: unbiased random bit tapes also produce this kind
+of return-statistics estimator. That is expected, because the square-lattice
+return formula is a property of unbiased four-channel walks. Therefore the
+current observation should not be stated as:
+
+```text
+Z0 uniquely encodes pi.
+```
+
+The defensible statement is:
+
+```text
+Z0's circular-XOR orbit can act as a finite deterministic closure-walk sampler
+whose return statistics produce a pi-like progression without inserting pi as a
+stored value.
+```
+
+The next scientific question is not whether pi can be obtained at all. It is
+whether the Z0 orbit is special as a closure sampler:
+
+```text
+compare against shuffled Z0 seeds
+compare against all CODATA constants under the same XOR orbit rule
+compare against same-length and same-density random seeds
+compare across forward, reverse, inverse, and inverse-reverse orientations
+compare across alternate bit-pair channel maps
+track convergence, variance, drift, return counts, and finite-period artifacts
+```
+
+If Z0 merely behaves like a typical unbiased deterministic bit source, then this
+section remains a useful demonstration of the closure-return method. If it
+separates from controls, then it becomes a stronger impedance-facing receipt.
+
+Either way, the important methodological point survives:
+
+```text
+pi can be produced operationally by closure-return statistics over a finite
+running process, rather than assumed as a primitive geometric constant.
+```
+
+---
+
 ## References
 
 - BIPM, *The International System of Units (SI Brochure)*: distinction between frequency in hertz and angular frequency in radians per second.
