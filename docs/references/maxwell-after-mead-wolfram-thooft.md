@@ -187,6 +187,54 @@ What running closure rule decides when electromagnetic relation becomes transfer
 
 ---
 
+## Leibniz and yin/yang as binary process receipt
+
+Leibniz belongs here as a pre-digital process ancestor. The companion note
+[Leibniz, Binary, Yin/Yang, and Process Receipts](leibniz-binary-yinyang-process-receipt.md)
+keeps the useful point without turning it into a sloppy origin myth.
+
+The sober contribution is:
+
+```text
+Leibniz gives binary generativity.
+Yin/yang reminds us that the bit is not merely stored difference, but a running
+alternation that can become process.
+```
+
+Historically, the careful statement is:
+
+```text
+Leibniz developed binary arithmetic before the famous I Ching correspondence.
+The I Ching / Fu Xi hexagram tradition later gave a striking formal analogy:
+broken/unbroken, yin/yang, 0/1 as a world-generating distinction.
+```
+
+Through this lens:
+
+```text
+0/1                  -> minimal distinction can generate ordered structure
+yin/yang             -> complementary polarity as dynamic alternation
+hexagram             -> six-line state/change grammar
+binary arithmetic    -> symbolic universe from repeated distinction
+running bit process  -> state -> tendency -> change -> new state -> receipt
+```
+
+This plugs into the Maxwell-completion program because `Z0_AsBinary` does not
+only store bits. It runs a bit pattern under a transformation rule and asks
+whether closure receipts appear.
+
+The useful lineage is:
+
+```text
+Leibniz: 0/1 can generate an ordered universe of number.
+Yin/yang: binary opposition can be understood as change-process.
+Shannon: bits can be measured cleanly as information.
+Wolfram: small executable rules can generate serious structure.
+Z0_AsBinary: a physical constant's binary form can be tested as runnable closure candidate.
+```
+
+---
+
 ## Implementation-neutral posture
 
 This note should not trap the Maxwell completion program inside one experiment,
@@ -550,6 +598,7 @@ Heaviside gives the public electromagnetic API.
 Pre-Maxwell experimenters expose the receipts Maxwell must preserve.
 Tesla makes phase, induction, resonance, impedance, and boundary behavior run in apparatus.
 Einstein exposes quantized threshold transfer at the matter/light boundary.
+Leibniz and yin/yang preserve binary as generative running distinction.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
@@ -667,11 +716,12 @@ For the current repo, that open program begins with a concrete implementation:
 ```text
 Maxwell wanted the engine; the pre-Maxwell experimenters exposed the receipts;
 Tesla made phase and resonance run as apparatus; Einstein exposed quantized
-threshold transfer at the matter/light boundary; the BBQ gold-star lineup tells
-us what a real answer must preserve; Z0_AsBinary is the first concrete
-closure-receipt search that started this investigation, but the Maxwell
-completion program remains open to any method that can expose the running
-machine and survive controls.
+threshold transfer at the matter/light boundary; Leibniz and yin/yang remind us
+that binary is a running generative distinction, not only stored difference; the
+BBQ gold-star lineup tells us what a real answer must preserve; Z0_AsBinary is
+the first concrete closure-receipt search that started this investigation, but
+the Maxwell completion program remains open to any method that can expose the
+running machine and survive controls.
 ```
 
 ---
@@ -681,11 +731,13 @@ machine and survive controls.
 - [Pre-Maxwell Electromagnetic Receipt Ledger](pre-maxwell-electromagnetic-receipt-ledger.md)
 - [Tesla Apparatus Receipts](tesla-apparatus-receipts.md)
 - [Einstein Photoelectric Transfer Receipt](einstein-photoelectric-transfer-receipt.md)
+- [Leibniz, Binary, Yin/Yang, and Process Receipts](leibniz-binary-yinyang-process-receipt.md)
 - [Maxwell Machine Completion Note](maxwell-machine-completion-note.md)
 - [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md)
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
 - [Computational Process Lineage](computational-process-lineage.md)
 - [Fundamental Pi](fundamentalPi.md)
+- Gottfried Wilhelm Leibniz, "Explication de l'Arithmétique Binaire," 1703.
 - Albert Einstein, "On a Heuristic Point of View Concerning the Production and Transformation of Light," 1905.
 - Nobel Prize in Physics 1921, awarded to Einstein especially for the law of the photoelectric effect.
 - Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National Academy of Sciences*, 1997.
