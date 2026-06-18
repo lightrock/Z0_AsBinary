@@ -20,6 +20,7 @@ Longer companion notes already exist for several entries:
 - [`mead-pointer-swap-z0.md`](mead-pointer-swap-z0.md)
 - [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md)
 - [`fundamentalPi.md`](fundamentalPi.md)
+- [`boltzmann-gibbs-wheeler-landauer-bennett-receipts.md`](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md)
 
 ---
 
@@ -151,6 +152,68 @@ He is one of the best receipt-layer theorists we have.
 The issue is not that pointer states, einselection, or quantum Darwinism are useless.
 The issue is that records are downstream of closure.
 The missing machine must select admissible systems and pointer bases before records can proliferate.
+```
+
+### Ludwig Boltzmann + J. Willard Gibbs - double gold star
+
+Longer note: [`boltzmann-gibbs-wheeler-landauer-bennett-receipts.md`](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md)
+
+Double-gold-star reason:
+
+```text
+Boltzmann -> entropy as physical microstate multiplicity, S = k log W
+Gibbs     -> ensemble/probability distribution over states
+physical entropy becomes state-counting behind a visible macrostate
+ensemble discipline becomes the control layer for claims about patterns
+direct bridge from thermodynamic entropy to Shannon-style information entropy
+```
+
+Why two gold stars:
+
+```text
+Gold star 1: Boltzmann makes entropy physical by tying it to hidden state multiplicity.
+Gold star 2: Gibbs makes entropy ensemble-disciplined, which is exactly what Z0_AsBinary needs for null models and controls.
+```
+
+Closure correction:
+
+```text
+A visible pattern is not a receipt until the ensemble of possible alternatives is specified.
+A macrostate hides many compatible microstates.
+A bit pattern hides many possible comparison classes.
+Entropy is the warning that visible order and hidden multiplicity are not the same thing.
+```
+
+Relation to Shannon:
+
+```text
+Boltzmann/Gibbs -> count compatible physical state possibilities
+Shannon         -> count uncertainty / information possibilities in messages
+Z0_AsBinary     -> compare the Z0 receipt against explicit ensembles before interpretation
+```
+
+Remaining gap:
+
+```text
+entropy is not substrate
+ensemble is not execution
+state-counting is not closure
+information entropy is not the process engine
+statistical typicality is not the same as admissibility
+```
+
+Compact line:
+
+> Boltzmann and Gibbs get two gold stars: one for physical state multiplicity, one for ensemble discipline; together they bridge entropy into information controls without pretending entropy is the machine.
+
+Gold star note:
+
+```text
+Do not BBQ Boltzmann and Gibbs as mere thermodynamics.
+They are the control-room bridge between physical state multiplicity and information entropy.
+For Z0_AsBinary, they are mandatory: every striking bit/token pattern must be judged against the ensemble of alternatives.
+Entropy is not only heat.
+Entropy is receipt multiplicity behind a visible description.
 ```
 
 ### Claude Shannon - half gold star
@@ -987,6 +1050,8 @@ Compact line:
 > Smolin says time is real and rejects timeless math worship; closure must make real time physically operative.
 >
 > Zurek gives pointer states, einselection, and redundant records; closure must select the system and pointer basis before records multiply.
+>
+> Boltzmann and Gibbs get two gold stars: physical entropy as hidden state multiplicity, and ensemble discipline as the bridge to information-entropy controls.
 >
 > Shannon gets half a gold star: he measures payload uncertainty exactly, while closure asks what one bit can trigger when the receiving structure is already physically instantiated.
 >
