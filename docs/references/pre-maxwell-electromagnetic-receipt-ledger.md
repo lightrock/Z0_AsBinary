@@ -14,6 +14,7 @@ charge can be stored
 charge can be transported
 current can persist
 materials resist and conduct
+matter can be treated as force relation before hard substance
 currents produce magnetic action
 changing magnetic relations induce current
 field-like relations carry stress, memory, and closure
@@ -204,6 +205,36 @@ Maxwell pressure:
 ```text
 the machine must preserve charge accounting and make local electrical events
 and large-scale discharge continuous descriptions of one process
+```
+
+---
+
+## Boscovich / Bošković: matter as point-force relation before field language
+
+Longer note: [Boscovich Point-Force Receipts](boscovich-point-force-receipts.md)
+
+Historical observation:
+
+```text
+matter need not be modeled as tiny hard extended corpuscles;
+ultimate centers can be treated as non-extended points governed by a
+single distance-dependent law of attraction and repulsion
+```
+
+Machine receipt:
+
+```text
+apparent material solidity, collision, and resistance can be modeled as lawful
+relation behavior rather than primitive hard substance
+```
+
+Maxwell pressure:
+
+```text
+before field language matures, Boscovich already pressures physics away from
+hard marbles and toward relation-first matter;
+Maxwell completion must preserve that anti-substance lesson while replacing
+point-force metaphysics with a running closure/admissibility account
 ```
 
 ---
@@ -635,6 +666,7 @@ By the time Maxwell arrived, the receipt pile already contained:
 
 ```text
 static charge attraction and repulsion
+matter as point-force relation before hard-marble substance
 charge storage and discharge
 conduction and insulation
 polarity / sign bookkeeping
@@ -676,6 +708,7 @@ interface of electric and magnetic field amplitudes.
 In this ledger's language:
 
 ```text
+Boscovich exposes matter as relation/force before hard substance.
 Laplace exposes state/rule/boundary discipline.
 Volta and Ohm expose running current and resistance.
 Ørsted and Ampère expose the magnetic face of current.
@@ -696,9 +729,11 @@ completion program must stop at binary `Z0` experiments.
 - [Maxwell After the BBQ Gold-Star Lineup](maxwell-after-mead-wolfram-thooft.md)
 - [Maxwell Machine Completion Note](maxwell-machine-completion-note.md)
 - [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md)
+- [Boscovich Point-Force Receipts](boscovich-point-force-receipts.md)
 - [Laplace Potential and Determinism Receipts](laplace-potential-determinism-receipts.md)
 - William Gilbert, *De Magnete*, 1600.
 - Benjamin Franklin, *Experiments and Observations on Electricity*, 1751-1754.
+- Roger Joseph Boscovich / Ruđer Josip Bošković, *Theoria philosophiae naturalis*, 1758; revised edition 1763.
 - Charles-Augustin de Coulomb, 1785 torsion-balance memoirs on electric force.
 - Pierre-Simon Laplace, *Mécanique céleste*, 1799-1825.
 - Pierre-Simon Laplace, *Théorie analytique des probabilités*, 1812.
