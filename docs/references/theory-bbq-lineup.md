@@ -23,6 +23,7 @@ Longer companion notes already exist for several entries:
 - [`fundamentalPi.md`](fundamentalPi.md)
 - [`boltzmann-gibbs-wheeler-landauer-bennett-receipts.md`](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md)
 - [`boscovich-point-force-receipts.md`](boscovich-point-force-receipts.md)
+- [`wilson-kadanoff-scale-receipts.md`](wilson-kadanoff-scale-receipts.md)
 
 ---
 
@@ -383,6 +384,79 @@ Useful. Powerful. Standard-Model-grade useful.
 But if spacetime is rendered from entanglement-basis closure,
 then gauges regulate the projected pointer fuzz.
 They do not identify the machine that runs it.
+```
+
+### Kenneth Wilson - qualified double gold star
+
+Longer note: [`wilson-kadanoff-scale-receipts.md`](wilson-kadanoff-scale-receipts.md)
+
+Double-gold-star reason:
+
+```text
+renormalization group
+scale-dependent effective law
+couplings that run with probe scale
+fixed points
+universality classes
+coarse-graining discipline
+clear warning that observer-facing constants may be scale receipts, not substrate
+```
+
+Why two gold stars:
+
+```text
+Gold star 1: Wilson makes scale custody honest: do not pretend one effective law is valid at infinite resolution.
+Gold star 2: fixed points and universality expose information horizons of relative rates: many hidden micro-rate stories can render the same stable macro receipt.
+```
+
+Rates repair:
+
+```text
+Wilson may be reading relative rates, not separate machines.
+Renormalization flow can be read as the dashboard trace of hidden closure work
+being compressed across an information horizon.
+
+fast / fine / inaccessible relation updates
+-> slower or coarser observer cannot resolve them
+-> hidden work is integrated out
+-> effective parameters become visible rate receipts
+-> couplings appear to run with scale
+```
+
+Remaining gap:
+
+```text
+renormalization group is not substrate
+beta function is not the engine
+scale flow does not by itself identify the closure rule
+fixed point is a receipt, not the machine
+universality can hide many incompatible micro-machines
+"relative rates" must reproduce ordinary RG receipts or it is only metaphor
+```
+
+Required receipts for any proposed scale-independent little thingy:
+
+```text
+beta functions
+running couplings
+fixed points
+universality classes
+effective field theory domains
+known failure modes where the effective theory stops being valid
+```
+
+Compact line:
+
+> Wilson gets two gold stars: one for scale custody, one for fixed-point/universality rate horizons. Closure must show whether running couplings are the visible rates of one deeper machine across information horizons of relative rates.
+
+Gold star note:
+
+```text
+Do not BBQ Wilson as merely "the infinities guy."
+He is the scale-control engineer in the room.
+If Z0_AsBinary has a little thingy that works at any scale, Wilson supplies the audit:
+what changes with scale, what survives coarse-graining, what is a relative-rate horizon,
+and what effective constants are only observer-facing receipts.
 ```
 
 ---
@@ -1183,6 +1257,8 @@ Compact line:
 >
 > Weyl gives gauge/reference bookkeeping; closure must derive pointer adjacency before "local gauge" means anything.
 >
+> Wilson gets two gold stars: scale custody plus fixed-point/universality rate horizons; closure must explain running couplings as visible rates across information horizons of relative rates.
+>
 > Boscovich kills the hard marble early: matter becomes point centers plus force relations; closure must explain how relation stabilizes as particles, fields, and records.
 >
 > Wheeler gives the slogan.
@@ -1225,4 +1301,4 @@ Compact line:
 >
 > Feynman gives the grammar.
 >
-> The missing machine is running closure with admissibility, persistence, receipts, and rendered observer geometry/time.
+> The missing machine is running closure with admissibility, persistence, receipts, rate horizons, and rendered observer geometry/time.
