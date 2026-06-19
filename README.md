@@ -34,6 +34,7 @@ It currently provides:
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
+- For the runnable `Z0`/`π` return-sampler report, read [Z0/Pi Return Sampler](https://lightrock.github.io/Z0_AsBinary/reports/z0-pi-return-sampler.html).
 - For the Maxwell/Mead/Wolfram/'t Hooft synthesis, read [Maxwell After Mead, Wolfram, and 't Hooft](docs/references/maxwell-after-mead-wolfram-thooft.md).
 
 
@@ -98,8 +99,6 @@ is structurally special under simple computational tests.
 - [Fundamental Pi](docs/references/fundamentalPi.md) asks what physical machine
   produces the closure represented by `π`, `2π`, phase, rotation, and emergent
   geometry, without treating the symbol as the substrate.
-- [Z0/Pi Return Sampler](https://lightrock.github.io/Z0_AsBinary/reports/z0-pi-return-sampler.md)
-  records the return-sampler report that probes possible `Z0`/`π` closure behavior.
 - [Maxwell Machine Completion Note](docs/references/maxwell-machine-completion-note.md)
   preserves the project posture that Heaviside gives the public interface of
   electromagnetism, while Maxwell preserves the unfinished machine question that
