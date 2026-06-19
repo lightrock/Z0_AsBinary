@@ -98,6 +98,8 @@ is structurally special under simple computational tests.
 - [Fundamental Pi](docs/references/fundamentalPi.md) asks what physical machine
   produces the closure represented by `π`, `2π`, phase, rotation, and emergent
   geometry, without treating the symbol as the substrate.
+- [Z0/Pi Return Sampler](https://lightrock.github.io/Z0_AsBinary/reports/z0-pi-return-sampler.md)
+  records the return-sampler report that probes possible `Z0`/`π` closure behavior.
 - [Maxwell Machine Completion Note](docs/references/maxwell-machine-completion-note.md)
   preserves the project posture that Heaviside gives the public interface of
   electromagnetism, while Maxwell preserves the unfinished machine question that
