@@ -6,16 +6,17 @@ This is a general research-position note for completing Maxwell's machine
 question. It lives in `Z0_AsBinary` because that repo produced the first concrete
 shovel: the pre-2019 `Z0` binary/XOR exploration.
 
-It is not a claim that Maxwell, Mead, Smolin, Zurek, Shannon, Weyl, Wolfram,
-`t Hooft, Boltzmann, Gibbs, Lloyd, Vedral, Seife, or Gleick already proved the
-project's hypothesis. It is also not a claim that binary exploration of `Z0` is
-the only possible path.
+It is not a claim that Maxwell, Boscovich, Mead, Smolin, Zurek, Shannon, Weyl,
+Wolfram, `t Hooft, Boltzmann, Gibbs, Lloyd, Vedral, Seife, or Gleick already
+proved the project's hypothesis. It is also not a claim that binary exploration
+of `Z0` is the only possible path.
 
 The purpose is broader:
 
 ```text
 Use Maxwell's unfinished machine question as the target.
 Use the BBQ gold-star people as repair lenses.
+Use Boscovich for the pre-field anti-hard-marble point-force receipt.
 Use Mead for phase-first electromagnetism.
 Use Smolin for real time and anti-Platonic pressure.
 Use Zurek for pointer states, einselection, and receipt-copying.
@@ -92,6 +93,7 @@ Through this lens:
 ```text
 Gilbert      -> repeatable electric/magnetic material behavior
 Franklin     -> polarity bookkeeping and lightning as electrical discharge
+Boscovich    -> matter as non-extended centers plus force relations, not hard marbles
 Coulomb      -> calibrated static charge force
 Galvani      -> electricity couples to organized living tissue
 Volta        -> sustained current source
@@ -114,14 +116,64 @@ Maxwell's completion task was therefore:
 
 ```text
 preserve charge, current, resistance, magnetic action, induction, field memory,
-energy custody, boundary accounting, and loop closure inside one electromagnetic
-interface
+energy custody, boundary accounting, loop closure, and the pre-field lesson that
+matter itself may be relation-pattern rather than hard substance inside one
+electromagnetic interface
 ```
 
 The modern question is deeper:
 
 ```text
 what running closure process makes those receipts appear together at all?
+```
+
+---
+
+## Boscovich as pre-field anti-marble receipt
+
+Boscovich belongs here before Tesla, Einstein, Mead, or modern process talk. The
+companion note [Boscovich Point-Force Receipts](boscovich-point-force-receipts.md)
+keeps the useful point sober.
+
+The sober contribution is:
+
+```text
+Boscovich did not have Maxwell's fields or quantum mechanics.
+He did break the hard-marble picture early by treating matter as non-extended
+centers governed by distance-dependent attraction and repulsion.
+```
+
+Through this lens:
+
+```text
+non-extended point center -> relation before substance
+distance-dependent force  -> behavior from comparison/separation
+attraction / repulsion    -> apparent solidity without primitive hard stuff
+material objecthood       -> downstream receipt of lawful relation pattern
+```
+
+Boscovich's useful place in the Maxwell-completion sequence is:
+
+```text
+Boscovich pressures matter away from hard corpuscles and toward lawful relation.
+Faraday later pressures action away from direct force and toward field relation.
+Maxwell compresses electric and magnetic receipts into one field interface.
+Mead restores phase-handshake behavior to the center.
+Z0_AsBinary asks whether the impedance face of that interface left a runnable receipt.
+```
+
+The guardrail is essential:
+
+```text
+point-force theory is not closure/admissibility
+relation written against distance still assumes a background comparison space
+Boscovich does not derive fields, spectra, particles, measurement, or records
+```
+
+So Boscovich is not the answer. He is the early warning label:
+
+```text
+do not mistake visible stable matter for primitive hard substance
 ```
 
 ---
@@ -583,6 +635,7 @@ How many binary distinctions does the observed receipt actually select?
 The compact map is:
 
 ```text
+Boscovich       -> anti-hard-marble point-force relation before field language
 Mead            -> phase handshake
 Smolin          -> real time / anti-Platonism
 Zurek           -> pointer records / environment as witness
@@ -909,6 +962,7 @@ The synthesis is:
 ```text
 Maxwell asks for the machine.
 Heaviside gives the public electromagnetic API.
+Boscovich breaks hard-marble matter into non-extended centers plus force relations.
 Pre-Maxwell experimenters expose the receipts Maxwell must preserve.
 Tesla makes phase, induction, resonance, impedance, and boundary behavior run in apparatus.
 Einstein exposes quantized threshold transfer at the matter/light boundary.
@@ -960,6 +1014,7 @@ published Z0 information object
 In Allen-speak:
 
 ```text
+Do not worship the hard marble.
 Do not worship the field equations.
 Do not worship the gauge.
 Do not worship the cellular automaton.
@@ -1099,6 +1154,7 @@ not the house.
 ## References for context
 
 - [Pre-Maxwell Electromagnetic Receipt Ledger](pre-maxwell-electromagnetic-receipt-ledger.md)
+- [Boscovich Point-Force Receipts](boscovich-point-force-receipts.md)
 - [Tesla Apparatus Receipts](tesla-apparatus-receipts.md)
 - [Einstein Photoelectric Transfer Receipt](einstein-photoelectric-transfer-receipt.md)
 - [Leibniz, Binary, Yin/Yang, and Process Receipts](leibniz-binary-yinyang-process-receipt.md)
@@ -1115,6 +1171,7 @@ not the house.
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
 - [Computational Process Lineage](computational-process-lineage.md)
 - [Fundamental Pi](fundamentalPi.md)
+- Roger Joseph Boscovich / Ruđer Josip Bošković, `Theoria philosophiae naturalis redacta ad unicam legem virium in natura existentium`, 1758; revised edition 1763.
 - Gottfried Wilhelm Leibniz, `Explication de l'Arithmetique Binaire`, 1703.
 - Albert Einstein, `On a Heuristic Point of View Concerning the Production and Transformation of Light`, 1905.
 - Nobel Prize in Physics 1921, awarded to Einstein especially for the law of the photoelectric effect.
