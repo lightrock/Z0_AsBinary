@@ -756,6 +756,51 @@ Compact line:
 
 > Maldacena and Witten made the dictionary magnificent. The dictionary still is not the engine.
 
+### E8 / exceptional unification
+
+Win:
+
+```text
+exceptional Lie symmetry pressure
+ambition to unify gravity and Standard Model gauge structure
+beautiful high-dimensional algebraic classification instinct
+serious reminder that particle catalogs may be shadows of representation structure
+keeps the "one pattern behind the zoo" question alive
+```
+
+Gap:
+
+```text
+E8 beauty is not physical admissibility
+classification is not dynamics
+representation fit is not execution
+one elegant algebra is not automatically the running machine
+known critiques press hard on chirality, generations, mirror fermions, and representation-theoretic fit
+no accepted derivation of observed particle masses, couplings, generations, or quantum dynamics
+```
+
+Compact line:
+
+> E8 gives a gorgeous symmetry cathedral. BBQ says: beautiful map, not the engine; representation closure still has to become admissible dynamics with real particle receipts.
+
+Reference hook:
+
+```text
+Garrett Lisi's E8 program is worth keeping as a symmetry/classification receipt,
+not as an accepted completion of physics.
+
+The main public repair guardrail is Jacques Distler and Skip Garibaldi,
+"There is no Theory of Everything inside E8" (arXiv:0905.2658;
+Communications in Mathematical Physics 298, 419-436, 2010), which argues that
+E8 embeddings of gravity plus Standard Model gauge structure lack representation
+properties required by physical reality.
+
+The BBQ stance is not "laugh and discard." It is:
+E8 found a spectacular possible catalog geometry; closure still demands chiral
+matter, three generations, masses, couplings, dynamics, measurement records,
+and a running process that selects what actually exists.
+```
+
 ### Gell-Mann
 
 Win:
@@ -1057,15 +1102,16 @@ Compact line:
 3. Bell separately
 4. Bekenstein + Hawking + Susskind together
 5. Maldacena + Witten together
-6. Wheeler + Tegmark together
-7. Everett + Deutsch + Zeh together
-8. Einstein / General Relativity separately and carefully
-9. Sorkin / causal sets separately
-10. Jacobson + Verlinde + Padmanabhan together
-11. Kitada / Dugić + Kitada, friendly and carefully
-12. Rovelli separately
-13. Gell-Mann separately
-14. Feynman separately, carefully, because he is dangerous in a good way
+6. E8 / exceptional unification separately, beautiful but dangerous
+7. Wheeler + Tegmark together
+8. Everett + Deutsch + Zeh together
+9. Einstein / General Relativity separately and carefully
+10. Sorkin / causal sets separately
+11. Jacobson + Verlinde + Padmanabhan together
+12. Kitada / Dugić + Kitada, friendly and carefully
+13. Rovelli separately
+14. Gell-Mann separately
+15. Feynman separately, carefully, because he is dangerous in a good way
 ```
 
 ---
@@ -1111,6 +1157,8 @@ Compact line:
 > Black-hole information gives the receipt wall.
 >
 > Maldacena and Witten give the dictionary.
+>
+> E8 gives a gorgeous symmetry cathedral; closure still demands chiral matter, generations, dynamics, and real particle receipts.
 >
 > Gell-Mann gives classification and pattern discipline.
 >
