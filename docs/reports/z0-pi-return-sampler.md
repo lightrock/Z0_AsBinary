@@ -1,5 +1,7 @@
 # Z0 Pi-Return Sampler
 
+Readable report page: [Z0 Pi-Return Sampler](https://lightrock.github.io/Z0_AsBinary/reports/z0-pi-return-sampler.html).
+
 This generated report tests a bounded version of the `fundamentalPi.md`
 claim: a finite running process can produce pi operationally through
 closure-return statistics, without storing decimal digits of pi or
