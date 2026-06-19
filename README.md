@@ -102,6 +102,12 @@ is structurally special under simple computational tests.
   preserves the project posture that Heaviside gives the public interface of
   electromagnetism, while Maxwell preserves the unfinished machine question that
   `Z0` may help turn into testable information-substrate experiments.
+- [Pre-Maxwell Electromagnetic Receipt Ledger](docs/references/pre-maxwell-electromagnetic-receipt-ledger.md)
+  itemizes the receipt pile Maxwell inherited, now including Boscovich as the
+  pre-field point-force / anti-hard-marble ancestor.
+- [Boscovich Point-Force Receipts](docs/references/boscovich-point-force-receipts.md)
+  records why Boscovich matters here: matter as non-extended centers plus lawful
+  attraction/repulsion relations, not primitive hard substance.
 - [Maxwell After Mead, Wolfram, and 't Hooft](docs/references/maxwell-after-mead-wolfram-thooft.md)
   states the direct completion frame: Maxwell asks for the engine, Mead points
   to phase handshake, Wolfram and 't Hooft make executable substructure
