@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z0 Pi-Return Sampler</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14201b;
+      --muted: #58655f;
+      --line: #ccd8d2;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --green: #1c6b4f;
+      --green-soft: #e8f3ee;
+      --gold: #946c16;
+      --code: #10251c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 42px 24px 72px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 48px);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      margin-top: 42px;
+      font-size: 25px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 26px;
+      font-size: 18px;
+      color: var(--green);
+    }
+
+    p { margin: 14px 0 0; }
+
+    a { color: var(--green); }
+
+    .lede {
+      max-width: 920px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-top: 14px;
+    }
+
+    .note {
+      margin-top: 22px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--green);
+      background: var(--green-soft);
+      border-radius: 8px;
+    }
+
+    .meta-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .meta-list li {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 10px 12px;
+    }
+
+    .meta-list code {
+      font-weight: 700;
+    }
+
+    pre {
+      overflow-x: auto;
+      margin: 16px 0 0;
+      padding: 16px;
+      background: #0e1d17;
+      color: #d7f6df;
+      border-radius: 10px;
+      border: 1px solid #214132;
+      line-height: 1.45;
+    }
+
+    code {
+      font-family: Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.95em;
+    }
+
+    .table-wrap {
+      margin: 16px 0 26px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+      box-shadow: 0 1px 0 rgba(20, 32, 27, 0.03);
+    }
+
+    table {
+      width: 100%;
+      min-width: 780px;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 9px 11px;
+      border-bottom: 1px solid var(--line);
+      text-align: right;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+
+    th {
+      background: #f3f7f5;
+      color: #273b32;
+      font-weight: 700;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    tr:nth-child(even) td { background: #fbfdfc; }
+    tr:last-child td { border-bottom: 0; }
+
+    td:first-child, th:first-child,
+    .orientation td:first-child, .orientation th:first-child,
+    .catalog td:nth-child(2), .catalog th:nth-child(2) {
+      text-align: left;
+    }
+
+    .catalog { min-width: 1040px; }
+
+    .result {
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+    }
+
+    ul { margin-top: 12px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Z0 Pi-Return Sampler</h1>
+  <p class="lede">This generated report tests a bounded version of the <code>fundamentalPi.md</code> claim: a finite running process can produce pi operationally through closure-return statistics, without storing decimal digits of pi or assuming circles, radians, or primitive geometry.</p>
+
+  <div class="note">
+    This is the readable HTML companion to the Markdown source. The Markdown report is kept as an evidence file, but the wide numeric tables need a styled, scrollable view or they look ugly in the browser.
+  </div>
+
+  <p>It is not a proof that Z0 uniquely encodes pi. The report exists to separate the runnable construction from the control ensembles.</p>
+
+  <h2>Method</h2>
+  <pre>Z0 seed
+-&gt; circular XOR orbit, S_next = S XOR RotL1(S)
+-&gt; one tap tape per bit position
+-&gt; non-overlapping bit pairs mapped to four relation-walk channels
+-&gt; cyclic return windows of length 2n
+-&gt; pi_n = 1 / (n * P_return(2n))</pre>
+
+  <p>The four bit-pair channels are a diagnostic harness for return statistics, not a claim that the substrate is a square lattice.</p>
+
+  <h2>Z0 Forward Progression</h2>
+  <ul class="meta-list">
+    <li>Seed bits: <code>101011110110110111000000110001011110101</code></li>
+    <li>Seed length: <code>39</code></li>
+    <li>Hamming weight: <code>22</code></li>
+    <li>XOR steps sampled: <code>4095</code></li>
+  </ul>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>n</th><th>walk steps</th><th>returns</th><th>windows</th><th>P_return</th><th>pi_hat</th><th>error</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>2</td><td>19759</td><td>79833</td><td>0.247504</td><td>4.040336</td><td>+0.898743</td></tr>
+        <tr><td>2</td><td>4</td><td>11068</td><td>79833</td><td>0.138639</td><td>3.606478</td><td>+0.464885</td></tr>
+        <tr><td>4</td><td>8</td><td>5953</td><td>79833</td><td>0.074568</td><td>3.352637</td><td>+0.211045</td></tr>
+        <tr><td>5</td><td>10</td><td>4895</td><td>79833</td><td>0.061315</td><td>3.261818</td><td>+0.120226</td></tr>
+        <tr><td>8</td><td>16</td><td>3152</td><td>79833</td><td>0.039482</td><td>3.165966</td><td>+0.024373</td></tr>
+        <tr><td>16</td><td>32</td><td>1520</td><td>79833</td><td>0.019040</td><td>3.282607</td><td>+0.141014</td></tr>
+        <tr><td>32</td><td>64</td><td>804</td><td>79833</td><td>0.010071</td><td>3.102962</td><td>-0.038631</td></tr>
+        <tr><td>64</td><td>128</td><td>409</td><td>79833</td><td>0.005123</td><td>3.049855</td><td>-0.091738</td></tr>
+        <tr><td>80</td><td>160</td><td>319</td><td>79833</td><td>0.003996</td><td>3.128252</td><td>-0.013340</td></tr>
+        <tr><td>128</td><td>256</td><td>203</td><td>79833</td><td>0.002543</td><td>3.072391</td><td>-0.069202</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Weyl Orientation Audit</h2>
+  <p>The four canonical Z0 descriptions are tested as descriptions, not silently promoted to ontology. The table reports selected estimator values from the same circular-XOR pi-return sampler.</p>
+
+  <div class="table-wrap">
+    <table class="orientation">
+      <thead><tr><th>Orientation</th><th>bits</th><th>weight</th><th>n=8</th><th>n=32</th><th>n=80</th><th>n=128</th><th>mean abs error</th></tr></thead>
+      <tbody>
+        <tr><td>Z0 forward</td><td>39</td><td>22</td><td>3.165966</td><td>3.102962</td><td>3.128252</td><td>3.072391</td><td>0.063050</td></tr>
+        <tr><td>Z0 reverse</td><td>39</td><td>22</td><td>3.185166</td><td>3.489205</td><td>3.108762</td><td>3.231582</td><td>0.156190</td></tr>
+        <tr><td>Z0 inverse</td><td>39</td><td>17</td><td>3.165966</td><td>3.102962</td><td>3.128252</td><td>3.072391</td><td>0.063050</td></tr>
+        <tr><td>Z0 inverse-reverse</td><td>39</td><td>17</td><td>3.185166</td><td>3.489205</td><td>3.108762</td><td>3.231582</td><td>0.156190</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Shuffled And Same-Density Controls</h2>
+  <p>The empirical p column is the fraction of controls whose pi estimate is as close or closer to mathematical pi than the Z0 forward estimate at the same scale, with one-count smoothing.</p>
+
+  <h3>Same-bit-population shuffled Z0</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>n</th><th>Z0 pi_hat</th><th>control mean</th><th>stdev</th><th>min</th><th>max</th><th>controls as close</th><th>empirical p</th></tr></thead>
+      <tbody>
+        <tr><td>8</td><td>3.165966</td><td>3.243308</td><td>0.069684</td><td>3.058267</td><td>3.428075</td><td>9/128</td><td>0.078</td></tr>
+        <tr><td>16</td><td>3.282607</td><td>3.175878</td><td>0.118586</td><td>2.892500</td><td>3.536189</td><td>100/128</td><td>0.783</td></tr>
+        <tr><td>32</td><td>3.102962</td><td>3.091205</td><td>0.188627</td><td>2.543100</td><td>3.674199</td><td>17/128</td><td>0.140</td></tr>
+        <tr><td>64</td><td>3.049855</td><td>3.030478</td><td>0.275910</td><td>2.489802</td><td>3.947439</td><td>33/128</td><td>0.264</td></tr>
+        <tr><td>80</td><td>3.128252</td><td>3.030499</td><td>0.309448</td><td>2.370338</td><td>4.023841</td><td>3/128</td><td>0.031</td></tr>
+        <tr><td>128</td><td>3.072391</td><td>3.083982</td><td>0.440633</td><td>2.219556</td><td>4.130433</td><td>15/128</td><td>0.124</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Same-density random 39-bit seeds</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>n</th><th>Z0 pi_hat</th><th>control mean</th><th>stdev</th><th>min</th><th>max</th><th>controls as close</th><th>empirical p</th></tr></thead>
+      <tbody>
+        <tr><td>8</td><td>3.165966</td><td>3.244940</td><td>0.074346</td><td>3.064842</td><td>3.441078</td><td>18/128</td><td>0.147</td></tr>
+        <tr><td>16</td><td>3.282607</td><td>3.186944</td><td>0.132388</td><td>2.799979</td><td>3.636707</td><td>91/128</td><td>0.713</td></tr>
+        <tr><td>32</td><td>3.102962</td><td>3.100118</td><td>0.165564</td><td>2.668215</td><td>3.563973</td><td>17/128</td><td>0.140</td></tr>
+        <tr><td>64</td><td>3.049855</td><td>3.035704</td><td>0.308095</td><td>2.422118</td><td>3.998047</td><td>24/128</td><td>0.194</td></tr>
+        <tr><td>80</td><td>3.128252</td><td>3.000295</td><td>0.293314</td><td>2.422118</td><td>3.838125</td><td>8/128</td><td>0.070</td></tr>
+        <tr><td>128</td><td>3.072391</td><td>3.061416</td><td>0.442868</td><td>2.058400</td><td>4.910987</td><td>12/128</td><td>0.101</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>CODATA Catalog Scan</h2>
+  <p>Profiles scanned: <code>336</code> official pre-2019 CODATA rows.</p>
+  <p>The ranking below uses mean absolute error across the control scales. This is a diagnostic ranking only. It does not prove physical meaning.</p>
+  <p>Z0 rank by this crude score: <code>2</code>.</p>
+
+  <div class="table-wrap">
+    <table class="catalog">
+      <thead><tr><th>rank</th><th>CODATA quantity</th><th>bits</th><th>weight</th><th>mean abs error</th><th>n=8</th><th>n=32</th><th>n=80</th><th>n=128</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>neutron Compton wavelength</td><td>37</td><td>24</td><td>0.046644</td><td>3.145307</td><td>3.139050</td><td>3.187668</td><td>3.233393</td></tr>
+        <tr><td>2</td><td>characteristic impedance of vacuum</td><td>39</td><td>22</td><td>0.063050</td><td>3.165966</td><td>3.102962</td><td>3.128252</td><td>3.072391</td></tr>
+        <tr><td>3</td><td>helion-proton mass ratio</td><td>39</td><td>17</td><td>0.064953</td><td>3.227401</td><td>3.106826</td><td>3.147989</td><td>3.282607</td></tr>
+        <tr><td>4</td><td>alpha particle-proton mass ratio</td><td>39</td><td>19</td><td>0.072742</td><td>3.051720</td><td>3.182119</td><td>3.005761</td><td>3.149976</td></tr>
+        <tr><td>5</td><td>Compton wavelength</td><td>35</td><td>20</td><td>0.095767</td><td>3.164532</td><td>2.907670</td><td>3.035805</td><td>3.009283</td></tr>
+        <tr><td>6</td><td>triton-proton mass ratio</td><td>39</td><td>20</td><td>0.105359</td><td>3.185166</td><td>3.282607</td><td>3.293441</td><td>3.214924</td></tr>
+        <tr><td>7</td><td>atomic mass unit-hartree relationship</td><td>35</td><td>22</td><td>0.119048</td><td>3.199580</td><td>3.100978</td><td>2.755577</td><td>3.198438</td></tr>
+        <tr><td>8</td><td>electron mass in u</td><td>39</td><td>26</td><td>0.135342</td><td>3.396571</td><td>3.122380</td><td>3.138090</td><td>3.214924</td></tr>
+        <tr><td>9</td><td>electron molar mass</td><td>39</td><td>26</td><td>0.135342</td><td>3.396571</td><td>3.122380</td><td>3.138090</td><td>3.214924</td></tr>
+        <tr><td>10</td><td>neutron-proton mass ratio</td><td>37</td><td>19</td><td>0.140949</td><td>3.288425</td><td>3.211457</td><td>3.242252</td><td>3.003609</td></tr>
+        <tr><td>11</td><td>electron mag. mom. to Bohr magneton ratio</td><td>47</td><td>20</td><td>0.146033</td><td>3.247671</td><td>3.043048</td><td>3.099517</td><td>2.713476</td></tr>
+        <tr><td>12</td><td>deuteron-electron mass ratio</td><td>39</td><td>18</td><td>0.147156</td><td>3.292354</td><td>3.102962</td><td>2.978843</td><td>2.676804</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Result</h2>
+  <div class="result">
+    <p>The Z0 circular-XOR orbit does produce a sane finite pi-return sampler: it creates a running closure process whose return statistics enter the <code>pi_n = 1 / (n * P_return(2n))</code> estimator without storing pi.</p>
+    <p>The control tables are the brake pedal. Any sufficiently unbiased four-channel walk can produce a pi-return estimator, so the important question is not whether pi appears at all. The important question is whether Z0 separates from shuffled seeds, same-density seeds, and other CODATA constants by drift, variance, anisotropy, finite-period behavior, or some stronger invariant.</p>
+  </div>
+
+  <h2>Declared Limits</h2>
+  <ul>
+    <li>Bit-pair to walk-channel mapping is a diagnostic harness, not substrate.</li>
+    <li>Controls use deterministic RNG seeds for reproducibility.</li>
+    <li>Same-density controls preserve length and Hamming weight, but not every linear cellular-automaton invariant.</li>
+    <li>CODATA rows have different bit lengths, so catalog ranking is a lead generator, not a normalized final verdict.</li>
+    <li>A stronger report should add channel-map permutations, drift/aniso audits, exact period handling, and unit/precision transforms.</li>
+  </ul>
+</main>
+</body>
+</html>
