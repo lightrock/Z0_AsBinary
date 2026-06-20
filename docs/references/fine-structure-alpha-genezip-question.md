@@ -27,10 +27,19 @@ Near the Z-boson scale, the effective electromagnetic coupling is closer to
 1/128.95, not 1/137.
 ```
 
+Stricter working language:
+
+```text
+Alpha should be treated as a variable / running effective coupling unless a
+candidate machine can derive exact attractor values at each relevant scale.
+```
+
 So the word `constant` is dangerous here. Alpha is dimensionless and historically
 cataloged as a fundamental constant, but in quantum field theory the effective
 coupling depends on probe scale, renormalization convention, and what degrees of
-freedom have been integrated into the observed interaction.
+freedom have been integrated into the observed interaction. A catalog value such
+as `α(0)` or an evaluated high-energy value such as `α(M_Z)` is a receipt at a
+scale and scheme, not automatically an exact attractor of the underlying machine.
 
 ## What alpha is
 
@@ -168,6 +177,41 @@ another receipt. The machine question is whether the compression grammar can
 explain the relation between those receipts, not merely compress either decimal
 string by itself.
 
+## Exact attractor caveat
+
+Calling alpha a variable is the correct default unless a stronger theory supplies
+an attractor rule.
+
+A serious closure-machine claim would need to show something like:
+
+```text
+scale / relation-depth / scheme input
+-> admissibility rule
+-> exact attractor value or constrained flow value
+-> measured effective alpha receipt
+```
+
+Without that, `α(0)`, `α(M_Z)`, and any other evaluated coupling are not exact
+machine values. They are measured or computed points on a running flow, with
+uncertainties and scheme dependence.
+
+So the standard physics statement is:
+
+```text
+alpha runs with scale.
+```
+
+The project-strengthened statement is:
+
+```text
+alpha is a variable coupling receipt unless the underlying machine derives exact
+attractor values for each relevant scale / pointer-depth / observer horizon.
+```
+
+This matters because GeneZip should not be asked to fully reduce alpha as one
+integer-like catalog token. It should be asked whether it can detect the rule or
+relation that connects alpha's scale-labeled receipts.
+
 ## Project interpretation: alpha as pointer-swap interconnectivity
 
 Standard physics says alpha is the electromagnetic coupling strength. This note
@@ -277,6 +321,7 @@ measurement scale
 probe energy / distance scale
 renormalization scheme
 pointer-swap interconnectivity candidate
+attractor-value hypothesis, if any
 ```
 
 So partial compression makes sense. Full compression may fail because the current
@@ -296,6 +341,7 @@ alpha = boundary coupling token
       = charge-action-vacuum impedance ratio
       = scale-labeled EM coupling receipt
       = pointer-swap interconnectivity receipt candidate
+      = possible attractor-flow receipt, if a machine can derive it
 ```
 
 The key failure mode is this:
@@ -333,6 +379,7 @@ The next move is to add an alpha-specific rule family:
 Z0 = 2 α R_K
 α = α(scale, scheme)
 α = α(pointer-relation depth?)
+α = attractor(scale, pointer-depth?) ?
 ```
 
 Then test whether GeneZip compression improves when alpha is treated as an
@@ -356,9 +403,12 @@ bitstring.
 7. Add a pointer-depth hypothesis test: does compression improve when alpha is
    represented as a relation-depth / interconnectivity token instead of a single
    constants-catalog token?
-8. Require ablation controls: if alpha only compresses after the dictionary is
-   allowed to smuggle in `Z0`, `R_K`, `h`, `e`, a chosen scale token, or a
-   pointer-depth token, the improvement must be reported as relational
+8. Add an attractor hypothesis test: can any proposed machine derive exact values
+   or constrained flow values for alpha at specified scale / scheme / pointer-depth,
+   rather than merely fitting known decimals after the fact?
+9. Require ablation controls: if alpha only compresses after the dictionary is
+   allowed to smuggle in `Z0`, `R_K`, `h`, `e`, a chosen scale token, an attractor
+   token, or a pointer-depth token, the improvement must be reported as relational
    compression, not independent discovery.
 
 ## One-line version
@@ -368,9 +418,11 @@ Alpha is the EM coupling knob, but not one frozen knob setting. Low-energy alpha
 is the familiar 1/137 catalog receipt; high-energy alpha runs toward about
 1/128.95 near the Z scale. In the project lens, alpha is a candidate receipt of
 pointer-swap interconnectivity: the pre-spatial coupling rule whose projection
-looks like charged particles having feet in rendered space. GeneZip probably did
-not fully reduce it because it was treated like a flat constant instead of a
-scale-labeled boundary-coupling relation.
+looks like charged particles having feet in rendered space. It should be treated
+as a variable / running coupling unless a deeper machine derives exact attractor
+values at each relevant scale. GeneZip probably did not fully reduce it because
+it was treated like a flat constant instead of a scale-labeled boundary-coupling
+relation.
 ```
 
 ## References
