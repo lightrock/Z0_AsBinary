@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electron as Minimal Stable Charged Spinor Closure</title>
+  <style>
+    :root {
+      --bg: #07080b;
+      --panel: #10151e;
+      --panel2: #151b27;
+      --line: #30465d;
+      --ink: #eef7ff;
+      --muted: #a9bbca;
+      --cyan: #57e7ff;
+      --green: #63ffa5;
+      --orange: #ffbd62;
+      --red: #ff6b6b;
+      --shadow: rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 18% 8%, rgba(87,231,255,.14), transparent 34%),
+        radial-gradient(circle at 85% 20%, rgba(99,255,165,.10), transparent 32%),
+        var(--bg);
+      color: var(--ink);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      line-height: 1.55;
+    }
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 60px;
+    }
+    a { color: var(--cyan); font-weight: 700; }
+    header.hero {
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(16,21,30,.96), rgba(10,13,19,.92));
+      border-radius: 18px;
+      padding: clamp(22px, 4vw, 42px);
+      box-shadow: 0 22px 48px var(--shadow);
+      overflow: hidden;
+    }
+    .eyebrow {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: .82rem;
+      margin: 0 0 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 4.5rem);
+      line-height: .98;
+      letter-spacing: -.06em;
+    }
+    .subtitle {
+      max-width: 860px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      margin: 18px 0 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 410px);
+      gap: 18px;
+      margin-top: 20px;
+      align-items: start;
+    }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+    section, figure, .card {
+      border: 1px solid var(--line);
+      background: rgba(16,21,30,.94);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 16px 34px var(--shadow);
+    }
+    section { margin-top: 18px; }
+    h2 {
+      margin: 0 0 10px;
+      color: var(--orange);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: 1rem;
+    }
+    h3 { margin: 20px 0 8px; color: var(--cyan); }
+    p { margin: 0 0 12px; color: var(--muted); }
+    strong { color: var(--ink); }
+    code, pre {
+      background: #06090f;
+      color: var(--green);
+      border: 1px solid #253849;
+      border-radius: 10px;
+    }
+    code { padding: .1em .35em; }
+    pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+    .warning {
+      border-color: rgba(255,107,107,.55);
+      background: linear-gradient(180deg, rgba(255,107,107,.12), rgba(16,21,30,.94));
+    }
+    .stamp {
+      display: inline-block;
+      border: 1px solid var(--green);
+      color: var(--green);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: .82rem;
+      margin-right: 6px;
+    }
+    figure { margin: 20px 0 0; padding: 12px; }
+    figure img {
+      display: block;
+      width: 100%;
+      max-height: 560px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: #05070a;
+      border: 1px solid #26394c;
+    }
+    figcaption {
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: 10px;
+    }
+    ul { color: var(--muted); padding-left: 1.2rem; }
+    li { margin: 7px 0; }
+    .two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    @media (max-width: 700px) { .two { grid-template-columns: 1fr; } }
+    .callout {
+      border-left: 4px solid var(--cyan);
+      padding-left: 14px;
+      color: var(--ink);
+    }
+    footer {
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: 24px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <p class="eyebrow">Z0_AsBinary · next closure target after alpha</p>
+    <h1>Electron as Minimal Stable Charged Spinor Closure</h1>
+    <p class="subtitle">
+      Alpha was the coupling knob. The electron is the stable charged closure process that makes the knob unavoidable.
+      Do not start by worshipping the decimal mass. Start with the receipts the machine must produce.
+    </p>
+  </header>
+
+  <figure>
+    <img src="../images/ElectronIsTheCenterOfStrangeQuark.png" alt="Legacy diagram: Electron Is The Center Of Strange Quark" onerror="this.style.display='none'; this.parentElement.classList.add('warning'); this.parentElement.querySelector('figcaption').innerHTML='Requested image path: ../images/ElectronIsTheCenterOfStrangeQuark.png. If this caption is visible without the image, the image file still needs to be present at that exact path.';">
+    <figcaption>
+      Legacy image receipt: <code>docs/images/ElectronIsTheCenterOfStrangeQuark.png</code>. Treat the visual as a project artifact / lead-generator, not a standard-model proof claim.
+    </figcaption>
+  </figure>
+
+  <div class="grid">
+    <section>
+      <h2>Working thesis</h2>
+      <p>
+        The electron should not be introduced as a tiny marble moving through pre-existing caveman space.
+        In this project frame, the electron is a <strong>minimal stable charged spinor closure</strong> whose observer-facing receipts include charge, spin, mass, Compton scale, magnetic moment, alpha corrections, and detector persistence.
+      </p>
+      <pre>electron = stable charged closure-process
+         = spin-1/2 / 4π-return receipt
+         = charge/action participation mode
+         = Compton boundary receipt
+         = persistent detector identity</pre>
+    </section>
+
+    <section class="warning">
+      <h2>Wrong first target</h2>
+      <p>
+        The wrong first target is simply deriving <code>m_e = 9.109...</code>. That may come later, but starting there invites numerology.
+      </p>
+      <p class="callout">
+        Better target: derive why a stable charged spin-1/2 closure process exists at all, then ask why its Compton scale and mass receipt take the observed values.
+      </p>
+    </section>
+  </div>
+
+  <section>
+    <h2>Why electron next?</h2>
+    <p>
+      Alpha can close to its honest boundary as a running coupling receipt. The electron is where the next receipts collide cleanly:
+    </p>
+    <div class="two">
+      <div class="card">
+        <span class="stamp">Z0</span>
+        <p>Vacuum electromagnetic interface: how the E/H faces exchange in free-space propagation.</p>
+      </div>
+      <div class="card">
+        <span class="stamp">α</span>
+        <p>Running coupling knob: how charge/action participates in the EM interface.</p>
+      </div>
+      <div class="card">
+        <span class="stamp">Compton</span>
+        <p>Mass/action/rate rendered as an operational boundary length.</p>
+      </div>
+      <div class="card">
+        <span class="stamp">spinor</span>
+        <p>Spin-1/2 and 4π return: the closure is not an ordinary 2π spatial loop.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Do Compton before mass</h2>
+    <p>
+      The mass decimal is not the cleanest machine-facing receipt. The Compton relation is better because it says mass is where action and propagation rate become an operational length scale.
+    </p>
+    <pre>λ_C = h / (m_e c)
+λ̄_C = ℏ / (m_e c)</pre>
+    <p>
+      In project language:
+    </p>
+    <pre>Compton = mass/action/rate boundary receipt
+mass    = closure frequency seen through action and propagation limits</pre>
+    <p>
+      This matters because the Z0/π sampler already produced Compton-family constants as strong leads. That points toward closure scale before naked mass decimal.
+    </p>
+  </section>
+
+  <section>
+    <h2>Required electron receipts</h2>
+    <ul>
+      <li><strong>Charge unit:</strong> why one stable negative unit of elementary charge appears.</li>
+      <li><strong>Spin-1/2 / 4π return:</strong> why the full state closes after 4π, not merely a 2π spatial circuit.</li>
+      <li><strong>Compton scale:</strong> why the electron has this action/rate boundary.</li>
+      <li><strong>Magnetic moment:</strong> why <code>g ≈ 2</code> appears before the QED correction ladder.</li>
+      <li><strong>g−2:</strong> why the alpha ladder corrects the magnetic moment with absurd precision.</li>
+      <li><strong>Persistence:</strong> why the electron survives as a stable detector identity.</li>
+      <li><strong>Pointlike scattering:</strong> why it behaves pointlike in high-energy tests while still carrying nontrivial closure receipts.</li>
+      <li><strong>Family modes:</strong> whether electron, muon, and tau are related closure modes rather than unrelated catalog entries.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>No caveman space assumption</h2>
+    <p>
+      The electron target must not assume a little charged bead moving in a primitive arena. Spatial appearance is downstream.
+    </p>
+    <pre>entanglement / pointer relation first
+pointer-swap closure and admissibility next
+stable charged spinor closure persists
+observer-facing space, track, and detector event render afterward</pre>
+    <p>
+      If ordinary spatial space were fundamental, the electron would be a thing walking through it. If spatial space is projected from entanglement-basis pointer relations, the electron is part of the rule-set that makes charged interaction look spatial in the first place.
+    </p>
+  </section>
+
+  <section>
+    <h2>Candidate work order for Jim / QLF</h2>
+    <pre>Next target: electron.
+
+Do not start by deriving the mass decimal.
+
+Target:
+derive the electron as the minimal stable charged spinor closure process.
+
+Required receipts:
+- charge unit
+- spin-1/2 / 4π return
+- Compton scale
+- g≈2 and g−2 alpha ladder
+- stability / detector persistence
+- pointlike scattering behavior
+- lepton-family relation if possible
+
+Gate:
+no treating the electron as a little marble in pre-existing space.
+Spatial appearance is downstream of closure.</pre>
+  </section>
+
+  <section>
+    <h2>One-line version</h2>
+    <pre>Alpha was the knob.
+The electron is the hand on the knob.
+Now derive the hand without assuming caveman space.</pre>
+  </section>
+
+  <footer>
+    Status: working target note, not a completed derivation. This is a receipt ledger and next-closure work order for the electron.
+  </footer>
+</main>
+</body>
+</html>
