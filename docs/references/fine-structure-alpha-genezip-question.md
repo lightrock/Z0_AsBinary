@@ -168,6 +168,51 @@ another receipt. The machine question is whether the compression grammar can
 explain the relation between those receipts, not merely compress either decimal
 string by itself.
 
+## Project interpretation: alpha as pointer-swap interconnectivity
+
+Standard physics says alpha is the electromagnetic coupling strength. This note
+adds the project interpretation, not as established doctrine, but as the working
+machine question.
+
+If space were a caveman arena made of little objects walking through a room,
+alpha would look like a small number controlling the effectiveness of the
+charged particle's feet on that floor.
+
+But the process-first claim is different:
+
+```text
+spatial space is not the primitive floor
+entanglement / pointer relation is the pre-spatial basis
+pointer-swap interconnectivity is what later renders as spatial reach
+```
+
+In that framing, alpha is not a constant brick and not merely a decimal token. It
+is a coupling-rate receipt for how readily charge/action relations participate in
+the electromagnetic pointer-swap network.
+
+```text
+alpha = interconnectivity receipt
+      = charge/action participation rate
+      = how strongly local relation-update couples into the EM interface
+      = the projected "feet" that look spatial only after geometry renders
+```
+
+So the earlier walking metaphor should be read this way:
+
+```text
+If ordinary spatial space were fundamental, alpha would be the feet walking
+through it.
+
+If spatial space is projected from entanglement-basis pointer relations, alpha is
+not the feet in space. It is part of the pre-spatial stepping / coupling rule that
+later makes EM interaction appear to walk through space.
+```
+
+This is why the running of alpha matters. If the effective coupling changes with
+probe scale, then the apparent interconnectivity is not a single static property
+painted onto space. It is a scale-labeled receipt of how much unresolved pointer
+relation work has been compressed into the observer-facing EM interaction.
+
 ## What alpha does exactly
 
 Alpha controls the strength and rate of electromagnetic interaction.
@@ -231,6 +276,7 @@ renormalized EM coupling
 measurement scale
 probe energy / distance scale
 renormalization scheme
+pointer-swap interconnectivity candidate
 ```
 
 So partial compression makes sense. Full compression may fail because the current
@@ -249,6 +295,7 @@ alpha = boundary coupling token
       = Z0 / (2 R_K)
       = charge-action-vacuum impedance ratio
       = scale-labeled EM coupling receipt
+      = pointer-swap interconnectivity receipt candidate
 ```
 
 The key failure mode is this:
@@ -285,6 +332,7 @@ The next move is to add an alpha-specific rule family:
 α = Z0 / (2 R_K)
 Z0 = 2 α R_K
 α = α(scale, scheme)
+α = α(pointer-relation depth?)
 ```
 
 Then test whether GeneZip compression improves when alpha is treated as an
@@ -305,19 +353,24 @@ bitstring.
    as the same information object as alpha at high-energy scales.
 6. Add a second alpha target, such as `α(M_Z)`, and ask whether GeneZip compresses
    the relation between `α(0)` and `α(M_Z)`, not merely the two flat strings.
-7. Require ablation controls: if alpha only compresses after the dictionary is
-   allowed to smuggle in `Z0`, `R_K`, `h`, `e`, or a chosen scale token, the
-   improvement must be reported as relational compression, not independent
-   discovery.
+7. Add a pointer-depth hypothesis test: does compression improve when alpha is
+   represented as a relation-depth / interconnectivity token instead of a single
+   constants-catalog token?
+8. Require ablation controls: if alpha only compresses after the dictionary is
+   allowed to smuggle in `Z0`, `R_K`, `h`, `e`, a chosen scale token, or a
+   pointer-depth token, the improvement must be reported as relational
+   compression, not independent discovery.
 
 ## One-line version
 
 ```text
 Alpha is the EM coupling knob, but not one frozen knob setting. Low-energy alpha
 is the familiar 1/137 catalog receipt; high-energy alpha runs toward about
-1/128.95 near the Z scale. GeneZip probably did not fully reduce it because it
-was treated like a flat constant instead of a scale-labeled boundary-coupling
-relation.
+1/128.95 near the Z scale. In the project lens, alpha is a candidate receipt of
+pointer-swap interconnectivity: the pre-spatial coupling rule whose projection
+looks like charged particles having feet in rendered space. GeneZip probably did
+not fully reduce it because it was treated like a flat constant instead of a
+scale-labeled boundary-coupling relation.
 ```
 
 ## References
