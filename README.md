@@ -36,6 +36,8 @@ It currently provides:
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
 - We are asking this question next in the quark GeneZip compression work:
   [Fine-Structure Constant Alpha and GeneZip](docs/references/fine-structure-alpha-genezip-question.md).
+- Next closure target after alpha:
+  [Electron as Minimal Stable Charged Spinor Closure](https://lightrock.github.io/Z0_AsBinary/references/electron-minimal-stable-charged-spinor-closure.html).
 - For the runnable `Z0`/`π` return-sampler report, read [Z0/Pi Return Sampler](https://lightrock.github.io/Z0_AsBinary/reports/z0-pi-return-sampler.html).
 - For the Maxwell/Mead/Wolfram/'t Hooft synthesis, read [Maxwell After Mead, Wolfram, and 't Hooft](docs/references/maxwell-after-mead-wolfram-thooft.md).
 
@@ -197,4 +199,4 @@ source code unless GitHub Pages or another static host is used.
 
 - BIPM, [The International System of Units (SI)](https://www.bipm.org/en/measurement-units).
 - NIST, [SI Redefinition](https://www.nist.gov/si-redefinition).
-- Pierre Fayet, [Completing the International System of units with c = hbar = mu0 = epsilon0 = kB = NA = 1](https://arxiv.org/abs/1906.05123), arXiv:1906.05123.
+- Pierre Fayet, SI units completion paper, arXiv:1906.05123.
