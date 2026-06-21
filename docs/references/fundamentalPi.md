@@ -1068,6 +1068,95 @@ running process, rather than assumed as a primitive geometric constant.
 
 ---
 
+## 15. Z0 Machine as a sparse pi machine
+
+Longer companion note: [`z0-sparse-pi-machine.md`](z0-sparse-pi-machine.md)
+
+The finite return-sampler result above should now be sharpened with one more
+word:
+
+```text
+sparse
+```
+
+The Z0 Machine is a pi machine in the specific process-first sense that it can
+run a finite deterministic closure orbit whose selected return statistics produce
+a pi-like estimator without importing circles, radians, coordinates, or stored
+digits of pi.
+
+It is sparse because the machine does not say pi everywhere. It does not ask
+every bit, every tap, every window, or every local update to carry the whole
+meaning. The signal appears through selected return receipts inside a larger
+field of non-returns, skipped windows, unused local structure, null outcomes, and
+finite-period artifacts.
+
+That matters. A dense or greedy reading would treat every occupied slot as the
+machine and every empty slot as waste. The sparse reading says the opposite:
+
+```text
+blank space is part of the closure layout
+failed returns are part of the census
+null windows are part of the admissibility structure
+firebreaks preserve reachability
+```
+
+So the Z0 Machine should not be described as:
+
+```text
+Z0 stores pi.
+Z0 uniquely encodes pi.
+Z0 is secretly a circle.
+```
+
+The cleaner description is:
+
+```text
+Z0 is a sparse finite pi machine:
+a circular-XOR impedance-facing process whose selected return-window census can
+produce pi-like closure estimators without inserting pi as a primitive.
+```
+
+This also keeps the QLF/ZFA relationship honest. Jim's formal side says the ZFA
+closure census `C(2n,n)` supplies a substrate-native count that can render period
+receipts such as pi, and now also Apéry/ζ(3), through known constructions. The
+Z0_AsBinary side is not yet that theorem. It is an impedance-facing candidate:
+
+```text
+QLF / ZFA:
+    formal closure census
+    central binomial machine
+    period receipts
+
+Z0_AsBinary:
+    finite electromagnetic-impedance seed
+    circular XOR orbit
+    sparse return-window sampler
+    possible catalog-visible receipt of the same closure-census family
+```
+
+The bridge claim is therefore:
+
+```text
+Z0 may be the impedance-facing sparse pi machine corresponding to the same kind
+of closure generator that QLF exposes formally.
+```
+
+The required controls remain unchanged, but one metric should be added: measure
+how sparse the successful return windows are, and whether their distribution is
+special compared with random seeds, shuffled Z0 seeds, other CODATA constants,
+other orientations, and alternate bit-pair channel maps.
+
+Compact doctrine line:
+
+```text
+The Z0 Machine is not a pi decimal and not a circle. It is a running sparse
+closure sampler. It leaves enough return receipts that pi can be recovered by the
+right census, while its non-returns and gaps remain part of the machine rather
+than discarded noise.
+```
+
+---
+
 ## References
 
 - BIPM, *The International System of Units (SI Brochure)*: distinction between frequency in hertz and angular frequency in radians per second.
