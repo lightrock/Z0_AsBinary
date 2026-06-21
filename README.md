@@ -35,6 +35,7 @@ It currently provides:
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the new chromodyne/electron gold-star addendum, read [Chromodyne / Electron Lineage Gold Stars](docs/references/chromodyne-electron-lineage-gold-stars.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
+- For Jim/QLF's Apéry-period carryback into Fundamental Pi, read [Fundamental Pi: QLF Apéry Carryback](docs/references/fundamental-pi-qlf-apery-carryback.md).
 - We are asking this question next in the quark GeneZip compression work:
   [Fine-Structure Constant Alpha and GeneZip](docs/references/fine-structure-alpha-genezip-question.md).
 - Next closure target after alpha:
@@ -104,6 +105,11 @@ is structurally special under simple computational tests.
 - [Fundamental Pi](docs/references/fundamentalPi.md) asks what physical machine
   produces the closure represented by `π`, `2π`, phase, rotation, and emergent
   geometry, without treating the symbol as the substrate.
+- [Fundamental Pi: QLF Apéry Carryback](docs/references/fundamental-pi-qlf-apery-carryback.md)
+  records Jim Whitescarver's QLF-side update: `Z0_AsBinary` has been carried into
+  `Physical_Pi.md` as another closure-process machine, while QLF's
+  `QLF_AperyPeriod.lean` now uses the same central-binomial closure census to
+  render `ζ(3)` as a second period receipt.
 - [Maxwell Machine Completion Note](docs/references/maxwell-machine-completion-note.md)
   preserves the project posture that Heaviside gives the public interface of
   electromagnetism, while Maxwell preserves the unfinished machine question that
