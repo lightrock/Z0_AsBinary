@@ -12,6 +12,27 @@ The point is not an ordinary file-format claim. The point is a process-first com
 
 ---
 
+## 0. Literalism guardrail
+
+This note does **not** claim that the universe is literally sorting entries into hash tables, performing database lookups, or running an ordinary archive utility.
+
+The hash-table result is used as a computer-science receipt for one process lesson:
+
+```text
+local availability is not the same thing as global admissibility
+```
+
+The Zip/Unzip frame -- possibly quark genetic unzip from the Z0 itself -- is used as a compression/decompression lens for another process lesson:
+
+```text
+compact executable structure can expand only if boundaries, seams, stop points,
+and admissibility rules keep the expansion recoverable.
+```
+
+So the analogy is about **recoverability under expansion**, not about literal hash tables or literal lookups inside the universe.
+
+---
+
 ## 1. The correction: not only Zip, but Unzip
 
 The older language says:
@@ -49,7 +70,7 @@ That makes `Z0_AsBinary` a decompression question, not only a compression questi
 
 ## 2. Zip/Unzip and parse firebreaks
 
-A Zip/Unzip stream, in the generic sense, cannot be pure undifferentiated mush. If the output is to remain recoverable, the machine must preserve parseability.
+A Zip/Unzip stream, in the generic sense -- possibly quark genetic unzip from the Z0 itself -- cannot be pure undifferentiated mush. If the output is to remain recoverable, the machine must preserve parseability.
 
 So the relevant invariant is:
 
@@ -62,7 +83,7 @@ compressed payload
 
 Those boundaries are firebreaks.
 
-For Zip/Unzip -- possibly quark genetic unzip from the Z0 itself -- the firebreak is not decoration. It is the structural rule that lets a compressed stream remain decodable.
+For Zip/Unzip -- possibly quark genetic unzip from the Z0 itself -- the firebreak is not decoration. It is the structural rule that lets a compact stream remain expandable and recoverable.
 
 ```text
 Without firebreaks:
@@ -72,11 +93,7 @@ With firebreaks:
     expansion remains parseable, reachable, and recoverable.
 ```
 
-That is the same kind of lesson now being borrowed from elastic hash tables:
-
-```text
-local availability != global admissibility
-```
+That is the same class of warning now being borrowed from elastic hash tables, without making the universe a hash table.
 
 A locally available bit, slot, window, tap, branch, or token is not automatically meaningful payload. Some local opportunities must be skipped or bounded so that future recovery remains possible.
 
@@ -84,11 +101,11 @@ A locally available bit, slot, window, tap, branch, or token is not automaticall
 
 ## 3. Hash-table firebreaks and Zip/Unzip firebreaks
 
-Hash-table firebreaks preserve lookup reachability.
+In literal hash tables, firebreaks preserve access reachability under crowding.
 
-Zip/Unzip firebreaks -- possibly quark genetic unzip from the Z0 itself -- preserve decode reachability.
+In Zip/Unzip -- possibly quark genetic unzip from the Z0 itself -- firebreaks preserve decode/recovery reachability under expansion.
 
-Z0 sparse-closure firebreaks may preserve closure reachability.
+In Z0 sparse-closure work, firebreaks may preserve closure reachability.
 
 The shared doctrine is:
 
@@ -96,7 +113,7 @@ The shared doctrine is:
 Do not greedily occupy every locally available slot.
 Do not greedily interpret every locally visible bit.
 Do not throw away gaps as absence.
-Measure whether the gaps preserve future reachability.
+Measure whether the gaps preserve future recovery.
 ```
 
 This is the bridge from computer science into `Z0_AsBinary`:
@@ -108,11 +125,13 @@ greedy interpretation:
     every failed return is waste
 
 sparse closure interpretation:
-    some bits are parse boundaries
-    some taps are firebreaks
+    some bits may be parse boundaries
+    some taps may be firebreaks
     failed returns shape the census
-    null receipts keep the machine decodable
+    null receipts keep the expansion recoverable
 ```
+
+Again: not literal database lookup. The hash-table result is a receipt for why non-greedy spacing can matter.
 
 ---
 
@@ -131,7 +150,7 @@ Bigger-brain Occam says:
 ```text
 prefer the smallest runnable generator
 that expands into the observed receipts
-without losing parseability, lookup reachability, closure, or scale custody.
+without losing parseability, recovery reachability, closure, or scale custody.
 ```
 
 A short rule that expands into unusable chaos is not a good theory. A compact seed that expands through balanced access, firebreaks, and admissible closure is better.
@@ -146,7 +165,7 @@ minimal seed
 + admissible closure
 ```
 
-This is Occam with runtime, lookup debt, and recoverability included.
+This is Occam with runtime, recovery debt, and recoverability included.
 
 ---
 
@@ -163,7 +182,7 @@ Z0 may be a compact executable seed.
 And more specifically:
 
 ```text
-Z0 may be tested as a Zip/Unzip machine -- possibly quark genetic unzip from the Z0 itself.
+Z0 may be tested through a Zip/Unzip lens -- possibly quark genetic unzip from the Z0 itself.
 ```
 
 That means future tests should not only ask:
@@ -175,11 +194,11 @@ Can other constants compress into Z0-like tokens?
 They should also ask:
 
 ```text
-When Z0 runs, what does it Unzip?
-Does it Unzip quark genetic structure?
-Does it Unzip sparse return receipts?
-Does it Unzip closure statistics?
-Does it preserve firebreaks that make the expansion decodable?
+When Z0 runs, what expands from it?
+Does it Unzip quark genetic structure -- possibly quark genetic unzip from the Z0 itself?
+Does it Unzip sparse return receipts -- possibly quark genetic unzip from the Z0 itself?
+Does it Unzip closure statistics -- possibly quark genetic unzip from the Z0 itself?
+Does it preserve firebreaks that make the expansion recoverable?
 ```
 
 ---
@@ -228,7 +247,7 @@ It relocates structure into the rule that knows where to stop reading.
 
 ```text
 The firebreak is not a gap in the machine.
-The firebreak is what lets the machine Unzip without becoming unreadable.
+The firebreak is what lets the machine Unzip without becoming unreadable -- possibly quark genetic unzip from the Z0 itself.
 ```
 
 ```text
@@ -238,5 +257,10 @@ but what can Unzip from Z0 -- possibly quark genetic unzip from the Z0 itself.
 
 ```text
 Occam was counting description length.
-The closure machine must also count runtime, lookup debt, parseability, and whether the output can still close.
+The closure machine must also count runtime, recovery debt, parseability, and whether the output can still close.
+```
+
+```text
+The universe is not asserted to be a hash table.
+The hash-table firebreak result is a warning: non-greedy structure can preserve recoverability.
 ```
