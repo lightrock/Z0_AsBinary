@@ -1,8 +1,10 @@
 # Fundamental Pi: Elastic Hashing, Firebreaks, and Sparse Closure
 
-Status: explicit companion note to `fundamentalPi.md` and `z0-sparse-pi-machine.md`.
+Status: explicit companion note to `fundamentalPi.md`, `z0-sparse-pi-machine.md`, and [`zip-unzip-firebreak-occam.md`](zip-unzip-firebreak-occam.md).
 
 This note exists because the hash-table / elastic-hashing issue must be named directly, not left as a vague metaphor.
+
+It now also carries the Zip/Unzip frame -- possibly quark genetic unzip from the Z0 itself -- because compression alone is not the full question. The stronger question is what a compact `Z0` seed can expand into while preserving parseability and closure.
 
 ## 1. The computer-science anchor
 
@@ -45,7 +47,37 @@ The gaps may preserve reachability.
 The non-events may be part of the closure layout.
 ```
 
-## 3. Z0 sparse-pi reading
+## 3. Zip/Unzip bridge -- possibly quark genetic unzip from the Z0 itself
+
+The Zip/Unzip frame asks a deeper version of the same question:
+
+```text
+What does the compact seed expand into,
+and what firebreaks keep that expansion decodable?
+```
+
+For `Z0_AsBinary`, every Zip/Unzip reference here means:
+
+```text
+possibly quark genetic unzip from the Z0 itself
+```
+
+The point is not ordinary file format behavior. The point is that a compressed stream, a sparse hash table, and a finite closure sampler all need boundaries that preserve future recovery.
+
+```text
+Hash-table firebreaks preserve lookup reachability.
+Zip/Unzip firebreaks preserve decode reachability.
+Z0 sparse-closure firebreaks may preserve closure reachability.
+```
+
+So the Fundamental Pi correction is:
+
+```text
+Do not only count successful returns.
+Measure the seams that keep returns meaningful.
+```
+
+## 4. Z0 sparse-pi reading
 
 For Z0_AsBinary:
 
@@ -54,13 +86,14 @@ Z0 seed
 -> circular XOR orbit
 -> sparse tap tapes
 -> bit-pair relation channels
+-> possible quark genetic Unzip from the Z0 itself
 -> return-window census
 -> running pi estimator
 ```
 
 A greedy reading tries to assign immediate payload meaning to every bit, tap, and local window.
 
-A sparse closure reading asks a better question:
+A sparse closure / Zip/Unzip reading asks a better question:
 
 ```text
 Which selected windows return?
@@ -68,35 +101,41 @@ Which windows fail?
 How are the failures distributed?
 Do the gaps/firebreaks preserve a non-random closure geometry?
 Does Z0 separate from shuffled/random/CODATA controls?
+Do the seams preserve possible quark genetic unzip from the Z0 itself?
 ```
 
-## 4. Doctrine line
+## 5. Doctrine line
 
 ```text
-Elastic hashing proves the general process lesson: a locally open slot is not automatically an admissible slot. Z0 should be read the same way. A locally available bit/window/tap is not automatically meaningful payload; gaps, failed returns, and skipped windows may be firebreak-like structure that preserves the closure census.
+Elastic hashing proves the general process lesson: a locally open slot is not automatically an admissible slot. Z0 should be read the same way. A locally available bit/window/tap is not automatically meaningful payload; gaps, failed returns, skipped windows, and Zip/Unzip seams -- possibly quark genetic unzip from the Z0 itself -- may be firebreak-like structure that preserves the closure census.
 ```
 
-## 5. Brutal version
+## 6. Brutal version
 
 ```text
 Do not greedily interpret every bit.
 Do not throw away every gap.
 The firebreak may be the machine.
+The firebreak may be what lets Z0 Unzip without becoming unreadable -- possibly quark genetic unzip from the Z0 itself.
 ```
 
-## 6. Required test addition
+## 7. Required test addition
 
-Any future Z0/pi return-sampler test should measure not only pi-like convergence, but also the firebreak structure:
+Any future Z0/pi return-sampler test should measure not only pi-like convergence, but also the firebreak and Zip/Unzip structure -- possibly quark genetic unzip from the Z0 itself:
 
 ```text
 successful return density
 failed-return distribution
 run lengths between returns
 gap spacing
+null-window spacing
+tap sparsity
 orientation dependence
+alternate channel-map dependence
 comparison against shuffled Z0
 comparison against random same-density seeds
 comparison against other CODATA constants
+comparison against ordinary compressed and uncompressed control bitstreams
 ```
 
 The question is not merely:
@@ -110,5 +149,5 @@ Many unbiased samplers can do that.
 The sharper question is:
 
 ```text
-Does Z0 have an unusual sparse/firebreak closure layout?
+Does Z0 have an unusual sparse/firebreak Zip/Unzip closure layout -- possibly quark genetic unzip from the Z0 itself?
 ```
