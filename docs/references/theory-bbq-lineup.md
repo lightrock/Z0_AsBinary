@@ -21,9 +21,12 @@ Longer companion notes already exist for several entries:
 - [`smolin-real-time-receipts.md`](smolin-real-time-receipts.md)
 - [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md)
 - [`fundamentalPi.md`](fundamentalPi.md)
+- [`fundamentalpi-elastic-hashing-firebreaks.md`](fundamentalpi-elastic-hashing-firebreaks.md)
+- [`z0-sparse-pi-machine.md`](z0-sparse-pi-machine.md)
 - [`boltzmann-gibbs-wheeler-landauer-bennett-receipts.md`](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md)
 - [`boscovich-point-force-receipts.md`](boscovich-point-force-receipts.md)
 - [`wilson-kadanoff-scale-receipts.md`](wilson-kadanoff-scale-receipts.md)
+- [`witten-1984-uds-strange-matter-z0.md`](witten-1984-uds-strange-matter-z0.md)
 
 ---
 
@@ -65,14 +68,63 @@ That makes Z0 interesting as a possible catalog-visible impedance receipt
 of the EM phase-matching closure rule, not as a sacred ohm value.
 ```
 
-Gold star note:
+### Edward Witten 1984 / strange matter - double gold star
+
+Longer note: [`witten-1984-uds-strange-matter-z0.md`](witten-1984-uds-strange-matter-z0.md)
+
+Double-gold-star reason:
 
 ```text
-Do not BBQ Mead like a map-worshipper.
-Keep him near the controls.
-He is strong evidence that projectile/object-first electromagnetism is the wrong picture.
-The remaining question is not whether phase matters.
-The remaining question is what physical closure machine makes phase-handshakes real.
+Cosmic Separation of Phases (1984)
+Bodmer-Witten strange matter pressure
+U/D/S becomes a possible bulk-QCD ground-state receipt
+strange is not decorative; strange can become part of cheaper baryon packing
+flavor identity is phase/closure-context dependent at the dense-QCD level
+Z0's own UDS/electrical receipt now becomes BBQ-grade, not a cute coincidence
+```
+
+Why two gold stars:
+
+```text
+Gold star 1: Witten makes U/D/S physically unavoidable in the ground-state question, not merely in the particle zoo.
+Gold star 2: strange matter says flavor identity is phase/closure-context dependent at the bulk-QCD level, directly repairing the quarks-as-beads picture.
+```
+
+Z0 / electrical receipt note:
+
+```text
+The Z0 catalog saying UDS must not be waved away as decorative numerology.
+Z0 is electromagnetic impedance -- electric shit, not abstract bead taxonomy.
+If the impedance-facing receipt itself says UDS, then U/D/S belongs in the same BBQ zone as Witten's strange-matter clue.
+
+Safe version:
+Z0 saying UDS is an electrical/impedance receipt candidate that rhymes hard with Witten's strange-matter phase result.
+
+Unsafe version:
+Every ordinary proton is already literal strange matter.
+Do not say that.
+```
+
+Closure correction:
+
+```text
+uud / udd are low-density hadronic receipts.
+u/d/s may be the preferred dense-QCD bulk receipt.
+Which flavor degrees of freedom dominate depends on the closure regime.
+Quark labels are not marbles.
+Quark labels are visible flavor receipts of a running QCD closure machine.
+```
+
+Compact line:
+
+> Witten 1984 gets two gold stars because strange matter makes U/D/S a possible ground-state closure receipt, not just a particle-zoo label; Z0 saying UDS then becomes an electrical/impedance-facing clue that must be tested, not waved away.
+
+Brutal line:
+
+```text
+Witten is the receipt that strange is not garnish.
+Under the right QCD closure conditions, U/D/S may be the cheaper way for the machine to pack baryon number.
+If Z0 itself says UDS, BBQ it with two gold stars and test the hell out of it.
 ```
 
 ### Lee Smolin - qualified double gold star
@@ -113,16 +165,6 @@ Compact line:
 
 > Smolin gets two gold stars: one for making time physically real again, and one for refusing timeless law worship. He still needs the closure/admissibility machine that makes real time physically operative.
 
-Gold star note:
-
-```text
-Do not collapse Smolin into LQG.
-LQG is the discrete geometric receipt program.
-Smolin is broader: time is real, laws may evolve, and physics should not be timeless Platonism.
-The repair is to give Smolin the missing machine:
-time as process drive -> closure/admissibility -> persistence receipts -> rendered geometry/time.
-```
-
 ### Wojciech Zurek - gold star
 
 Gold star reason:
@@ -159,16 +201,6 @@ Zurek remains gold-star important because he identifies the record-copying layer
 but QLF/Fundamental Pi still need the admissibility rule that selects the structure.
 ```
 
-Gold star note:
-
-```text
-Do not BBQ Zurek as a failure.
-He is one of the best receipt-layer theorists we have.
-The issue is not that pointer states, einselection, or quantum Darwinism are useless.
-The issue is that records are downstream of closure.
-The missing machine must select admissible systems and pointer bases before records can proliferate.
-```
-
 ### Ludwig Boltzmann + J. Willard Gibbs - double gold star
 
 Longer note: [`boltzmann-gibbs-wheeler-landauer-bennett-receipts.md`](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md)
@@ -190,46 +222,9 @@ Gold star 1: Boltzmann makes entropy physical by tying it to hidden state multip
 Gold star 2: Gibbs makes entropy ensemble-disciplined, which is exactly what Z0_AsBinary needs for null models and controls.
 ```
 
-Closure correction:
-
-```text
-A visible pattern is not a receipt until the ensemble of possible alternatives is specified.
-A macrostate hides many compatible microstates.
-A bit pattern hides many possible comparison classes.
-Entropy is the warning that visible order and hidden multiplicity are not the same thing.
-```
-
-Relation to Shannon:
-
-```text
-Boltzmann/Gibbs -> count compatible physical state possibilities
-Shannon         -> count uncertainty / information possibilities in messages
-Z0_AsBinary     -> compare the Z0 receipt against explicit ensembles before interpretation
-```
-
-Remaining gap:
-
-```text
-entropy is not substrate
-ensemble is not execution
-state-counting is not closure
-information entropy is not the process engine
-statistical typicality is not the same as admissibility
-```
-
 Compact line:
 
 > Boltzmann and Gibbs get two gold stars: one for physical state multiplicity, one for ensemble discipline; together they bridge entropy into information controls without pretending entropy is the machine.
-
-Gold star note:
-
-```text
-Do not BBQ Boltzmann and Gibbs as mere thermodynamics.
-They are the control-room bridge between physical state multiplicity and information entropy.
-For Z0_AsBinary, they are mandatory: every striking bit/token pattern must be judged against the ensemble of alternatives.
-Entropy is not only heat.
-Entropy is receipt multiplicity behind a visible description.
-```
 
 ### Claude Shannon - half gold star
 
@@ -252,17 +247,6 @@ The half gold star is for the clean engineering abstraction.
 The missing half is because physics later mistook Shannon information for the substrate.
 ```
 
-Gap:
-
-```text
-communication information is not running physical closure
-bits counted are not bits executed
-message length is not causal reach
-entropy measure is not the process engine
-semantics bracketed for engineering can become fatal if promoted into ontology
-receiver ignorance is not the same as physical nonexistence
-```
-
 Closure correction:
 
 ```text
@@ -273,54 +257,9 @@ one communicated bit need not transmit the library.
 It can select the page both copies already have.
 ```
 
-Physical-machine version:
-
-```text
-Shannon model:
-source -> encoded message -> channel -> receiver reconstructs message
-
-Closure-machine model:
-running instance A
-running instance B
-shared admissibility grammar already instantiated
-one bit selects / unlocks / coordinates a permitted state
-receiver does not learn the whole library
-receiver enters the matching closure state
-```
-
-Atom / chromodynamic-instance note:
-
-```text
-The atom does not learn hydrogen behavior by receiving a textbook.
-Every hydrogen atom instantiates the same admissible closure structure.
-Every chromodynamic instance already runs the quark/gluon rules that make it an instance.
-Communication between such instances is therefore not pure Shannon novelty.
-It can be coordination among already-running copies.
-```
-
-Relation to Z0 / Fundamental Pi:
-
-```text
-If Z0 carries a real bit-level impedance receipt,
-then the important question is not only how many bits are present.
-The important question is what those bits coordinate.
-A short bit pattern may act less like a payload and more like a key:
-it can confirm or select an admissible closure grammar already available to the machine.
-```
-
 Compact line:
 
 > Shannon gets half a gold star: he measured payload uncertainty exactly, but closure asks what one bit can trigger when the receiving structure is already physically instantiated.
-
-Friendly nuke:
-
-```text
-Do not BBQ Shannon as wrong.
-BBQ the promotion of Shannon's engineering abstraction into metaphysics.
-A bit counted in a channel is not automatically the same thing as a bit that closes a physical process.
-The closure question is not merely: how many bits were sent?
-It is: what already-running physical structure did that bit select?
-```
 
 ### Hermann Weyl - qualified gold star
 
@@ -333,15 +272,6 @@ phase/reference comparison instead of absolute labels
 connection as comparison bookkeeping
 ancestor of the Standard Model gauge language
 clear warning that absolute labels are not observables
-```
-
-Scope correction:
-
-```text
-Weyl is not wrong because gauge freedom is fake.
-That is exactly the point: gauge choice is abstraction-space redundancy.
-The observable lesson is that only closure-preserving receipts survive
-a change of description.
 ```
 
 BBQ gap:
@@ -361,30 +291,9 @@ The gauge field is the rendered connection bookkeeping produced
 when pre-spatial pointer relationships are compressed into a smooth field theory.
 ```
 
-Missing derivation:
-
-```text
-derive adjacency before "local"
-derive comparison before connection
-derive allowed pointer transport before gauge field
-derive loop receipts before curvature
-derive closure/admissibility before force law
-```
-
 Compact line:
 
 > Weyl found the abstraction-space bookkeeping rule; closure must derive the pointer-swap machinery that makes comparison, transport, and loop receipts physically admissible.
-
-Friendly nuke:
-
-```text
-Do not worship the gauge.
-Gauge invariance is the statement that the description has redundant pointer labels.
-Useful. Powerful. Standard-Model-grade useful.
-But if spacetime is rendered from entanglement-basis closure,
-then gauges regulate the projected pointer fuzz.
-They do not identify the machine that runs it.
-```
 
 ### Kenneth Wilson - qualified double gold star
 
@@ -409,55 +318,27 @@ Gold star 1: Wilson makes scale custody honest: do not pretend one effective law
 Gold star 2: fixed points and universality expose information horizons of relative rates: many hidden micro-rate stories can render the same stable macro receipt.
 ```
 
-Rates repair:
-
-```text
-Wilson may be reading relative rates, not separate machines.
-Renormalization flow can be read as the dashboard trace of hidden closure work
-being compressed across an information horizon.
-
-fast / fine / inaccessible relation updates
--> slower or coarser observer cannot resolve them
--> hidden work is integrated out
--> effective parameters become visible rate receipts
--> couplings appear to run with scale
-```
-
-Remaining gap:
-
-```text
-renormalization group is not substrate
-beta function is not the engine
-scale flow does not by itself identify the closure rule
-fixed point is a receipt, not the machine
-universality can hide many incompatible micro-machines
-"relative rates" must reproduce ordinary RG receipts or it is only metaphor
-```
-
-Required receipts for any proposed scale-independent little thingy:
-
-```text
-beta functions
-running couplings
-fixed points
-universality classes
-effective field theory domains
-known failure modes where the effective theory stops being valid
-```
-
 Compact line:
 
 > Wilson gets two gold stars: one for scale custody, one for fixed-point/universality rate horizons. Closure must show whether running couplings are the visible rates of one deeper machine across information horizons of relative rates.
 
-Gold star note:
+### Elastic hashing / sparse firebreaks - process gold star
+
+Longer notes: [`fundamentalpi-elastic-hashing-firebreaks.md`](fundamentalpi-elastic-hashing-firebreaks.md), [`z0-sparse-pi-machine.md`](z0-sparse-pi-machine.md)
+
+Gold-star reason:
 
 ```text
-Do not BBQ Wilson as merely "the infinities guy."
-He is the scale-control engineer in the room.
-If Z0_AsBinary has a little thingy that works at any scale, Wilson supplies the audit:
-what changes with scale, what survives coarse-graining, what is a relative-rate horizon,
-and what effective constants are only observer-facing receipts.
+greedy local occupancy can create global congestion
+sparse placement / firebreaks can preserve reachability
+empty slots can be functional structure
+local availability is not global admissibility
+Z0 sparse-pi work must measure gaps, failed returns, skipped windows, and null receipts
 ```
+
+Compact line:
+
+> Elastic hashing gives the CS receipt for a process-first rule: do not greedily occupy every locally available slot; preserve the sparse/firebreak structure that keeps future closure reachable.
 
 ---
 
@@ -529,22 +410,6 @@ computational irreducibility as why time cannot be skipped
 time as progressive computation / rendered observer experience
 ```
 
-Why two gold stars:
-
-```text
-Gold star 1: Wolfram gives the everything-generator / universal walk instead of passive spacetime-as-stage.
-Gold star 2: newer observer-theory and time work moves toward rendered observer physics rather than rule generation alone.
-```
-
-Newer observer/time receipt:
-
-```text
-Observer Theory (2023) makes the observer part of the law-rendering problem.
-On the Nature of Time (2024) makes time depend on computational irreducibility plus bounded observers.
-Metaphysics and the Ruliad (2026) shows the same program pushing toward explicit ruliad ontology.
-Useful, but dangerous: the ruliad must not become another everything-landscape without physical admissibility.
-```
-
 Gap:
 
 ```text
@@ -552,8 +417,6 @@ generates too much
 ruliad is maximal possibility
 observer slice is not admissibility proof
 observer equivalencing is not closure derivation
-computational boundedness is not the tick generator
-persistent observer assumption is not persistence derivation
 universal walk is not physical closure by itself
 needs physical pruning, closure depth, and admissibility
 ```
@@ -563,8 +426,6 @@ Compact line:
 > Wolfram gets two gold stars: one for the universal generator, one for observer-rendered time. Fundamental Pi supplies early closure, and QLF/PFEM must still supply the admissibility rule that prunes possibility into physical receipts.
 
 ### 't Hooft
-
-Longer note: [`computational-process-lineage.md`](computational-process-lineage.md)
 
 Win:
 
@@ -605,7 +466,6 @@ perception and action as one loop
 Gap:
 
 ```text
-often framed biologically/cognitively rather than physics-first
 free-energy minimization begins after a system already exists
 Markov blanket partition is not automatically an admissibility proof
 surprise minimization is not the process drive
@@ -615,14 +475,6 @@ a thermostat reading is not the engine
 Compact line:
 
 > Friston found how systems stay real. Closure explains why there are systems that can stay real.
-
-Friendly nuke:
-
-```text
-Free energy is not the engine.
-It is the thermostat reading of a system already holding together.
-The deeper machine is the closure process that makes a system possible before it can minimize anything.
-```
 
 ---
 
@@ -646,7 +498,6 @@ Gap:
 
 ```text
 force law is not closure/admissibility
-point centers plus forces are not yet fields, quantum mechanics, gauge theory, or records
 relation is still written against an already-given distance/background
 stable particles, spectra, measurement, and observer geometry are not derived
 ```
@@ -654,20 +505,6 @@ stable particles, spectra, measurement, and observer geometry are not derived
 Compact line:
 
 > Boscovich killed the hard marble early: matter becomes point centers plus force relations. Closure still has to explain how relation stabilizes as particles, fields, and records.
-
-Reference hook:
-
-```text
-Roger Joseph Boscovich / Ruđer Josip Bošković,
-Theoria philosophiae naturalis redacta ad unicam legem virium in natura existentium,
-1758; revised edition 1763.
-
-BBQ stance:
-Boscovich is not a hidden modern field theorist.
-He is the pre-field warning that visible stable matter need not be primitive
-little hard stuff. The repair is to derive how relation-patterns become stable
-matter, fields, particles, and observer records.
-```
 
 ### Wheeler
 
@@ -881,7 +718,6 @@ exceptional Lie symmetry pressure
 ambition to unify gravity and Standard Model gauge structure
 beautiful high-dimensional algebraic classification instinct
 serious reminder that particle catalogs may be shadows of representation structure
-keeps the "one pattern behind the zoo" question alive
 ```
 
 Gap:
@@ -892,30 +728,11 @@ classification is not dynamics
 representation fit is not execution
 one elegant algebra is not automatically the running machine
 known critiques press hard on chirality, generations, mirror fermions, and representation-theoretic fit
-no accepted derivation of observed particle masses, couplings, generations, or quantum dynamics
 ```
 
 Compact line:
 
 > E8 gives a gorgeous symmetry cathedral. BBQ says: beautiful map, not the engine; representation closure still has to become admissible dynamics with real particle receipts.
-
-Reference hook:
-
-```text
-Garrett Lisi's E8 program is worth keeping as a symmetry/classification receipt,
-not as an accepted completion of physics.
-
-The main public repair guardrail is Jacques Distler and Skip Garibaldi,
-"There is no Theory of Everything inside E8" (arXiv:0905.2658;
-Communications in Mathematical Physics 298, 419-436, 2010), which argues that
-E8 embeddings of gravity plus Standard Model gauge structure lack representation
-properties required by physical reality.
-
-The BBQ stance is not "laugh and discard." It is:
-E8 found a spectacular possible catalog geometry; closure still demands chiral
-matter, three generations, masses, couplings, dynamics, measurement records,
-and a running process that selects what actually exists.
-```
 
 ### Gell-Mann
 
@@ -958,11 +775,9 @@ Gap:
 
 ```text
 branching is structure-relative unless an admissible decomposition is selected
-Dugic/Francom-style objections press exactly here through linear canonical transformations, not prose handwaving
+Dugic/Francom-style objections press exactly here through linear canonical transformations
 mutually irreducible subsystem decompositions can allow parallel decoherence while blocking one clean universal branching story
 the hydrogen-atom companion paper gives the positive example: structure-selection is physical and operational, not merely verbal
-branching may be a type of closure, but it still needs closure criteria, preferred/admissible structure, persistence, and observer-rendered records
-possible/impossible tasks still need closure-admissibility underneath
 no physical pruning/admissibility rule if everything persists equally
 ```
 
@@ -979,20 +794,11 @@ International Journal of Theoretical Physics 53, 169-181 (2014),
 DOI: 10.1007/s10773-013-1794-x,
 arXiv:1109.6424.
 
-J. Jeknic-Dugic, M. Dugic, A. Francom, M. Arsenijevic,
+J. Jeknic-Dugic, M. Arsenijevic, M. Dugic,
 "Quantum Structures of the Hydrogen Atom",
 Open Access Library Journal 1, e501 (2014),
 DOI: 10.4236/oalib.1100501,
 arXiv:1204.3172.
-
-The point is not an interpretive prose objection. The model-universe argument uses
-linear canonical transformations to exhibit mutually irreducible decompositions
-of the same total system, with parallel occurrence of decoherence. The pressure
-lands on whether Everett branching has an admissible, physically selected
-structure, or whether branching is only defined after choosing a decomposition.
-The hydrogen-atom paper supplies the positive side of the same issue: multiple
-quantum structures are available, while environment, operation, and access select
-which structure becomes physically usable.
 ```
 
 ### H. Dieter Zeh
@@ -1085,15 +891,6 @@ Compact line:
 
 > Einstein killed absolute space and time. Then physics started worshipping the metric.
 
-Kung fu move:
-
-```text
-Make Einstein's field equations the impedance-matching condition of process closure.
-Matter/process tells geometry how closure stress accumulates.
-Geometry tells process how admissible propagation is constrained.
-The metric is the dashboard, not the engine.
-```
-
 ### Kitada / Dugić + Kitada
 
 Win:
@@ -1117,16 +914,6 @@ local time explains clock faces, but not yet the tick generator
 Compact line:
 
 > Kitada found local clocks. Dugić + Kitada made time system-relative. We still need the process-ordering rule that selects the system and drives the clock.
-
-Friendly nuke:
-
-```text
-Kitada kills the universal clock.
-Dugić helps make time local to quantum structure.
-Good. Very good.
-But local time is still a clock face.
-We need the tick generator: the process-ordering rule that lets closure, subsystem selection, records, and local clocks exist at all.
-```
 
 Reference hook:
 
@@ -1228,7 +1015,9 @@ Compact line:
 13. Kitada / Dugić + Kitada, friendly and carefully
 14. Rovelli separately
 15. Gell-Mann separately
-16. Feynman separately, carefully, because he is dangerous in a good way
+16. Edward Witten 1984 / strange matter separately, double gold star, because U/D/S is now a ground-state closure clue and a Z0 electrical receipt clue
+17. Elastic hashing / sparse firebreaks as the computer-science control receipt for non-greedy closure layout
+18. Feynman separately, carefully, because he is dangerous in a good way
 ```
 
 ---
@@ -1247,6 +1036,8 @@ Compact line:
 >
 > Mead gives the phase handshake; closure must explain why the handshake is physically admissible.
 >
+> Witten 1984 gives the U/D/S strange-matter bomb: flavor is not bead inventory but phase/closure-context receipt; Z0 saying UDS is therefore an electrical/impedance-facing clue to test, not dismiss.
+>
 > Smolin gets two gold stars: Time Reborn makes time physically real again, and temporal naturalism refuses timeless law worship; closure must make real time physically operative.
 >
 > Zurek gives pointer states, einselection, and redundant records; closure must select the system and pointer basis before records multiply.
@@ -1258,6 +1049,8 @@ Compact line:
 > Weyl gives gauge/reference bookkeeping; closure must derive pointer adjacency before "local gauge" means anything.
 >
 > Wilson gets two gold stars: scale custody plus fixed-point/universality rate horizons; closure must explain running couplings as visible rates across information horizons of relative rates.
+>
+> Elastic hashing gives the firebreak lesson: a locally open slot is not automatically a globally admissible slot; Z0's gaps, failed returns, and skipped windows may be part of the sparse closure layout.
 >
 > Boscovich kills the hard marble early: matter becomes point centers plus force relations; closure must explain how relation stabilizes as particles, fields, and records.
 >
