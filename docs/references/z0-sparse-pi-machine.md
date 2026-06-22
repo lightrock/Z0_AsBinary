@@ -12,6 +12,20 @@ It now also points at the Zip/Unzip doctrine -- possibly quark genetic unzip fro
 
 That means the Z0 circular-XOR orbit should not be described as a decimal pi encoder, a stored circle, or a literal square-lattice substrate. The stronger and safer statement is that Z0 behaves as a finite deterministic closure sampler whose return statistics can produce pi-like estimators without inserting pi as a primitive.
 
+## 0. Literalism guardrail
+
+This note does not claim that the universe is literally sorting things into hash tables or performing database lookups.
+
+The hash-table/firebreak result is used as a process receipt for one warning:
+
+```text
+local availability is not global admissibility
+```
+
+The Zip/Unzip frame -- possibly quark genetic unzip from the Z0 itself -- is also not a literal file-format claim. It is a lens for asking whether a compact running seed can expand into recoverable receipts while preserving seams, gaps, stop points, and closure structure.
+
+So the analogy is about **recoverability under expansion**, not literal hash tables, literal lookups, or ordinary archive mechanics.
+
 ## 1. The object under discussion
 
 The running rule is the existing Z0 circular-XOR machine:
@@ -54,7 +68,7 @@ The usable pi signal appears only after selecting a relation-walk reading of the
 
 This point must be explicit because it is now part of the actual doctrine, not a side analogy.
 
-Elastic hashing broke the naive assumption that a nearly full table must become slow merely because it is nearly full. The important move is non-greedy placement: do not take every locally available slot if doing so destroys future reachability. Preserve firebreaks.
+Elastic hashing broke the naive assumption that a nearly full table must become slow merely because it is nearly full. The important move is non-greedy placement: do not take every locally available slot if doing so destroys future access/recovery. Preserve firebreaks.
 
 For Z0_AsBinary, the parallel is:
 
@@ -62,12 +76,12 @@ For Z0_AsBinary, the parallel is:
 greedy hash table:
     fill the first available slot
     form clusters
-    future lookup degrades
+    table access degrades
 
 elastic / firebreak hash table:
     skip some locally available slots
     preserve spacing
-    future lookup remains reachable
+    future access remains recoverable
 
 Z0 sparse pi machine:
     do not force every bit/window/tap to mean something immediately
@@ -80,7 +94,7 @@ The blunt version:
 ```text
 Greedy occupancy is not the machine.
 Empty structure can be functional.
-Spacing can preserve reachability.
+Spacing can preserve recoverability.
 Non-events are part of the layout.
 ```
 
@@ -92,7 +106,7 @@ unspoken bits / skipped windows / failed returns / sparse taps
 
 are not merely absence. They are part of the statistical closure environment that lets return counts mean something.
 
-The hash-table lesson is therefore not just computer-science color. It is the operational warning against the wrong interpretation of Z0:
+The hash-table lesson is therefore not a claim that physics is hash-table lookup. It is the operational warning against the wrong interpretation of Z0:
 
 ```text
 Do not greedily interpret every occupied bit as a payload.
@@ -109,7 +123,7 @@ Does Z0 merely receive compression,
 or can Z0 itself run as an Unzip machine -- possibly quark genetic unzip from the Z0 itself?
 ```
 
-The word "Unzip" here does not mean an ordinary file-format claim. It means a compact executable seed expanding into readable receipts while preserving parseability.
+The word "Unzip" here does not mean an ordinary file-format claim. It means a compact executable seed expanding into readable receipts while preserving parseability and recoverability.
 
 A greedy Unzip would expand into unreadable possibility soup. A sparse/firebreak Unzip preserves seams, stop points, null windows, and reachable receipts.
 
