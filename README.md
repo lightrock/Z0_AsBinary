@@ -35,6 +35,7 @@ It currently provides:
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the new chromodyne/electron gold-star addendum, read [Chromodyne / Electron Lineage Gold Stars](docs/references/chromodyne-electron-lineage-gold-stars.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
+- For the Z0 sparse `π` machine and the explicit elastic-hashing / hash-table firebreak analogy, read [Z0 Machine as a Sparse Pi Machine](docs/references/z0-sparse-pi-machine.md).
 - For Jim/QLF's Apéry-period carryback into Fundamental Pi, read [Fundamental Pi: QLF Apéry Carryback](docs/references/fundamental-pi-qlf-apery-carryback.md).
 - We are asking this question next in the quark GeneZip compression work:
   [Fine-Structure Constant Alpha and GeneZip](docs/references/fine-structure-alpha-genezip-question.md).
@@ -55,6 +56,21 @@ just another constant in that catalog. It may be the impedance boundary between
 physical measurement and symbolic compression: a compact seed whose simple
 binary evolution reconstructs or intersects an unusually large fraction of the
 other published constant bit patterns.
+
+### Sparse/firebreak warning
+
+The Z0 sparse-pi work now explicitly borrows the lesson from elastic hashing and
+hash-table firebreaks: a greedy process that fills every locally available slot
+can destroy future reachability, while a sparse/firebreak rule preserves useful
+access near saturation. In Z0_AsBinary language, gaps, failed returns, skipped
+windows, and unclaimed taps are not automatically garbage. They may be part of
+the closure layout that makes the return census meaningful.
+
+```text
+Greedy occupancy is not the machine.
+Firebreaks can be functional structure.
+A sparse closure layout can preserve reachability.
+```
 
 ## Evidence Chain
 
@@ -105,6 +121,10 @@ is structurally special under simple computational tests.
 - [Fundamental Pi](docs/references/fundamentalPi.md) asks what physical machine
   produces the closure represented by `π`, `2π`, phase, rotation, and emergent
   geometry, without treating the symbol as the substrate.
+- [Z0 Machine as a Sparse Pi Machine](docs/references/z0-sparse-pi-machine.md)
+  makes the elastic-hashing / hash-table firebreak issue explicit: sparse gaps,
+  failed returns, and skipped windows can preserve reachability and may be part
+  of the closure layout rather than waste.
 - [Fundamental Pi: QLF Apéry Carryback](docs/references/fundamental-pi-qlf-apery-carryback.md)
   records Jim Whitescarver's QLF-side update: `Z0_AsBinary` has been carried into
   `Physical_Pi.md` as another closure-process machine, while QLF's
