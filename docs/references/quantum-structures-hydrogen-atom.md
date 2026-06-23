@@ -85,7 +85,40 @@ same total system
 
 ---
 
-## 4. Relation to Everett
+## 4. Maxwell-machine consequence
+
+This note now also carries a bounded Maxwell-completion point.
+
+Maxwell's compact field equations require source handles: charge and current. They do not derive what an electron is, why stable charged sourcehood exists, or why a source should appear as a countable quantum object rather than as an arbitrary continuous smear.
+
+The hydrogen-atom paper does not solve the field substrate. It does, however, show that the electron/proton cut is already one quantum structure among other non-equivalent structures of the same whole system.
+
+That matters for Maxwell because the electron should not be treated as a tiny classical doodad inserted into a pre-existing field machine. In bound hydrogen, "electron" is one operable handle on the total atomic process, while the center-of-mass plus relative-degree structure is often the structure spectroscopy actually uses.
+
+Project-level consequence:
+
+```text
+Maxwell source terms are not the machine.
+Electron/proton is not the only possible cut.
+Hydrogen shows source-side structure selection in a real atom.
+Z0 still asks for the field/impedance-side machine receipt.
+```
+
+So the claim should stay sharp but guarded:
+
+> We may already have a concrete source-side machine clue: stable charged sourcehood appears through operationally selected quantum structure. What remains open is the field/impedance-side machine that makes Maxwell's interface, and therefore Z0, natural.
+
+In Allen-language:
+
+```text
+Hydrogen helps with Maxwell's source-side machine.
+It does not yet derive the field-side machine.
+The electron is a handle of the running whole, not a marble that explains itself.
+```
+
+---
+
+## 5. Relation to Everett
 
 The Everett issue is branching.
 
@@ -112,7 +145,7 @@ structure-selection must be physical, not merely descriptive
 
 ---
 
-## 5. Relation to process-first physics
+## 6. Relation to process-first physics
 
 Process-first physics says:
 
@@ -139,15 +172,19 @@ total process -> possible decompositions -> selected operable closure -> rendere
 
 ---
 
-## 6. Compact line
+## 7. Compact line
 
 > The hydrogen atom is not merely electron plus proton in space. It is a structure-selection problem: different decompositions are mathematically valid, but only some become operationally stable under environmental coupling, closure, and experimental access.
 
+Maxwell-facing compact line:
+
+> Hydrogen gives a source-side clue for Maxwell's machine: the electron/proton cut is an operable quantum structure of the whole atom, not an automatically privileged little-marble ontology. The field/impedance-side machine is still the open Z0 question.
+
 ---
 
-## 7. Follow-up work
+## 8. Follow-up work
 
-A stronger version of this note should eventually do four things:
+A stronger version of this note should eventually do five things:
 
 1. Map the hydrogen paper into the closure-machine vocabulary:
 
@@ -167,7 +204,16 @@ A stronger version of this note should eventually do four things:
    closure/admissibility must choose what becomes physical branch structure
    ```
 
-3. Connect to Z0/CIP work:
+3. Connect to Maxwell:
+
+   ```text
+   charge/current source terms -> public electromagnetic interface
+   electron/proton cut -> one operable source-side quantum structure
+   center-of-mass + relative cut -> another operable atomic structure
+   Z0 -> remaining field/impedance-side receipt question
+   ```
+
+4. Connect to Z0/CIP work:
 
    ```text
    constants as information artifacts
@@ -175,12 +221,13 @@ A stronger version of this note should eventually do four things:
    generated patterns as candidate structures needing admissibility tests
    ```
 
-4. Define an acceptance test:
+5. Define an acceptance test:
 
    ```text
    Can a closure/admissibility rule select the same operable structure that atomic experiments select?
    Can it distinguish particle-label decomposition from center-of-mass/relative decomposition without handwaving?
    Can it explain when a decomposition becomes observer-facing physics?
+   Can it connect source-side structure selection to the field/impedance-side Z0 receipt without claiming more than has been earned?
    ```
 
 The point is not to replace hydrogen spectroscopy. The point is to use hydrogen as a clean example where physical structure is selected, not merely assumed.
