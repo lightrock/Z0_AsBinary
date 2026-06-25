@@ -138,6 +138,22 @@ occupying optical constants" come only after occurrence tables and controls.
 - `tools/codata/build_codata_docs.py` - CODATA artifact builder.
 - `tests/` - current regression tests.
 
+## GitHub Update Discipline
+
+Do not leave README or prominent-document edits half-done because the GitHub
+contents wrapper rejects a large full-file update. If `update_file` is blocked,
+flaky, or otherwise chokes on a README-sized replacement, immediately use the
+lower-level Git object path instead:
+
+```text
+fetch current file/blob -> create_tree with the replacement path -> create_commit -> update_ref main
+```
+
+Use this route before inventing workaround files when the user asked for a
+specific file to be fixed. After the ref update, verify with `fetch_file` that
+the target file on `main` contains the intended section or link. Do not claim the
+README is fixed until the fetched file proves it.
+
 ## Development Guidance
 
 - Run tests before committing:
