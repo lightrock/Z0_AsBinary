@@ -153,7 +153,7 @@ The chart below is therefore **one representative forward-orientation layout**, 
 
 ## Manual Line Break Layout
 
-The source then manually inserts line breaks and spaces around the forward Z0 bits. The resulting shape is not calculated by a physics engine; it is a visual reading of the string according to the quark-word segmentation.
+The source then manually inserts line breaks and spaces around the forward Z0 bits. The resulting shape is not calculated by a physics engine; it is an order-preserving visual reading of the string according to the quark-word segmentation.
 
 ```text
 10
@@ -165,19 +165,27 @@ The source then manually inserts line breaks and spaces around the forward Z0 bi
 01
 ```
 
-Simply spaced as 3-bit groupings, the same material produces the chart-like visual form:
+Spaced into the chart-like visual form without changing bit order:
 
 ```text
         1 0
 
-101     111     101
-101             101
-110   0 0 0 0   011
-       0 0 0
-101     111     101
+101      11      101
+101              101
+110    0 0 0 0    011
+         0 0 0
+101      11      101
 
-        0 1
+         0 1
 ```
+
+The rows consume exactly `2 + 8 + 6 + 10 + 3 + 8 + 2 = 39` bits. Removing the spaces and line breaks returns the exact source string:
+
+```text
+101011110110110111000000110001011110101
+```
+
+The earlier transcription used `111` in both eight-bit DOWN rows. That added one bit to each row and silently turned the diagram into a 41-bit object. The correct centers are `11`, because each row must remain the intact eight-bit word `10111101`.
 
 This is the section behind the claim that the Z0 bits, once spaced by their own suggested words, resemble common quark/gluon chart structures. The point to preserve is not that the chart proves the Standard Model; it is that the bit string invites a Standard-Model-like reading with almost no machinery.
 
