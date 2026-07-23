@@ -18,9 +18,7 @@
       --red: #9c3b33;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -36,53 +34,56 @@
       padding: 42px 24px 72px;
     }
 
-    h1, h2, h3 {
-      line-height: 1.15;
-      margin: 0;
-    }
-
-    h1 {
-      font-size: 40px;
-      letter-spacing: 0;
-    }
-
+    h1, h2, h3 { line-height: 1.15; margin: 0; }
+    h1 { font-size: 40px; }
     h2 {
       margin-top: 42px;
-      font-size: 25px;
-      border-bottom: 1px solid var(--line);
       padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      font-size: 25px;
     }
+    h3 { margin-top: 22px; font-size: 18px; }
+    p { margin: 14px 0 0; }
 
-    h3 {
-      margin-top: 22px;
-      font-size: 18px;
-    }
-
-    p {
-      margin: 14px 0 0;
-    }
+    a { color: var(--blue); }
 
     img {
       max-width: 100%;
       height: auto;
+      margin-top: 12px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      margin-top: 12px;
     }
 
     .lede {
       max-width: 900px;
+      margin-top: 14px;
       color: var(--muted);
       font-size: 18px;
-      margin-top: 14px;
     }
 
-    .source {
+    .source,
+    .callout {
       margin-top: 18px;
       padding: 14px 16px;
+      border: 1px solid #b8d5c6;
       border-left: 4px solid var(--green);
-      background: #eef6f1;
-      color: #20352c;
+      border-radius: 8px;
+      background: #f0f8f4;
+    }
+
+    .source { color: #20352c; }
+
+    .warning {
+      border-color: #dbc58b;
+      border-left-color: var(--gold);
+      background: #fff8e6;
+    }
+
+    .error-note {
+      border-color: #d7aaa5;
+      border-left-color: var(--red);
+      background: #fff3f2;
     }
 
     .grid {
@@ -93,37 +94,40 @@
     }
 
     .card {
-      background: var(--panel);
+      padding: 16px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 16px;
+      background: var(--panel);
     }
 
     .label {
+      margin-bottom: 6px;
       color: var(--muted);
       font-size: 13px;
-      text-transform: uppercase;
       letter-spacing: 0.04em;
-      margin-bottom: 6px;
+      text-transform: uppercase;
     }
 
-    code, pre {
-      font-family: Consolas, "Courier New", monospace;
-    }
+    code, pre { font-family: Consolas, "Courier New", monospace; }
 
     pre {
       overflow-x: auto;
-      white-space: pre;
       margin: 16px 0 0;
       padding: 16px;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: #f5f7f6;
+      white-space: pre;
     }
 
-    .bits {
-      font-size: 16px;
-      letter-spacing: 0.02em;
+    .bits { font-size: 16px; letter-spacing: 0.02em; }
+
+    .layout {
+      width: fit-content;
+      max-width: 100%;
+      min-width: 430px;
+      font-size: 17px;
+      line-height: 1.45;
     }
 
     .segmentation {
@@ -141,98 +145,56 @@
     }
 
     .segment {
+      min-width: 84px;
       padding: 12px 10px;
       border-right: 1px solid var(--line);
-      min-width: 84px;
     }
 
-    .segment:last-child {
-      border-right: 0;
-    }
-
+    .segment:last-child { border-right: 0; }
     .segment strong {
       display: block;
-      font-size: 12px;
-      color: var(--muted);
       margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 12px;
       white-space: nowrap;
     }
-
-    .segment code {
-      display: block;
-      font-size: 17px;
-      color: var(--ink);
-    }
-
-    .edge {
-      background: #f6f0dd;
-    }
-
-    .down {
-      background: #eaf4fb;
-    }
-
-    .up {
-      background: #eef7eb;
-    }
-
-    .strange {
-      background: #fbefee;
-    }
-
-    .gluon {
-      background: #f0eef8;
-    }
+    .segment code { display: block; color: var(--ink); font-size: 17px; }
+    .edge { background: #f6f0dd; }
+    .down { background: #eaf4fb; }
+    .up { background: #eef7eb; }
+    .strange { background: #fbefee; }
+    .gluon { background: #f0eef8; }
 
     table {
       width: 100%;
-      border-collapse: collapse;
       margin-top: 16px;
-      background: var(--panel);
       border: 1px solid var(--line);
+      border-collapse: collapse;
+      background: var(--panel);
     }
 
     th, td {
-      border-bottom: 1px solid var(--line);
       padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
       text-align: left;
       vertical-align: top;
     }
 
-    th {
-      background: #eef2f0;
-      font-weight: 650;
-    }
+    th { background: #eef2f0; font-weight: 650; }
+    tr:last-child td { border-bottom: 0; }
 
-    tr:last-child td {
-      border-bottom: 0;
-    }
+    ul { margin-top: 12px; }
 
-    .callout {
-      margin-top: 18px;
-      padding: 16px;
-      border: 1px solid #b8d5c6;
-      border-radius: 8px;
-      background: #f0f8f4;
-    }
-
-    .warning {
-      border-color: #dbc58b;
-      background: #fff8e6;
+    .verified {
+      color: var(--green);
+      font-weight: 700;
     }
 
     @media (max-width: 760px) {
-      main {
-        padding: 28px 16px 48px;
-      }
-
-      h1 {
-        font-size: 31px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
+      main { padding: 28px 16px 48px; }
+      h1 { font-size: 31px; }
+      .grid { grid-template-columns: 1fr; }
+      .layout { min-width: 390px; font-size: 15px; }
     }
   </style>
 </head>
@@ -248,12 +210,16 @@
   </p>
 
   <div class="source">
-    Source material: <code>E:\physics\ObservationsOfTheFundamentalConstantsInBinary.pdf</code>,
-    with matching text recovered from
-    <code>E:\physics\ObservationsOfTheFundamentalConstantsInBinary.rtf</code>.
-    The core source range is the “QUARKS”, “CHARACTERISTIC IMPEDANCE OF VACUUM”,
-    “GLUONS”, and “Atom from 39 bits” section.
+    Source material: legacy 2019 PDF/RTF research notes from the binary constants
+    investigation. The core source range is the “QUARKS”, “CHARACTERISTIC
+    IMPEDANCE OF VACUUM”, “GLUONS”, and “Atom from 39 bits” section.
   </div>
+
+  <p>
+    For the historical chain that makes this a pre-2019 metrological artifact
+    rather than the modern moving CODATA value, see
+    <a href="references/z0-history-to-2019.html">History of Z0 up to the 2019 SI Break</a>.
+  </p>
 
   <h2>Claim Being Preserved</h2>
   <p>
@@ -283,7 +249,7 @@
       <code>39 bits</code>
     </div>
   </div>
-  <pre class="bits">101011110110110111000000110001011110101</pre>
+  <pre class="bits" id="source-bits">101011110110110111000000110001011110101</pre>
 
   <h2>Prime And Triple Facts</h2>
   <p>
@@ -347,6 +313,44 @@ gcd(233635311620, 295533873261, 376730313461) = 1
 and the Z0 receipt may preserve structure worth testing before later SI
 normalization hides it.</pre>
 
+  <h2>Proto-Geometry Note</h2>
+  <p>
+    If a fundamental constant of physics is truly fundamental, then a structural
+    or geometric trace inside its information form would not be absurd in
+    advance. In this reading, Z0 is not only a numeric seed; it also looks like
+    proto-geometry: a compact binary object with edge bits, interior word
+    structure, a central gap, and orientation-dependent layouts.
+  </p>
+  <p>
+    Informally, the forward layout has a minimal tetrahedral flavor — a kind of
+    binary <code>d4</code> in tabletop terms. That image should be treated as an
+    interpretive clue, not as proof. The research task is to turn the
+    visual/geometric hunch into explicit segmentation rules, generated layouts,
+    and controls.
+  </p>
+
+  <h2>Discovery Provenance: Visual Natural Order</h2>
+  <p>
+    The quark observation was not originally found by arbitrarily permuting the
+    Z0 information until a match appeared. It came from looking at
+    proto-geometric views of the impedance bits and noticing that quark words
+    could be read in a natural visual order, including an outside/clockwise
+    ordering in the relevant layout.
+  </p>
+  <p>That discovery path matters. The project should preserve the difference between:</p>
+  <ul>
+    <li>changing or scrambling the information until a match appears, and</li>
+    <li>reading the same fixed information through a natural orientation, boundary, or traversal order suggested by the layout itself.</li>
+  </ul>
+  <p>
+    The stronger claim to test is that all quark signatures may be resolvable
+    from the fixed Z0 information when viewed in the right natural
+    orientation/order, without changing the underlying bits. Future code should
+    therefore reproduce candidate visual traversals explicitly: row order,
+    outside boundary order, clockwise/counter-clockwise order, orientation used,
+    and any closure rule used.
+  </p>
+
   <h2>Quark Words</h2>
   <p>
     The source converts quark mass values to binary using significant digits and
@@ -362,42 +366,12 @@ normalization hides it.</pre>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>UP</td>
-        <td><code>22</code></td>
-        <td><code>10110</code></td>
-        <td><code>101101</code>, forward plus backward closure</td>
-      </tr>
-      <tr>
-        <td>DOWN</td>
-        <td><code>47</code></td>
-        <td><code>101111</code></td>
-        <td><code>10111101</code>, forward plus backward closure</td>
-      </tr>
-      <tr>
-        <td>STRANGE</td>
-        <td><code>96</code></td>
-        <td><code>1100000</code></td>
-        <td><code>1100000011</code>, forward plus backward closure</td>
-      </tr>
-      <tr>
-        <td>CHARM</td>
-        <td><code>128</code></td>
-        <td><code>10000000</code></td>
-        <td>not part of the first native Z0 segmentation</td>
-      </tr>
-      <tr>
-        <td>BOTTOM</td>
-        <td><code>418</code></td>
-        <td><code>110100010</code></td>
-        <td>not part of the first native Z0 segmentation</td>
-      </tr>
-      <tr>
-        <td>TOP</td>
-        <td><code>1731</code></td>
-        <td><code>11011000011</code></td>
-        <td>not part of the first native Z0 segmentation</td>
-      </tr>
+      <tr><td>UP</td><td><code>22</code></td><td><code>10110</code></td><td><code>101101</code>, forward plus backward closure</td></tr>
+      <tr><td>DOWN</td><td><code>47</code></td><td><code>101111</code></td><td><code>10111101</code>, forward plus backward closure</td></tr>
+      <tr><td>STRANGE</td><td><code>96</code></td><td><code>1100000</code></td><td><code>1100000011</code>, forward plus backward closure</td></tr>
+      <tr><td>CHARM</td><td><code>128</code></td><td><code>10000000</code></td><td>not part of the first native Z0 segmentation</td></tr>
+      <tr><td>BOTTOM</td><td><code>418</code></td><td><code>110100010</code></td><td>not part of the first native Z0 segmentation</td></tr>
+      <tr><td>TOP</td><td><code>1731</code></td><td><code>11011000011</code></td><td>not part of the first native Z0 segmentation</td></tr>
     </tbody>
   </table>
 
@@ -415,9 +389,7 @@ normalization hides it.</pre>
     <div class="segment down"><strong>DOWN word</strong><code>10111101</code></div>
     <div class="segment edge"><strong>edge</strong><code>01</code></div>
   </div>
-  <p>
-    Read linearly, this accounts for all 39 bits:
-  </p>
+  <p>Read linearly, this accounts for all 39 bits:</p>
   <pre>10 10111101 101101 1100000011 000 10111101 01</pre>
   <p>
     The document frames this as syntactic rather than decorative: the quark
@@ -425,32 +397,67 @@ normalization hides it.</pre>
     edge bits and a central <code>000</code> gap.
   </p>
 
+  <h2>Orientation Coverage Note</h2>
+  <p>
+    The legacy system did not treat this forward reading as the only interesting
+    structure. The Z0 evidence must preserve the four canonical orientation
+    views used elsewhere in the project: forward, reverse, inverse, and
+    inverse-reverse.
+  </p>
+  <table>
+    <thead><tr><th>orientation</th><th>bit string</th></tr></thead>
+    <tbody>
+      <tr><td><code>forward</code></td><td><code>101011110110110111000000110001011110101</code></td></tr>
+      <tr><td><code>reverse</code></td><td><code>101011110100011000000111011011011110101</code></td></tr>
+      <tr><td><code>inverse</code></td><td><code>010100001001001000111111001110100001010</code></td></tr>
+      <tr><td><code>inverse-reverse</code></td><td><code>010100001011100111111000100100100001010</code></td></tr>
+    </tbody>
+  </table>
+  <p>
+    The chart below is therefore <strong>one representative forward-orientation
+    layout</strong>, not the complete legacy evidence set. The other three
+    orientation structures should be restored as first-class evidence from the
+    legacy source or reproduced by code, not silently ignored.
+  </p>
+
   <h2>Manual Line Break Layout</h2>
   <p>
-    The source then manually inserts line breaks and spaces around the same
-    Z0 bits. The resulting shape is not calculated by a physics engine; it is a
-    visual reading of the string according to the quark-word segmentation.
+    The source then manually inserts line breaks and spaces around the forward
+    Z0 bits. The resulting shape is not calculated by a physics engine; it is an
+    order-preserving visual reading of the string according to the quark-word
+    segmentation.
   </p>
-  <pre>10
+  <pre id="layout-rows">10
 10111101
 101101
 1100000011
 000
 10111101
 01</pre>
-  <p>
-    Re-arranged as 3-bit groupings, the same material produces the chart-like
-    visual form:
-  </p>
-  <pre>        1 0
+  <p>Spaced into the chart-like visual form without changing bit order:</p>
+  <pre class="layout">        1 0
 
-101     111     101
-101             101
-110   0 0 0 0   011
-       0 0 0
-101     111     101
+101      11      101
+101              101
+110    0 0 0 0    011
+         0 0 0
+101      11      101
 
-        0 1</pre>
+         0 1</pre>
+
+  <div class="callout" id="layout-verification">
+    The rows consume exactly <code>2 + 8 + 6 + 10 + 3 + 8 + 2 = 39</code>
+    bits. Removing spaces and line breaks returns the exact source string.
+    <span class="verified" id="verification-result">Verifying…</span>
+  </div>
+
+  <div class="callout error-note">
+    The earlier transcription used <code>111</code> in both eight-bit DOWN rows.
+    That added one bit to each row and silently turned the diagram into a 41-bit
+    object. The correct centers are <code>11</code>, because each row must remain
+    the intact eight-bit word <code>10111101</code>.
+  </div>
+
   <p>
     This is the section behind the claim that the Z0 bits, once spaced by their
     own suggested words, resemble common quark/gluon chart structures. The point
@@ -466,29 +473,12 @@ normalization hides it.</pre>
     or two-of-three bit selections inside a gluon index.
   </p>
   <table>
-    <thead>
-      <tr>
-        <th>Concept</th>
-        <th>Binary reading</th>
-      </tr>
-    </thead>
+    <thead><tr><th>Concept</th><th>Binary reading</th></tr></thead>
     <tbody>
-      <tr>
-        <td>8 gluons</td>
-        <td>Indexed by three bits: <code>000</code> through <code>111</code></td>
-      </tr>
-      <tr>
-        <td>1/3 pion</td>
-        <td>One selected bit of a 3-bit gluon index</td>
-      </tr>
-      <tr>
-        <td>2/3 pion</td>
-        <td>Two selected bits of a 3-bit gluon index</td>
-      </tr>
-      <tr>
-        <td>Quark charge</td>
-        <td>Read as a pion/gluon bit-selection relationship rather than as a free-standing decimal value</td>
-      </tr>
+      <tr><td>8 gluons</td><td>Indexed by three bits: <code>000</code> through <code>111</code></td></tr>
+      <tr><td>1/3 pion</td><td>One selected bit of a 3-bit gluon index</td></tr>
+      <tr><td>2/3 pion</td><td>Two selected bits of a 3-bit gluon index</td></tr>
+      <tr><td>Quark charge</td><td>Read as a pion/gluon bit-selection relationship rather than as a free-standing decimal value</td></tr>
     </tbody>
   </table>
 
@@ -517,31 +507,33 @@ normalization hides it.</pre>
     mechanics. The next useful modules are:
   </p>
   <table>
-    <thead>
-      <tr>
-        <th>Module</th>
-        <th>Purpose</th>
-      </tr>
-    </thead>
+    <thead><tr><th>Module</th><th>Purpose</th></tr></thead>
     <tbody>
-      <tr>
-        <td><code>segmentation</code></td>
-        <td>Represent named bit words and exact non-overlapping decompositions.</td>
-      </tr>
-      <tr>
-        <td><code>catalog</code></td>
-        <td>Load pre-2019 CODATA and quark/gluon signature records with provenance.</td>
-      </tr>
-      <tr>
-        <td><code>baselines</code></td>
-        <td>Compare Z0 against shuffled, random, and other-constant controls.</td>
-      </tr>
-      <tr>
-        <td><code>reports</code></td>
-        <td>Generate reproducible HTML evidence pages from code, not hand layout.</td>
-      </tr>
+      <tr><td><code>segmentation</code></td><td>Represent named bit words and exact non-overlapping decompositions.</td></tr>
+      <tr><td><code>catalog</code></td><td>Load pre-2019 CODATA and quark/gluon signature records with provenance.</td></tr>
+      <tr><td><code>baselines</code></td><td>Compare Z0 against shuffled, random, and other-constant controls.</td></tr>
+      <tr><td><code>reports</code></td><td>Generate reproducible HTML evidence pages from code, not hand layout.</td></tr>
     </tbody>
   </table>
 </main>
+
+<script>
+  (() => {
+    const source = document.getElementById("source-bits").textContent.trim();
+    const rows = document.getElementById("layout-rows").textContent
+      .split(/\s+/)
+      .filter(Boolean);
+    const rebuilt = rows.join("");
+    const result = document.getElementById("verification-result");
+
+    if (source.length !== 39 || rebuilt.length !== 39 || rebuilt !== source) {
+      result.textContent = "FAILED";
+      result.style.color = "var(--red)";
+      throw new Error(`Z0 layout mismatch: source=${source.length}, rebuilt=${rebuilt.length}`);
+    }
+
+    result.textContent = "Verified: 39 bits, exact match.";
+  })();
+</script>
 </body>
 </html>
